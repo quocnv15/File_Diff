@@ -1,0 +1,236 @@
+{
+  "template_name": "Vietnamese Invoice Template",
+  "document_type": "invoice",
+  "version": "1.0",
+  "confidence_threshold": 0.75,
+  "description": "Template for Vietnamese invoices with standard layout",
+  "created_date": "2025-10-16",
+  "regions": [
+    {
+      "name": "header",
+      "type": "header",
+      "description": "Invoice header with company information",
+      "bbox": {"x0": 50, "y0": 50, "x1": 550, "x2": 150},
+      "required": true,
+      "field_types": ["header"],
+      "text_patterns": [
+        "hóa đơn",
+        "invoice",
+        "công ty",
+        "company"
+      ]
+    },
+    {
+      "name": "invoice_number",
+      "type": "field",
+      "description": "Invoice number",
+      "bbox": {"x0": 400, "y0": 50, "x1": 550, "y1": 80},
+      "required": true,
+      "field_types": ["invoice_number"],
+      "text_patterns": [
+        "số.*hóa đơn.*[:：]\\s*(.+)",
+        "invoice.*no?\\.?[:：]\\s*(.+)",
+        "mã.*số[:：]\\s*(.+)"
+      ],
+      "validation": {
+        "pattern": "^[A-Z0-9/-]{3,}$",
+        "required": true
+      }
+    },
+    {
+      "name": "invoice_date",
+      "type": "field",
+      "description": "Invoice date",
+      "bbox": {"x0": 400, "y0": 80, "x1": 550, "y1": 110},
+      "required": true,
+      "field_types": ["date"],
+      "text_patterns": [
+        "ngày\\s*\\d{1,2}\\s*tháng\\s*\\d{1,2}\\s*năm\\s*\\d{4}",
+        "\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}",
+        "date[:：]\\s*(.+)"
+      ],
+      "validation": {
+        "pattern": "^\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}$",
+        "required": true
+      }
+    },
+    {
+      "name": "seller_info",
+      "type": "field_group",
+      "description": "Seller company information",
+      "bbox": {"x0": 50, "y0": 120, "x1": 350, "y1": 200},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "seller_name",
+          "patterns": [
+            "công ty.*[:：]\\s*(.+)",
+            "company.*name[:：]\\s*(.+)",
+            "tên.*công ty[:：]\\s*(.+)"
+          ],
+          "required": true
+        },
+        {
+          "name": "seller_address",
+          "patterns": [
+            "địa chỉ.*[:：]\\s*(.+)",
+            "address[:：]\\s*(.+)"
+          ],
+          "required": true
+        },
+        {
+          "name": "seller_tax_code",
+          "patterns": [
+            "mã.*số.*thuế[:：]\\s*([0-9-]+)",
+            "tax.*code[:：]\\s*([0-9-]+)"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "buyer_info",
+      "type": "field_group",
+      "description": "Buyer company information",
+      "bbox": {"x0": 400, "y0": 120, "x1": 550, "y1": 200},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "buyer_name",
+          "patterns": [
+            "khách hàng.*[:：]\\s*(.+)",
+            "customer.*name[:：]\\s*(.+)"
+          ],
+          "required": true
+        },
+        {
+          "name": "buyer_address",
+          "patterns": [
+            "địa chỉ.*[:：]\\s*(.+)",
+            "address[:：]\\s*(.+)"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "items_table",
+      "type": "table",
+      "description": "Invoice items table",
+      "bbox": {"x0": 50, "y0": 220, "x1": 550, "y1": 400},
+      "required": true,
+      "headers": [
+        "STT",
+        "Tên hàng hóa, dịch vụ",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền"
+      ],
+      "alternative_headers": [
+        ["STT", "Tên hàng hóa", "Đơn vị", "Số lượng", "Đơn giá", "Thành tiền"],
+        ["No.", "Description", "Unit", "Quantity", "Unit Price", "Amount"],
+        ["STT", "Tên hàng", "SL", "Đơn giá", "Thành tiền"]
+      ],
+      "min_rows": 1,
+      "max_rows": 50,
+      "column_validations": {
+        "Số lượng": {"type": "number", "min": 0},
+        "Đơn giá": {"type": "currency", "min": 0},
+        "Thành tiền": {"type": "currency", "min": 0}
+      }
+    },
+    {
+      "name": "summary_section",
+      "type": "field_group",
+      "description": "Summary section with totals",
+      "bbox": {"x0": 350, "y0": 410, "x1": 550, "y1": 500},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "subtotal",
+          "patterns": [
+            "tổng.*tiền.*[:：]\\s*([0-9.,]+)",
+            "subtotal[:：]\\s*([0-9.,]+)"
+          ],
+          "required": false,
+          "type": "currency"
+        },
+        {
+          "name": "vat_amount",
+          "patterns": [
+            "thuế.*GTGT[:：]\\s*([0-9.,]+)",
+            "VAT[:：]\\s*([0-9.,]+)",
+            "tax[:：]\\s*([0-9.,]+)"
+          ],
+          "required": false,
+          "type": "currency"
+        },
+        {
+          "name": "total_amount",
+          "patterns": [
+            "tổng.*cộng[:：]\\s*([0-9.,]+\\s*(vnđ|usd|$)?)",
+            "tổng.*tiền[:：]\\s*([0-9.,]+\\s*(vnđ|usd|$)?)",
+            "total[:：]\\s*([0-9.,]+\\s*(usd|$|vnđ))",
+            "thành.*tiền[:：]\\s*([0-9.,]+\\s*vnđ?)"
+          ],
+          "required": true,
+          "type": "currency"
+        },
+        {
+          "name": "total_in_words",
+          "patterns": [
+            "bằng.*chữ[:：]\\s*(.+)",
+            "in.*words[:：]\\s*(.+)"
+          ],
+          "required": false,
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "type": "footer",
+      "description": "Footer with signatures",
+      "bbox": {"x0": 50, "y0": 510, "x1": 550, "y1": 600},
+      "required": false,
+      "field_types": ["footer"],
+      "text_patterns": [
+        "chữ ký",
+        "signature",
+        "người lập",
+        "giám đốc",
+        "director",
+        "kế toán",
+        "accountant"
+      ]
+    }
+  ],
+  "extraction_engines": ["pdfplumber", "pymupdf"],
+  "post_processing_rules": [
+    {
+      "field": "total_amount",
+      "operation": "clean_currency",
+      "pattern": "([0-9,.]+)\\s*(vnđ|usd|$)?"
+    },
+    {
+      "field": "invoice_date",
+      "operation": "normalize_date",
+      "input_formats": ["dd/mm/yyyy", "dd-mm-yyyy", "dd/mm/yy"],
+      "output_format": "yyyy-mm-dd"
+    },
+    {
+      "field": "tax_code",
+      "operation": "clean_tax_code",
+      "pattern": "[^0-9-]"
+    }
+  ],
+  "quality_checks": {
+    "required_fields": ["invoice_number", "invoice_date", "seller_name", "total_amount"],
+    "min_table_rows": 1,
+    "total_calculation": {
+      "check": true,
+      "tolerance": 0.01
+    }
+  }
+}

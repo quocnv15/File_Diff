@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 State Management Test</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 20px; }
+        .test-container { max-width: 800px; margin: 0 auto; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .status.success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .status.error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .debug-info { background: #f8f9fa; padding: 10px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔧 State Management Test</h1>
+        <p>Testing the fix for file selection state management issues</p>
+        
+        <div class="test-section">
+            <h2>📁 File Selection Test</h2>
+            
+            <!-- File 1 -->
+            <div style="margin: 10px 0;">
+                <input type="file" id="file1" accept=".xlsx,.pdf,.csv" onchange="selectFile(1, this)">
+                <label for="file1">Chọn File 1:</label>
+                <span id="file1-status">Chưa chọn</span>
+            </div>
+            
+            <!-- File 2 -->
+            <div style="margin: 10px 0;">
+                <input type="file" id="file2" accept=".xlsx,.pdf,.csv" onchange="selectFile(2, this)">
+                <label for="file2">Chọn File 2:</label>
+                <span id="file2-status">Chưa chọn</span>
+            </div>
+            
+            <button onclick="testState()" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px;">
+                🔍 Test State
+            </button>
+            
+            <button onclick="clearFiles()" style="padding: 10px 20px; background: #6c757d; color: white; border: none; border-radius: 5px; margin-left: 10px;">
+                🗑️ Clear
+            </button>
+        </div>
+        
+        <div class="test-section">
+            <h2>🔍 Debug Information</h2>
+            <div id="debugInfo" class="debug-info">
+                Debug information will appear here...
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>✅ Test Results</h2>
+            <div id="testResults"></div>
+        </div>
+    </div>
+
+    <!-- Scripts loaded in same order as main app -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/api_integration.js"></script>
+    
+    <script>
+        function selectFile(fileNumber, input) {
+            const file = input.files[0];
+            if (file) {
+                // This should use handleFileSelect from main.js
+                if (typeof handleFileSelect === 'function') {
+                    handleFileSelect(fileNumber, input);
+                } else {
+                    // Fallback if main.js not loaded
+                    window.uploadedFiles[`file${fileNumber}`] = file;
+                }
+                
+                document.getElementById(`file${fileNumber}-status`).textContent = 
+                    `✅ ${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)`;
+            }
+        }
+        
+        function testState() {
+            const debugDiv = document.getElementById('debugInfo');
+            const resultsDiv = document.getElementById('testResults');
+            
+            // Test 1: Check if window.uploadedFiles exists
+            const hasGlobalState = typeof window.uploadedFiles !== 'undefined';
+            const hasGlobalComparison = typeof window.comparisonResults !== 'undefined';
+            
+            // Test 2: Check file states
+            const file1Selected = window.uploadedFiles?.file1 !== null;
+            const file2Selected = window.uploadedFiles?.file2 !== null;
+            const bothSelected = file1Selected && file2Selected;
+            
+            // Test 3: Check if handleFileSelect function exists
+            const hasHandleFileSelect = typeof handleFileSelect === 'function';
+            
+            // Test 4: Check if checkFilesReady function exists
+            const hasCheckFilesReady = typeof checkFilesReady === 'function';
+            
+            // Debug info
+            const debugInfo = {
+                'window.uploadedFiles exists': hasGlobalState,
+                'window.comparisonResults exists': hasGlobalComparison,
+                'handleFileSelect function exists': hasHandleFileSelect,
+                'checkFilesReady function exists': hasCheckFilesReady,
+                'File 1 selected': file1Selected,
+                'File 2 selected': file2Selected,
+                'Both files selected': bothSelected,
+                'uploadedFiles object': window.uploadedFiles,
+                'File 1 details': window.uploadedFiles?.file1 ? {
+                    name: window.uploadedFiles.file1.name,
+                    size: window.uploadedFiles.file1.size,
+                    type: window.uploadedFiles.file1.type
+                } : null,
+                'File 2 details': window.uploadedFiles?.file2 ? {
+                    name: window.uploadedFiles.file2.name,
+                    size: window.uploadedFiles.file2.size,
+                    type: window.uploadedFiles.file2.type
+                } : null
+            };
+            
+            debugDiv.textContent = JSON.stringify(debugInfo, null, 2);
+            
+            // Test results
+            let resultsHTML = '';
+            const tests = [
+                { name: 'Global state initialized', passed: hasGlobalState },
+                { name: 'Global comparison state initialized', passed: hasGlobalComparison },
+                { name: 'handleFileSelect function available', passed: hasHandleFileSelect },
+                { name: 'checkFilesReady function available', passed: hasCheckFilesReady },
+                { name: 'File selection state management', passed: bothSelected || (!file1Selected && !file2Selected) }
+            ];
+            
+            tests.forEach(test => {
+                const statusClass = test.passed ? 'success' : 'error';
+                const statusIcon = test.passed ? '✅' : '❌';
+                resultsHTML += `<div class="status ${statusClass}">${statusIcon} ${test.name}: ${test.passed ? 'PASS' : 'FAIL'}</div>`;
+            });
+            
+            // Test state synchronization
+            if (bothSelected) {
+                // Trigger checkFilesReady to test button enable
+                if (hasCheckFilesReady) {
+                    checkFilesReady();
+                    resultsHTML += `<div class="status success">✅ State synchronization: Button should be enabled</div>`;
+                } else {
+                    resultsHTML += `<div class="status error">❌ State synchronization: checkFilesReady not available</div>`;
+                }
+            }
+            
+            resultsDiv.innerHTML = resultsHTML;
+        }
+        
+        function clearFiles() {
+            if (typeof window.uploadedFiles !== 'undefined') {
+                window.uploadedFiles.file1 = null;
+                window.uploadedFiles.file2 = null;
+            }
+            
+            document.getElementById('file1').value = '';
+            document.getElementById('file2').value = '';
+            document.getElementById('file1-status').textContent = 'Chưa chọn';
+            document.getElementById('file2-status').textContent = 'Chưa chọn';
+            
+            // Clear debug
+            document.getElementById('debugInfo').textContent = 'Debug information will appear here...';
+            document.getElementById('testResults').innerHTML = '';
+        }
+        
+        // Auto-test on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(testState, 1000);
+        });
+    </script>
+</body>
+</html>

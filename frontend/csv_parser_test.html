@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 CSV Parser Fix Test</title>
+    
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            padding: 20px; 
+            background: #f5f5f5;
+        }
+        .test-container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section { 
+            margin: 20px 0; 
+            padding: 15px; 
+            border: 1px solid #ddd; 
+            border-radius: 6px; 
+        }
+        .file-input { 
+            border: 2px dashed #ccc; 
+            padding: 20px; 
+            text-align: center; 
+            cursor: pointer; 
+            margin: 10px 0;
+        }
+        .file-input:hover { border-color: #007bff; }
+        .result { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-radius: 4px; 
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        .debug { background: #fff3cd; border-color: #ffeaa7; }
+        button { 
+            padding: 8px 16px; 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            margin: 5px;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔧 CSV Parser Fix Test</h1>
+        <p>Test fix for CSV parsing issue with "Tên hàng hóa, dịch vụ" header</p>
+        
+        <div class="test-section">
+            <h3>📁 Test File Selection</h3>
+            <div class="file-input" onclick="document.getElementById('testFile').click()">
+                <input type="file" id="testFile" accept=".csv" style="display: none;" onchange="handleFile(this)">
+                <p>📄 Chọn file CSV để test</p>
+                <p style="font-size: 12px; color: #666;">Nên test với file invoice_001.csv</p>
+            </div>
+            
+            <div id="fileInfo" style="display: none;" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🧪 Test Controls</h3>
+            <button onclick="testDirectParsing()">Test Direct CSV Parsing</button>
+            <button onclick="testSampleData()">Test with Sample Data</button>
+            <button onclick="clearResults()">Clear Results</button>
+        </div>
+        
+        <div class="test-section">
+            <h3>📊 Test Results</h3>
+            <div id="testResults" class="result">Test results will appear here...</div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🐛 Debug Console</h3>
+            <div id="debugConsole" class="result debug">Debug logs will appear here...</div>
+        </div>
+    </div>
+
+    <script src="utils/file-parsers.js"></script>
+    
+    <script>
+        let selectedFile = null;
+        let debugLogs = [];
+        
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = `[${timestamp}] ${type}: ${message}`;
+            debugLogs.push(logEntry);
+            
+            document.getElementById('debugConsole').textContent = debugLogs.join('\n');
+            console.log(logEntry);
+        }
+        
+        function handleFile(input) {
+            const file = input.files[0];
+            if (!file) return;
+            
+            selectedFile = file;
+            
+            const fileInfo = `
+File: ${file.name}
+Size: ${(file.size / 1024).toFixed(2)} KB
+Type: ${file.type || 'Unknown'}
+Last Modified: ${new Date(file.lastModified).toLocaleString()}
+            `;
+            
+            document.getElementById('fileInfo').textContent = fileInfo;
+            document.getElementById('fileInfo').style.display = 'block';
+            
+            log(`File selected: ${file.name} (${file.size} bytes)`);
+        }
+        
+        async function testDirectParsing() {
+            if (!selectedFile) {
+                log('No file selected', 'error');
+                return;
+            }
+            
+            log('=== Starting Direct CSV Parsing Test ===', 'info');
+            
+            try {
+                const result = await parseCSVFile(selectedFile);
+                
+                log(`✅ Parsing successful!`, 'success');
+                log(`📊 Parsed ${result.length} rows`, 'info');
+                
+                const resultText = `
+✅ SUCCESS
+File: ${selectedFile.name}
+Rows parsed: ${result.length}
+
+First 3 rows:
+${JSON.stringify(result.slice(0, 3), null, 2)}
+                `;
+                
+                document.getElementById('testResults').textContent = resultText;
+                document.getElementById('testResults').className = 'result success';
+                
+            } catch (error) {
+                log(`❌ Parsing failed: ${error.message}`, 'error');
+                
+                const resultText = `
+❌ ERROR
+File: ${selectedFile.name}
+Error: ${error.message}
+
+Stack trace:
+${error.stack}
+                `;
+                
+                document.getElementById('testResults').textContent = resultText;
+                document.getElementById('testResults').className = 'result error';
+            }
+        }
+        
+        async function testSampleData() {
+            log('=== Testing with Sample Data ===', 'info');
+            
+            // Create sample CSV content that matches the problematic format
+            const sampleCSV = `STT,"Tên hàng hóa, dịch vụ",Đơn vị,Số lượng,Đơn giá,Thành tiền
+1,Canxi Carbonate Coated 1500T,kg,500,75000,37500000
+2,Talc Powder 325 mesh,kg,200,120000,24000000
+3,Kaolin Clay,kg,100,95000,9500000
+4,Phí vận chuyển,lượt,1,500000,500000`;
+            
+            log('Created sample CSV with problematic header format', 'info');
+            
+            // Create a blob from the sample data
+            const blob = new Blob([sampleCSV], { type: 'text/csv;charset=utf-8;' });
+            const file = new File([blob], 'sample_invoice.csv', { type: 'text/csv' });
+            
+            try {
+                const result = await parseCSVFile(file);
+                
+                log(`✅ Sample parsing successful!`, 'success');
+                log(`📊 Parsed ${result.length} rows`, 'info');
+                
+                result.forEach((row, index) => {
+                    log(`Row ${index + 1}: ${row.description} - ${row.quantity} x ${row.unit_price} = ${row.amount}`, 'info');
+                });
+                
+                const resultText = `
+✅ SAMPLE TEST SUCCESS
+Rows parsed: ${result.length}
+
+Parsed data:
+${JSON.stringify(result, null, 2)}
+                `;
+                
+                document.getElementById('testResults').textContent = resultText;
+                document.getElementById('testResults').className = 'result success';
+                
+            } catch (error) {
+                log(`❌ Sample parsing failed: ${error.message}`, 'error');
+                
+                const resultText = `
+❌ SAMPLE TEST ERROR
+Error: ${error.message}
+Sample data:
+${sampleCSV}
+                `;
+                
+                document.getElementById('testResults').textContent = resultText;
+                document.getElementById('testResults').className = 'result error';
+            }
+        }
+        
+        function clearResults() {
+            document.getElementById('testResults').textContent = 'Results cleared...';
+            document.getElementById('testResults').className = 'result';
+            document.getElementById('debugConsole').textContent = 'Debug console cleared...';
+            debugLogs = [];
+        }
+        
+        // Initialize
+        log('CSV Parser Fix Test initialized', 'success');
+        log('Ready to test CSV parsing fixes', 'info');
+    </script>
+</body>
+</html>

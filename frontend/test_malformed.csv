@@ -1,0 +1,9 @@
+STT,Mô tả sản phẩm,Số lượng,Đơn giá,Thành tiền
+1,Sản phẩm A,10,100.50
+2,Sản phẩm B,20
+3,Sản phẩm C,30,200.75,6022.50
+4,Sản phẩm D
+5,"Sản phẩm E có dấu phẩy trong mô tả, phần 2",40,300.25,12010.00
+6,Sản phẩm F,50,400.50,20025.00
+7,Sản phẩm G,60,500.75
+8,Sản phẩm H,70,600.00,42000.00

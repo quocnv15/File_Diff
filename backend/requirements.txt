@@ -1,0 +1,57 @@
+# FastAPI and Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+pydantic==2.10.2
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# File Processing
+markitdown==0.1.3
+pandas==2.2.3
+openpyxl==3.1.5
+xlrd==2.0.1
+python-jose[cryptography]==3.3.0
+chardet==5.2.0
+
+# Text Processing and Comparison
+markdown==3.7
+# difflib is part of Python standard library
+# Alternative: diff-match-patch==20230430
+
+# Export and Reports
+reportlab==4.2.5
+jinja2==3.1.4
+weasyprint==63.0
+
+# Utilities
+aiofiles==24.1.0
+httpx==0.28.0
+passlib[bcrypt]==1.7.4
+psutil==6.1.0
+
+# Development and Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+black==24.10.0
+isort==5.13.2
+mypy==1.13.0
+
+# OCR and Image Processing
+pytesseract==0.3.10
+Pillow==10.2.0
+opencv-python==4.8.1.78
+easyocr==1.7.0
+paddleocr==2.7.3
+
+# Enhanced PDF Processing
+pdfplumber==0.9.0
+camelot-py[cv]==0.11.0
+
+# Word Processing
+python-docx==0.8.11
+docxtpl==0.16.7
+
+# Additional Image Processing
+numpy==1.24.3

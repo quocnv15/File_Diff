@@ -1,0 +1,241 @@
+{
+  "template_name": "Vietnamese Sale Contract Template",
+  "document_type": "contract",
+  "version": "1.0",
+  "confidence_threshold": 0.70,
+  "description": "Template for Vietnamese sale contracts with standard layout",
+  "created_date": "2025-10-16",
+  "regions": [
+    {
+      "name": "contract_header",
+      "type": "header",
+      "description": "Contract title and type",
+      "bbox": {"x0": 200, "y0": 50, "x1": 400, "y1": 100},
+      "required": true,
+      "field_types": ["header"],
+      "text_patterns": [
+        "hợp đồng",
+        "contract",
+        "thỏa thuận",
+        "agreement"
+      ]
+    },
+    {
+      "name": "contract_number",
+      "type": "field",
+      "description": "Contract number",
+      "bbox": {"x0": 50, "y0": 110, "x1": 250, "y1": 140},
+      "required": true,
+      "field_types": ["contract_number"],
+      "text_patterns": [
+        "số.*[:：]\\s*(.+)",
+        "contract.*no?\\.?[:：]\\s*(.+)",
+        "mã.*hợp đồng[:：]\\s*(.+)"
+      ]
+    },
+    {
+      "name": "contract_date",
+      "type": "field",
+      "description": "Contract signing date",
+      "bbox": {"x0": 300, "y0": 110, "x1": 550, "y1": 140},
+      "required": true,
+      "field_types": ["date"],
+      "text_patterns": [
+        "ngày\\s*\\d{1,2}\\s*tháng\\s*\\d{1,2}\\s*năm\\s*\\d{4}",
+        "\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}",
+        "date[:：]\\s*(.+)"
+      ]
+    },
+    {
+      "name": "parties",
+      "type": "field_group",
+      "description": "Contract parties information",
+      "bbox": {"x0": 50, "y0": 150, "x1": 550, "y1": 300},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "seller_info",
+          "patterns": [
+            "bên.*A.*[:：]\\s*(.+)",
+            "seller[:：]\\s*(.+)",
+            "bên.*bán[:：]\\s*(.+)"
+          ],
+          "required": true,
+          "sub_fields": [
+            {
+              "name": "seller_name",
+              "patterns": [
+                "công ty.*[:：]\\s*(.+)",
+                "tên.*[:：]\\s*(.+)"
+              ]
+            },
+            {
+              "name": "seller_address",
+              "patterns": [
+                "địa chỉ.*[:：]\\s*(.+)",
+                "address[:：]\\s*(.+)"
+              ]
+            },
+            {
+              "name": "seller_representative",
+              "patterns": [
+                "người.*đại diện.*[:：]\\s*(.+)",
+                "representative[:：]\\s*(.+)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "buyer_info",
+          "patterns": [
+            "bên.*B.*[:：]\\s*(.+)",
+            "buyer[:：]\\s*(.+)",
+            "bên.*mua[:：]\\s*(.+)"
+          ],
+          "required": true,
+          "sub_fields": [
+            {
+              "name": "buyer_name",
+              "patterns": [
+                "công ty.*[:：]\\s*(.+)",
+                "tên.*[:：]\\s*(.+)"
+              ]
+            },
+            {
+              "name": "buyer_address",
+              "patterns": [
+                "địa chỉ.*[:：]\\s*(.+)",
+                "address[:：]\\s*(.+)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contract_terms",
+      "type": "field_group",
+      "description": "Contract terms and conditions",
+      "bbox": {"x0": 50, "y0": 310, "x1": 550, "y1": 400},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "delivery_terms",
+          "patterns": [
+            "điều.*khoản.*giao.*hàng[:：]\\s*(.+)",
+            "delivery.*terms[:：]\\s*(.+)"
+          ],
+          "required": false
+        },
+        {
+          "name": "payment_terms",
+          "patterns": [
+            "điều.*khoản.*thanh.*toán[:：]\\s*(.+)",
+            "payment.*terms[:：]\\s*(.+)"
+          ],
+          "required": false
+        },
+        {
+          "name": "validity_period",
+          "patterns": [
+            "hiệu.*lực[:：]\\s*(.+)",
+            "validity[:：]\\s*(.+)",
+            "thời.*hạn[:：]\\s*(.+)"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "goods_table",
+      "type": "table",
+      "description": "Goods/items table in contract",
+      "bbox": {"x0": 50, "y0": 410, "x1": 550, "y1": 550},
+      "required": true,
+      "headers": [
+        "No.",
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit price",
+        "Amount"
+      ],
+      "alternative_headers": [
+        ["STT", "Tên hàng hóa", "Số lượng", "Đơn vị", "Đơn giá", "Thành tiền"],
+        ["No", "Mô tả", "Số lượng", "Đơn vị tính", "Đơn giá", "Thành tiền"],
+        ["Mã SP", "Tên sản phẩm", "Số lượng", "Đơn giá", "Thành tiền"]
+      ],
+      "min_rows": 1,
+      "max_rows": 100,
+      "column_validations": {
+        "Quantity": {"type": "number", "min": 0},
+        "Unit price": {"type": "currency", "min": 0},
+        "Amount": {"type": "currency", "min": 0}
+      }
+    },
+    {
+      "name": "total_amount",
+      "type": "field",
+      "description": "Total contract value",
+      "bbox": {"x0": 400, "y0": 560, "x1": 550, "y1": 590},
+      "required": true,
+      "field_types": ["currency"],
+      "text_patterns": [
+        "tổng.*giá.*trị.*[:：]\\s*([0-9.,]+)",
+        "total.*value[:：]\\s*([0-9.,]+)",
+        "tổng.*cộng[:：]\\s*([0-9.,]+)",
+        "contract.*value[:：]\\s*([0-9.,]+)"
+      ]
+    },
+    {
+      "name": "signatures",
+      "type": "footer",
+      "description": "Signature sections",
+      "bbox": {"x0": 50, "y0": 600, "x1": 550, "y1": 700},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "seller_signature",
+          "patterns": [
+            "bên.*A.*[:：]\\s*(.+)",
+            "seller[:：]\\s*(.+)"
+          ]
+        },
+        {
+          "name": "buyer_signature",
+          "patterns": [
+            "bên.*B.*[:：]\\s*(.+)",
+            "buyer[:：]\\s*(.+)"
+          ]
+        }
+      ]
+    }
+  ],
+  "extraction_engines": ["pdfplumber", "pymupdf", "markitdown"],
+  "post_processing_rules": [
+    {
+      "field": "total_amount",
+      "operation": "clean_currency",
+      "pattern": "([0-9,.]+)\\s*(vnđ|usd|$)?"
+    },
+    {
+      "field": "contract_date",
+      "operation": "normalize_date",
+      "input_formats": ["dd/mm/yyyy", "dd-mm-yyyy", "dd/mm/yy"],
+      "output_format": "yyyy-mm-dd"
+    },
+    {
+      "field": "seller_name",
+      "operation": "extract_company_name"
+    },
+    {
+      "field": "buyer_name",
+      "operation": "extract_company_name"
+    }
+  ],
+  "quality_checks": {
+    "required_fields": ["contract_number", "contract_date", "seller_name", "buyer_name"],
+    "min_table_rows": 1,
+    "signature_sections": ["seller_signature", "buyer_signature"]
+  }
+}

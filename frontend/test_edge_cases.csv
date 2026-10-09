@@ -1,0 +1,11 @@
+STT,Mô tả sản phẩm,Số lượng,Đơn giá,Thành tiền
+1,"Sản phẩm có dấu đặc biệt: @#$%^&*()",5,100.50,502.50
+2,"Sản phẩm có dấu tiếng Việt: ÁÀÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯ",10,200.75,2007.50
+3,"Sản phẩm có dấu nháy đơn 'test'",3,150.25,450.75
+4,"Sản phẩm có dấu nháy đôi "test"",7,300.00,2100.00
+5,"Sản phẩm có dấu chấm phẩy; và dấu hai chấm:",2,400.50,801.00
+6,"Sản phẩm có dấu gạch ngang - và gạch dưới_",8,500.75,4006.00
+7,"Sản phẩm có dấu ngoặc đơn (test) và ngoặc vuông [test]",4,600.25,2401.00
+8,"Sản phẩm có ký tự unicode: ☕ ★ ♠ ♥ ♦ ♣",6,700.00,4200.00
+9,"Sản phẩm có công thức: H₂O và CO₂",1,800.50,800.50
+10,"Sản phẩm có link: http://example.com/product/10",9,900.75,8106.75

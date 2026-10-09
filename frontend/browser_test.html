@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Implementation Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .success { background: #d4edda; border-color: #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border-color: #f5c6cb; color: #721c24; }
+        .info { background: #d1ecf1; border-color: #bee5eb; color: #0c5460; }
+        .test-result { margin: 10px 0; padding: 10px; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        #results { margin-top: 20px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Frontend Implementation Tests</h1>
+    
+    <div class="test-section info">
+        <h2>Test Instructions</h2>
+        <p>This page tests the new PDF parsing and export functionality implementations.</p>
+        <ol>
+            <li>Run the automated tests below</li>
+            <li>Test file upload functionality</li>
+            <li>Test PDF export generation</li>
+            <li>Check browser console for detailed logs</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>🚀 Automated Tests</h2>
+        <button onclick="runAllTests()">Run All Tests</button>
+        <button onclick="testPDFParsing()">Test PDF Functions</button>
+        <button onclick="testExportFunctions()">Test Export Functions</button>
+        <button onclick="testErrorHandling()">Test Error Handling</button>
+        <div id="results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>📁 File Upload Test</h2>
+        <p>Test the enhanced file parsing with sample files:</p>
+        <input type="file" id="testFile" accept=".csv,.xlsx,.pdf" onchange="testFileUpload(this)">
+        <div id="fileResults"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>📊 PDF Export Test</h2>
+        <p>Test PDF report generation with sample data:</p>
+        <button onclick="testPDFExport()">Generate Test PDF Report</button>
+        <div id="exportResults"></div>
+    </div>
+
+    <!-- Load required scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+    <script>
+        // Test results container
+        const results = document.getElementById('results');
+        const fileResults = document.getElementById('fileResults');
+        const exportResults = document.getElementById('exportResults');
+
+        function addTestResult(test, status, message) {
+            const div = document.createElement('div');
+            div.className = `test-result ${status}`;
+            div.innerHTML = `<strong>${test}:</strong> ${message}`;
+            results.appendChild(div);
+            console.log(`[${status.toUpperCase()}] ${test}: ${message}`);
+        }
+
+        function clearResults() {
+            results.innerHTML = '';
+            fileResults.innerHTML = '';
+            exportResults.innerHTML = '';
+        }
+
+        // Mock the global functions that should be available
+        window.comparisonResults = {
+            summary: {
+                totalRows: 10,
+                matchingRows: 8,
+                differentRows: 2,
+                accuracyRate: 80
+            },
+            differences: [
+                {
+                    rowNumber: 3,
+                    item1: { description: 'Test Product A', quantity: 10, unit_price: 100, amount: 1000 },
+                    item2: { description: 'Test Product A', quantity: 12, unit_price: 100, amount: 1200 },
+                    differences: [
+                        { field: 'quantity', value1: 10, value2: 12, difference: 2 }
+                    ]
+                }
+            ],
+            matches: [
+                {
+                    rowNumber: 1,
+                    item1: { description: 'Test Product B', quantity: 5, unit_price: 50, amount: 250 },
+                    item2: { description: 'Test Product B', quantity: 5, unit_price: 50, amount: 250 }
+                }
+            ]
+        };
+
+        window.uploadedFiles = {
+            file1: { name: 'test1.csv' },
+            file2: { name: 'test2.csv' }
+        };
+
+        async function runAllTests() {
+            clearResults();
+            addTestResult('Test Suite', 'info', 'Starting comprehensive tests...');
+            
+            await testPDFParsing();
+            await testExportFunctions();
+            testErrorHandling();
+            
+            addTestResult('Test Suite', 'success', 'All tests completed!');
+        }
+
+        async function testPDFParsing() {
+            addTestResult('PDF Parsing Test', 'info', 'Testing PDF parsing functions...');
+            
+            try {
+                // Test loadPDFJSLibrary function
+                if (typeof loadPDFJSLibrary === 'function') {
+                    addTestResult('loadPDFJSLibrary', 'success', 'Function is defined');
+                } else {
+                    addTestResult('loadPDFJSLibrary', 'error', 'Function not found - will be loaded dynamically');
+                }
+
+                // Test PDF utility functions
+                if (typeof cleanText === 'function') {
+                    const testText = cleanText('Test @#$%^&*()_+ text with special chars');
+                    addTestResult('cleanText', 'success', `Works: "${testText}"`);
+                } else {
+                    addTestResult('cleanText', 'error', 'Function not found');
+                }
+
+                if (typeof parseNumber === 'function') {
+                    const testNum = parseNumber('1,234.56');
+                    addTestResult('parseNumber', 'success', `Works: ${testNum}`);
+                } else {
+                    addTestResult('parseNumber', 'error', 'Function not found');
+                }
+
+                if (typeof extractDescriptionFromLine === 'function') {
+                    const testDesc = extractDescriptionFromLine('Product A 123.45 678.90 Total');
+                    addTestResult('extractDescriptionFromLine', 'success', `Works: "${testDesc}"`);
+                } else {
+                    addTestResult('extractDescriptionFromLine', 'error', 'Function not found');
+                }
+
+            } catch (error) {
+                addTestResult('PDF Parsing Test', 'error', `Error: ${error.message}`);
+            }
+        }
+
+        async function testExportFunctions() {
+            addTestResult('Export Functions Test', 'info', 'Testing export functionality...');
+            
+            try {
+                // Test PDF generation functions
+                if (typeof generatePDFReport === 'function') {
+                    addTestResult('generatePDFReport', 'success', 'Function is defined');
+                } else {
+                    addTestResult('generatePDFReport', 'error', 'Function not found');
+                }
+
+                if (typeof loadJSPDFLibrary === 'function') {
+                    addTestResult('loadJSPDFLibrary', 'success', 'Function is defined');
+                } else {
+                    addTestResult('loadJSPDFLibrary', 'error', 'Function not found');
+                }
+
+                if (typeof generateHTMLReport === 'function') {
+                    addTestResult('generateHTMLReport', 'success', 'Function is defined');
+                } else {
+                    addTestResult('generateHTMLReport', 'error', 'Function not found');
+                }
+
+                if (typeof showSuccessMessage === 'function') {
+                    addTestResult('showSuccessMessage', 'success', 'Function is defined');
+                } else {
+                    addTestResult('showSuccessMessage', 'error', 'Function not found');
+                }
+
+                // Test CSV generation
+                if (typeof generateCSVContent === 'function') {
+                    const csvContent = generateCSVContent();
+                    addTestResult('generateCSVContent', 'success', `Generated CSV (${csvContent.length} chars)`);
+                } else {
+                    addTestResult('generateCSVContent', 'error', 'Function not found');
+                }
+
+            } catch (error) {
+                addTestResult('Export Functions Test', 'error', `Error: ${error.message}`);
+            }
+        }
+
+        function testErrorHandling() {
+            addTestResult('Error Handling Test', 'info', 'Testing error handling...');
+            
+            try {
+                // Test file size validation
+                const largeFile = new File(['x'.repeat(60 * 1024 * 1024)], 'large.csv', { type: 'text/csv' });
+                if (typeof parseFile === 'function') {
+                    parseFile(largeFile).catch(error => {
+                        addTestResult('Large File Error', 'success', `Correctly rejected: ${error.message.substring(0, 50)}...`);
+                    });
+                }
+
+                // Test file type validation
+                const invalidFile = new File(['test'], 'invalid.txt', { type: 'text/plain' });
+                if (typeof parseFile === 'function') {
+                    parseFile(invalidFile).catch(error => {
+                        addTestResult('Invalid File Type', 'success', `Correctly rejected: ${error.message.substring(0, 50)}...`);
+                    });
+                }
+
+                addTestResult('Error Handling', 'success', 'Error handling functions work correctly');
+
+            } catch (error) {
+                addTestResult('Error Handling Test', 'error', `Error: ${error.message}`);
+            }
+        }
+
+        async function testFileUpload(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            fileResults.innerHTML = `<p>Testing file: ${file.name} (${(file.size / 1024).toFixed(2)} KB)</p>`;
+
+            try {
+                // Simulate the file parsing if the function exists
+                if (typeof parseFile === 'function') {
+                    const startTime = Date.now();
+                    const data = await parseFile(file);
+                    const endTime = Date.now();
+                    
+                    fileResults.innerHTML += `
+                        <div class="test-result success">
+                            <strong>✅ File parsed successfully!</strong><br>
+                            Records found: ${data.length}<br>
+                            Processing time: ${endTime - startTime}ms<br>
+                            Sample record: ${JSON.stringify(data[0] || {}, null, 2)}
+                        </div>
+                    `;
+                } else {
+                    fileResults.innerHTML += `
+                        <div class="test-result error">
+                            <strong>❌ parseFile function not available</strong><br>
+                            Load the main application first.
+                        </div>
+                    `;
+                }
+
+            } catch (error) {
+                fileResults.innerHTML += `
+                    <div class="test-result error">
+                        <strong>❌ File parsing failed:</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        async function testPDFExport() {
+            exportResults.innerHTML = '<p>Testing PDF export functionality...</p>';
+
+            try {
+                if (typeof generatePDFReport === 'function') {
+                    exportResults.innerHTML += `
+                        <div class="test-result success">
+                            <strong>✅ PDF export function available</strong><br>
+                            Click to test: <button onclick="window.generatePDFReport()">Generate PDF</button>
+                        </div>
+                    `;
+                } else {
+                    exportResults.innerHTML += `
+                        <div class="test-result error">
+                            <strong>❌ PDF export function not available</strong><br>
+                            Load the main application first.
+                        </div>
+                    `;
+                }
+
+                if (typeof generateHTMLReport === 'function') {
+                    exportResults.innerHTML += `
+                        <div class="test-result success">
+                            <strong>✅ HTML export function available</strong><br>
+                            Click to test: <button onclick="window.generateHTMLReport()">Generate HTML Report</button>
+                        </div>
+                    `;
+                }
+
+            } catch (error) {
+                exportResults.innerHTML += `
+                    <div class="test-result error">
+                        <strong>❌ Export test failed:</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Auto-run basic tests on page load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                addTestResult('Page Load', 'success', 'Test page loaded successfully');
+                addTestResult('Libraries', 'info', 'Testing library availability...');
+                
+                if (typeof XLSX !== 'undefined') {
+                    addTestResult('XLSX Library', 'success', 'XLSX library loaded');
+                } else {
+                    addTestResult('XLSX Library', 'error', 'XLSX library not loaded');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

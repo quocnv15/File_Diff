@@ -1,0 +1,278 @@
+{
+  "template_name": "Vietnamese Shipping Document Template",
+  "document_type": "shipping",
+  "version": "1.0",
+  "confidence_threshold": 0.70,
+  "description": "Template for Vietnamese shipping documents (bill of lading, delivery note)",
+  "created_date": "2025-10-16",
+  "regions": [
+    {
+      "name": "document_header",
+      "type": "header",
+      "description": "Shipping document type",
+      "bbox": {"x0": 200, "y0": 50, "x1": 400, "y1": 100},
+      "required": true,
+      "field_types": ["header"],
+      "text_patterns": [
+        "vận đơn",
+        "bill of lading",
+        "phiếu giao hàng",
+        "delivery note",
+        "biên bản giao nhận"
+      ]
+    },
+    {
+      "name": "document_number",
+      "type": "field",
+      "description": "Document number",
+      "bbox": {"x0": 450, "y0": 50, "x1": 550, "y1": 80},
+      "required": true,
+      "field_types": ["document_number"],
+      "text_patterns": [
+        "số.*[:：]\\s*(.+)",
+        "no\\.?[:：]\\s*(.+)",
+        "mã.*[:：]\\s*(.+)"
+      ]
+    },
+    {
+      "name": "shipping_date",
+      "type": "field",
+      "description": "Shipping/delivery date",
+      "bbox": {"x0": 450, "y0": 80, "x1": 550, "y1": 110},
+      "required": true,
+      "field_types": ["date"],
+      "text_patterns": [
+        "ngày\\s*\\d{1,2}\\s*tháng\\s*\\d{1,2}\\s*năm\\s*\\d{4}",
+        "\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}",
+        "date[:：]\\s*(.+)"
+      ]
+    },
+    {
+      "name": "shipper_info",
+      "type": "field_group",
+      "description": "Shipper/sender information",
+      "bbox": {"x0": 50, "y0": 120, "x1": 300, "y1": 200},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "shipper_name",
+          "patterns": [
+            "người gửi.*[:：]\\s*(.+)",
+            "shipper.*[:：]\\s*(.+)",
+            "sender.*[:：]\\s*(.+)"
+          ],
+          "required": true
+        },
+        {
+          "name": "shipper_address",
+          "patterns": [
+            "địa chỉ.*[:：]\\s*(.+)",
+            "address[:：]\\s*(.+)"
+          ],
+          "required": false
+        },
+        {
+          "name": "shipper_phone",
+          "patterns": [
+            "điện thoại.*[:：]\\s*(.+)",
+            "phone[:：]\\s*(.+)",
+            "tel[:：]\\s*(.+)"
+          ],
+          "required": false,
+          "type": "phone"
+        }
+      ]
+    },
+    {
+      "name": "consignee_info",
+      "type": "field_group",
+      "description": "Consignee/receiver information",
+      "bbox": {"x0": 350, "y0": 120, "x1": 550, "y1": 200},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "consignee_name",
+          "patterns": [
+            "người nhận.*[:：]\\s*(.+)",
+            "consignee.*[:：]\\s*(.+)",
+            "receiver.*[:：]\\s*(.+)"
+          ],
+          "required": true
+        },
+        {
+          "name": "consignee_address",
+          "patterns": [
+            "địa chỉ.*[:：]\\s*(.+)",
+            "address[:：]\\s*(.+)"
+          ],
+          "required": false
+        },
+        {
+          "name": "consignee_phone",
+          "patterns": [
+            "điện thoại.*[:：]\\s*(.+)",
+            "phone[:：]\\s*(.+)"
+          ],
+          "required": false,
+          "type": "phone"
+        }
+      ]
+    },
+    {
+      "name": "transport_info",
+      "type": "field_group",
+      "description": "Transport information",
+      "bbox": {"x0": 50, "y0": 210, "x1": 550, "y1": 280},
+      "required": false,
+      "sub_fields": [
+        {
+          "name": "transport_method",
+          "patterns": [
+            "phương.*tiện.*[:：]\\s*(.+)",
+            "transport.*method[:：]\\s*(.+)"
+          ]
+        },
+        {
+          "name": "vehicle_number",
+          "patterns": [
+            "biển.*số.*[:：]\\s*([A-Z0-9-]+)",
+            "vehicle.*no\\.?[:：]\\s*([A-Z0-9-]+)"
+          ],
+          "type": "vehicle_plate"
+        },
+        {
+          "name": "driver_name",
+          "patterns": [
+            "lái xe.*[:：]\\s*(.+)",
+            "driver.*[:：]\\s*(.+)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "goods_table",
+      "type": "table",
+      "description": "Goods/items table",
+      "bbox": {"x0": 50, "y0": 290, "x1": 550, "y1": 450},
+      "required": true,
+      "headers": [
+        "STT",
+        "Tên hàng hóa",
+        "Số lượng",
+        "Đơn vị",
+        "Trọng lượng",
+        "Ghi chú"
+      ],
+      "alternative_headers": [
+        ["No.", "Description", "Quantity", "Unit", "Weight", "Notes"],
+        ["STT", "Mô tả", "Số lượng", "Đơn vị tính", "Trọng lượng", "Ghi chú"],
+        ["Mã SP", "Tên sản phẩm", "SL", "ĐVT", "KL", "Ghi chú"]
+      ],
+      "min_rows": 1,
+      "max_rows": 50,
+      "column_validations": {
+        "Số lượng": {"type": "number", "min": 0},
+        "Trọng lượng": {"type": "number", "min": 0}
+      }
+    },
+    {
+      "name": "total_quantities",
+      "type": "field_group",
+      "description": "Total quantities summary",
+      "bbox": {"x0": 350, "y0": 460, "x1": 550, "y1": 520},
+      "required": false,
+      "sub_fields": [
+        {
+          "name": "total_quantity",
+          "patterns": [
+            "tổng.*số.*lượng[:：]\\s*([0-9.,]+)",
+            "total.*quantity[:：]\\s*([0-9.,]+)"
+          ],
+          "type": "number"
+        },
+        {
+          "name": "total_weight",
+          "patterns": [
+            "tổng.*trọng.*lượng[:：]\\s*([0-9.,]+)",
+            "total.*weight[:：]\\s*([0-9.,]+)"
+          ],
+          "type": "number"
+        },
+        {
+          "name": "total_volume",
+          "patterns": [
+            "tổng.*thể.*tích[:：]\\s*([0-9.,]+)",
+            "total.*volume[:：]\\s*([0-9.,]+)"
+          ],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "delivery_status",
+      "type": "field",
+      "description": "Delivery status",
+      "bbox": {"x0": 50, "y0": 530, "x1": 250, "y1": 560},
+      "required": false,
+      "field_types": ["status"],
+      "text_patterns": [
+        "tình.*trạng.*[:：]\\s*(.+)",
+        "status[:：]\\s*(.+)",
+        "(đã giao|chưa giao|giao thành công)"
+      ]
+    },
+    {
+      "name": "signatures",
+      "type": "footer",
+      "description": "Signature sections",
+      "bbox": {"x0": 50, "y0": 570, "x1": 550, "y1": 650},
+      "required": true,
+      "sub_fields": [
+        {
+          "name": "shipper_signature",
+          "patterns": [
+            "người gửi.*[:：]\\s*(.+)",
+            "shipper[:：]\\s*(.+)"
+          ]
+        },
+        {
+          "name": "consignee_signature",
+          "patterns": [
+            "người nhận.*[:：]\\s*(.+)",
+            "consignee[:：]\\s*(.+)"
+          ]
+        },
+        {
+          "name": "driver_signature",
+          "patterns": [
+            "lái xe.*[:：]\\s*(.+)",
+            "driver[:：]\\s*(.+)"
+          ]
+        }
+      ]
+    }
+  ],
+  "extraction_engines": ["pdfplumber", "pymupdf"],
+  "post_processing_rules": [
+    {
+      "field": "shipping_date",
+      "operation": "normalize_date",
+      "input_formats": ["dd/mm/yyyy", "dd-mm-yyyy", "dd/mm/yy"],
+      "output_format": "yyyy-mm-dd"
+    },
+    {
+      "field": "vehicle_number",
+      "operation": "standardize_plate",
+      "pattern": "[A-Z0-9-]"
+    },
+    {
+      "field": "total_weight",
+      "operation": "extract_number"
+    }
+  ],
+  "quality_checks": {
+    "required_fields": ["document_number", "shipping_date", "shipper_name", "consignee_name"],
+    "min_table_rows": 1,
+    "signature_sections": ["shipper_signature", "consignee_signature"]
+  }
+}

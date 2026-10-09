@@ -1,0 +1,1001 @@
+STT,Mã SP,Tên sản phẩm,Danh mục,Số lượng,Đơn giá,Thành tiền,Nhà cung cấp,Ghi chú
+1,SP0001,Sản phẩm mẫu số 1,Vật liệu xây dựng,595,490971,66915087,Nhà cung cấp B,Ghi chú cho sản phẩm 1
+2,SP0002,Sản phẩm mẫu số 2,Nông sản,498,96260,351177789,Nhà cung cấp C,Ghi chú cho sản phẩm 2
+3,SP0003,Sản phẩm mẫu số 3,Thực phẩm,290,366363,58572481,Nhà cung cấp D,Ghi chú cho sản phẩm 3
+4,SP0004,Sản phẩm mẫu số 4,Dược phẩm,603,386570,90092721,Nhà cung cấp A,Ghi chú cho sản phẩm 4
+5,SP0005,Sản phẩm mẫu số 5,Hóa chất,339,219233,18865140,Nhà cung cấp B,Ghi chú cho sản phẩm 5
+6,SP0006,Sản phẩm mẫu số 6,Vật liệu xây dựng,323,378058,113736770,Nhà cung cấp C,Ghi chú cho sản phẩm 6
+7,SP0007,Sản phẩm mẫu số 7,Nông sản,462,28593,487958098,Nhà cung cấp D,Ghi chú cho sản phẩm 7
+8,SP0008,Sản phẩm mẫu số 8,Thực phẩm,154,460723,361647726,Nhà cung cấp A,Ghi chú cho sản phẩm 8
+9,SP0009,Sản phẩm mẫu số 9,Dược phẩm,397,441949,384840156,Nhà cung cấp B,Ghi chú cho sản phẩm 9
+10,SP0010,Sản phẩm mẫu số 10,Hóa chất,727,239012,314468051,Nhà cung cấp C,Ghi chú cho sản phẩm 10
+11,SP0011,Sản phẩm mẫu số 11,Vật liệu xây dựng,287,403034,98411263,Nhà cung cấp D,Ghi chú cho sản phẩm 11
+12,SP0012,Sản phẩm mẫu số 12,Nông sản,795,57908,199602789,Nhà cung cấp A,Ghi chú cho sản phẩm 12
+13,SP0013,Sản phẩm mẫu số 13,Thực phẩm,980,343214,182815045,Nhà cung cấp B,Ghi chú cho sản phẩm 13
+14,SP0014,Sản phẩm mẫu số 14,Dược phẩm,242,305163,116284351,Nhà cung cấp C,Ghi chú cho sản phẩm 14
+15,SP0015,Sản phẩm mẫu số 15,Hóa chất,467,77477,289482728,Nhà cung cấp D,Ghi chú cho sản phẩm 15
+16,SP0016,Sản phẩm mẫu số 16,Vật liệu xây dựng,158,316662,262844168,Nhà cung cấp A,Ghi chú cho sản phẩm 16
+17,SP0017,Sản phẩm mẫu số 17,Nông sản,970,382471,256557884,Nhà cung cấp B,Ghi chú cho sản phẩm 17
+18,SP0018,Sản phẩm mẫu số 18,Thực phẩm,492,485412,261116931,Nhà cung cấp C,Ghi chú cho sản phẩm 18
+19,SP0019,Sản phẩm mẫu số 19,Dược phẩm,699,300398,262846892,Nhà cung cấp D,Ghi chú cho sản phẩm 19
+20,SP0020,Sản phẩm mẫu số 20,Hóa chất,741,279297,419781389,Nhà cung cấp A,Ghi chú cho sản phẩm 20
+21,SP0021,Sản phẩm mẫu số 21,Vật liệu xây dựng,159,492028,237406928,Nhà cung cấp B,Ghi chú cho sản phẩm 21
+22,SP0022,Sản phẩm mẫu số 22,Nông sản,607,348878,470460177,Nhà cung cấp C,Ghi chú cho sản phẩm 22
+23,SP0023,Sản phẩm mẫu số 23,Thực phẩm,611,324814,267878216,Nhà cung cấp D,Ghi chú cho sản phẩm 23
+24,SP0024,Sản phẩm mẫu số 24,Dược phẩm,37,374326,139794685,Nhà cung cấp A,Ghi chú cho sản phẩm 24
+25,SP0025,Sản phẩm mẫu số 25,Hóa chất,837,497006,372345929,Nhà cung cấp B,Ghi chú cho sản phẩm 25
+26,SP0026,Sản phẩm mẫu số 26,Vật liệu xây dựng,342,472622,284649448,Nhà cung cấp C,Ghi chú cho sản phẩm 26
+27,SP0027,Sản phẩm mẫu số 27,Nông sản,334,425219,349436822,Nhà cung cấp D,Ghi chú cho sản phẩm 27
+28,SP0028,Sản phẩm mẫu số 28,Thực phẩm,624,406762,166026667,Nhà cung cấp A,Ghi chú cho sản phẩm 28
+29,SP0029,Sản phẩm mẫu số 29,Dược phẩm,321,40959,241327300,Nhà cung cấp B,Ghi chú cho sản phẩm 29
+30,SP0030,Sản phẩm mẫu số 30,Hóa chất,670,254917,257298266,Nhà cung cấp C,Ghi chú cho sản phẩm 30
+31,SP0031,Sản phẩm mẫu số 31,Vật liệu xây dựng,565,459878,251349573,Nhà cung cấp D,Ghi chú cho sản phẩm 31
+32,SP0032,Sản phẩm mẫu số 32,Nông sản,602,344295,286499106,Nhà cung cấp A,Ghi chú cho sản phẩm 32
+33,SP0033,Sản phẩm mẫu số 33,Thực phẩm,564,265369,317725413,Nhà cung cấp B,Ghi chú cho sản phẩm 33
+34,SP0034,Sản phẩm mẫu số 34,Dược phẩm,577,436595,141388461,Nhà cung cấp C,Ghi chú cho sản phẩm 34
+35,SP0035,Sản phẩm mẫu số 35,Hóa chất,188,360763,163012271,Nhà cung cấp D,Ghi chú cho sản phẩm 35
+36,SP0036,Sản phẩm mẫu số 36,Vật liệu xây dựng,831,373038,279840487,Nhà cung cấp A,Ghi chú cho sản phẩm 36
+37,SP0037,Sản phẩm mẫu số 37,Nông sản,38,101328,183193914,Nhà cung cấp B,Ghi chú cho sản phẩm 37
+38,SP0038,Sản phẩm mẫu số 38,Thực phẩm,473,217496,165210099,Nhà cung cấp C,Ghi chú cho sản phẩm 38
+39,SP0039,Sản phẩm mẫu số 39,Dược phẩm,265,144144,360893677,Nhà cung cấp D,Ghi chú cho sản phẩm 39
+40,SP0040,Sản phẩm mẫu số 40,Hóa chất,721,489012,57225373,Nhà cung cấp A,Ghi chú cho sản phẩm 40
+41,SP0041,Sản phẩm mẫu số 41,Vật liệu xây dựng,290,387880,146062710,Nhà cung cấp B,Ghi chú cho sản phẩm 41
+42,SP0042,Sản phẩm mẫu số 42,Nông sản,1,386872,309162878,Nhà cung cấp C,Ghi chú cho sản phẩm 42
+43,SP0043,Sản phẩm mẫu số 43,Thực phẩm,22,260807,246107218,Nhà cung cấp D,Ghi chú cho sản phẩm 43
+44,SP0044,Sản phẩm mẫu số 44,Dược phẩm,676,355658,75699609,Nhà cung cấp A,Ghi chú cho sản phẩm 44
+45,SP0045,Sản phẩm mẫu số 45,Hóa chất,215,467366,407239617,Nhà cung cấp B,Ghi chú cho sản phẩm 45
+46,SP0046,Sản phẩm mẫu số 46,Vật liệu xây dựng,186,192189,107717403,Nhà cung cấp C,Ghi chú cho sản phẩm 46
+47,SP0047,Sản phẩm mẫu số 47,Nông sản,516,152189,122686350,Nhà cung cấp D,Ghi chú cho sản phẩm 47
+48,SP0048,Sản phẩm mẫu số 48,Thực phẩm,600,180422,201397835,Nhà cung cấp A,Ghi chú cho sản phẩm 48
+49,SP0049,Sản phẩm mẫu số 49,Dược phẩm,774,474291,282016019,Nhà cung cấp B,Ghi chú cho sản phẩm 49
+50,SP0050,Sản phẩm mẫu số 50,Hóa chất,417,356558,72756886,Nhà cung cấp C,Ghi chú cho sản phẩm 50
+51,SP0051,Sản phẩm mẫu số 51,Vật liệu xây dựng,629,80504,99336247,Nhà cung cấp D,Ghi chú cho sản phẩm 51
+52,SP0052,Sản phẩm mẫu số 52,Nông sản,571,313011,419410233,Nhà cung cấp A,Ghi chú cho sản phẩm 52
+53,SP0053,Sản phẩm mẫu số 53,Thực phẩm,617,327707,144600638,Nhà cung cấp B,Ghi chú cho sản phẩm 53
+54,SP0054,Sản phẩm mẫu số 54,Dược phẩm,569,398678,158275350,Nhà cung cấp C,Ghi chú cho sản phẩm 54
+55,SP0055,Sản phẩm mẫu số 55,Hóa chất,521,388209,294248415,Nhà cung cấp D,Ghi chú cho sản phẩm 55
+56,SP0056,Sản phẩm mẫu số 56,Vật liệu xây dựng,81,117205,342610117,Nhà cung cấp A,Ghi chú cho sản phẩm 56
+57,SP0057,Sản phẩm mẫu số 57,Nông sản,171,71633,14136125,Nhà cung cấp B,Ghi chú cho sản phẩm 57
+58,SP0058,Sản phẩm mẫu số 58,Thực phẩm,896,26516,199645943,Nhà cung cấp C,Ghi chú cho sản phẩm 58
+59,SP0059,Sản phẩm mẫu số 59,Dược phẩm,180,384917,296576740,Nhà cung cấp D,Ghi chú cho sản phẩm 59
+60,SP0060,Sản phẩm mẫu số 60,Hóa chất,103,349897,482098109,Nhà cung cấp A,Ghi chú cho sản phẩm 60
+61,SP0061,Sản phẩm mẫu số 61,Vật liệu xây dựng,937,273652,334833374,Nhà cung cấp B,Ghi chú cho sản phẩm 61
+62,SP0062,Sản phẩm mẫu số 62,Nông sản,583,182580,122876125,Nhà cung cấp C,Ghi chú cho sản phẩm 62
+63,SP0063,Sản phẩm mẫu số 63,Thực phẩm,670,204540,463971482,Nhà cung cấp D,Ghi chú cho sản phẩm 63
+64,SP0064,Sản phẩm mẫu số 64,Dược phẩm,78,63776,430370435,Nhà cung cấp A,Ghi chú cho sản phẩm 64
+65,SP0065,Sản phẩm mẫu số 65,Hóa chất,572,70133,109460754,Nhà cung cấp B,Ghi chú cho sản phẩm 65
+66,SP0066,Sản phẩm mẫu số 66,Vật liệu xây dựng,407,148237,223345790,Nhà cung cấp C,Ghi chú cho sản phẩm 66
+67,SP0067,Sản phẩm mẫu số 67,Nông sản,409,407133,411882012,Nhà cung cấp D,Ghi chú cho sản phẩm 67
+68,SP0068,Sản phẩm mẫu số 68,Thực phẩm,803,191135,225151094,Nhà cung cấp A,Ghi chú cho sản phẩm 68
+69,SP0069,Sản phẩm mẫu số 69,Dược phẩm,858,126804,304994739,Nhà cung cấp B,Ghi chú cho sản phẩm 69
+70,SP0070,Sản phẩm mẫu số 70,Hóa chất,941,301368,356642845,Nhà cung cấp C,Ghi chú cho sản phẩm 70
+71,SP0071,Sản phẩm mẫu số 71,Vật liệu xây dựng,714,320191,405789688,Nhà cung cấp D,Ghi chú cho sản phẩm 71
+72,SP0072,Sản phẩm mẫu số 72,Nông sản,726,141069,234949816,Nhà cung cấp A,Ghi chú cho sản phẩm 72
+73,SP0073,Sản phẩm mẫu số 73,Thực phẩm,743,281795,86934022,Nhà cung cấp B,Ghi chú cho sản phẩm 73
+74,SP0074,Sản phẩm mẫu số 74,Dược phẩm,925,131664,461160166,Nhà cung cấp C,Ghi chú cho sản phẩm 74
+75,SP0075,Sản phẩm mẫu số 75,Hóa chất,471,401855,142419512,Nhà cung cấp D,Ghi chú cho sản phẩm 75
+76,SP0076,Sản phẩm mẫu số 76,Vật liệu xây dựng,97,353555,68157184,Nhà cung cấp A,Ghi chú cho sản phẩm 76
+77,SP0077,Sản phẩm mẫu số 77,Nông sản,449,94007,35043936,Nhà cung cấp B,Ghi chú cho sản phẩm 77
+78,SP0078,Sản phẩm mẫu số 78,Thực phẩm,192,448248,374315307,Nhà cung cấp C,Ghi chú cho sản phẩm 78
+79,SP0079,Sản phẩm mẫu số 79,Dược phẩm,959,434853,38651615,Nhà cung cấp D,Ghi chú cho sản phẩm 79
+80,SP0080,Sản phẩm mẫu số 80,Hóa chất,614,63152,249174283,Nhà cung cấp A,Ghi chú cho sản phẩm 80
+81,SP0081,Sản phẩm mẫu số 81,Vật liệu xây dựng,9,421910,404834208,Nhà cung cấp B,Ghi chú cho sản phẩm 81
+82,SP0082,Sản phẩm mẫu số 82,Nông sản,380,296777,99852962,Nhà cung cấp C,Ghi chú cho sản phẩm 82
+83,SP0083,Sản phẩm mẫu số 83,Thực phẩm,618,463464,484753377,Nhà cung cấp D,Ghi chú cho sản phẩm 83
+84,SP0084,Sản phẩm mẫu số 84,Dược phẩm,147,443458,188704874,Nhà cung cấp A,Ghi chú cho sản phẩm 84
+85,SP0085,Sản phẩm mẫu số 85,Hóa chất,533,484952,143760988,Nhà cung cấp B,Ghi chú cho sản phẩm 85
+86,SP0086,Sản phẩm mẫu số 86,Vật liệu xây dựng,100,203389,338165378,Nhà cung cấp C,Ghi chú cho sản phẩm 86
+87,SP0087,Sản phẩm mẫu số 87,Nông sản,730,37737,377279895,Nhà cung cấp D,Ghi chú cho sản phẩm 87
+88,SP0088,Sản phẩm mẫu số 88,Thực phẩm,352,372419,40635164,Nhà cung cấp A,Ghi chú cho sản phẩm 88
+89,SP0089,Sản phẩm mẫu số 89,Dược phẩm,835,161151,331176179,Nhà cung cấp B,Ghi chú cho sản phẩm 89
+90,SP0090,Sản phẩm mẫu số 90,Hóa chất,139,451073,161930913,Nhà cung cấp C,Ghi chú cho sản phẩm 90
+91,SP0091,Sản phẩm mẫu số 91,Vật liệu xây dựng,44,105284,459594524,Nhà cung cấp D,Ghi chú cho sản phẩm 91
+92,SP0092,Sản phẩm mẫu số 92,Nông sản,33,37947,212055769,Nhà cung cấp A,Ghi chú cho sản phẩm 92
+93,SP0093,Sản phẩm mẫu số 93,Thực phẩm,920,409162,459233562,Nhà cung cấp B,Ghi chú cho sản phẩm 93
+94,SP0094,Sản phẩm mẫu số 94,Dược phẩm,555,13087,334221963,Nhà cung cấp C,Ghi chú cho sản phẩm 94
+95,SP0095,Sản phẩm mẫu số 95,Hóa chất,175,388625,129197606,Nhà cung cấp D,Ghi chú cho sản phẩm 95
+96,SP0096,Sản phẩm mẫu số 96,Vật liệu xây dựng,128,108888,185096149,Nhà cung cấp A,Ghi chú cho sản phẩm 96
+97,SP0097,Sản phẩm mẫu số 97,Nông sản,34,132976,209967544,Nhà cung cấp B,Ghi chú cho sản phẩm 97
+98,SP0098,Sản phẩm mẫu số 98,Thực phẩm,814,105915,275598234,Nhà cung cấp C,Ghi chú cho sản phẩm 98
+99,SP0099,Sản phẩm mẫu số 99,Dược phẩm,251,290539,413913033,Nhà cung cấp D,Ghi chú cho sản phẩm 99
+100,SP0100,Sản phẩm mẫu số 100,Hóa chất,188,206760,459461724,Nhà cung cấp A,Ghi chú cho sản phẩm 100
+101,SP0101,Sản phẩm mẫu số 101,Vật liệu xây dựng,974,379885,5201401,Nhà cung cấp B,Ghi chú cho sản phẩm 101
+102,SP0102,Sản phẩm mẫu số 102,Nông sản,872,56025,49541321,Nhà cung cấp C,Ghi chú cho sản phẩm 102
+103,SP0103,Sản phẩm mẫu số 103,Thực phẩm,114,229019,60080034,Nhà cung cấp D,Ghi chú cho sản phẩm 103
+104,SP0104,Sản phẩm mẫu số 104,Dược phẩm,124,190797,232181849,Nhà cung cấp A,Ghi chú cho sản phẩm 104
+105,SP0105,Sản phẩm mẫu số 105,Hóa chất,388,265098,109205914,Nhà cung cấp B,Ghi chú cho sản phẩm 105
+106,SP0106,Sản phẩm mẫu số 106,Vật liệu xây dựng,883,472092,268264676,Nhà cung cấp C,Ghi chú cho sản phẩm 106
+107,SP0107,Sản phẩm mẫu số 107,Nông sản,70,310317,432151247,Nhà cung cấp D,Ghi chú cho sản phẩm 107
+108,SP0108,Sản phẩm mẫu số 108,Thực phẩm,803,459588,368468500,Nhà cung cấp A,Ghi chú cho sản phẩm 108
+109,SP0109,Sản phẩm mẫu số 109,Dược phẩm,578,362746,198775351,Nhà cung cấp B,Ghi chú cho sản phẩm 109
+110,SP0110,Sản phẩm mẫu số 110,Hóa chất,829,218013,103156571,Nhà cung cấp C,Ghi chú cho sản phẩm 110
+111,SP0111,Sản phẩm mẫu số 111,Vật liệu xây dựng,618,483617,181328031,Nhà cung cấp D,Ghi chú cho sản phẩm 111
+112,SP0112,Sản phẩm mẫu số 112,Nông sản,883,484305,345432206,Nhà cung cấp A,Ghi chú cho sản phẩm 112
+113,SP0113,Sản phẩm mẫu số 113,Thực phẩm,54,349612,42418769,Nhà cung cấp B,Ghi chú cho sản phẩm 113
+114,SP0114,Sản phẩm mẫu số 114,Dược phẩm,998,422355,376542102,Nhà cung cấp C,Ghi chú cho sản phẩm 114
+115,SP0115,Sản phẩm mẫu số 115,Hóa chất,619,389456,103874793,Nhà cung cấp D,Ghi chú cho sản phẩm 115
+116,SP0116,Sản phẩm mẫu số 116,Vật liệu xây dựng,633,22555,470917189,Nhà cung cấp A,Ghi chú cho sản phẩm 116
+117,SP0117,Sản phẩm mẫu số 117,Nông sản,414,133316,41598979,Nhà cung cấp B,Ghi chú cho sản phẩm 117
+118,SP0118,Sản phẩm mẫu số 118,Thực phẩm,756,267250,122951876,Nhà cung cấp C,Ghi chú cho sản phẩm 118
+119,SP0119,Sản phẩm mẫu số 119,Dược phẩm,751,36509,395342101,Nhà cung cấp D,Ghi chú cho sản phẩm 119
+120,SP0120,Sản phẩm mẫu số 120,Hóa chất,791,220441,60869228,Nhà cung cấp A,Ghi chú cho sản phẩm 120
+121,SP0121,Sản phẩm mẫu số 121,Vật liệu xây dựng,179,31228,143658743,Nhà cung cấp B,Ghi chú cho sản phẩm 121
+122,SP0122,Sản phẩm mẫu số 122,Nông sản,376,176789,338950622,Nhà cung cấp C,Ghi chú cho sản phẩm 122
+123,SP0123,Sản phẩm mẫu số 123,Thực phẩm,461,271263,255279147,Nhà cung cấp D,Ghi chú cho sản phẩm 123
+124,SP0124,Sản phẩm mẫu số 124,Dược phẩm,739,446141,63989618,Nhà cung cấp A,Ghi chú cho sản phẩm 124
+125,SP0125,Sản phẩm mẫu số 125,Hóa chất,104,40278,249645687,Nhà cung cấp B,Ghi chú cho sản phẩm 125
+126,SP0126,Sản phẩm mẫu số 126,Vật liệu xây dựng,294,76218,4546224,Nhà cung cấp C,Ghi chú cho sản phẩm 126
+127,SP0127,Sản phẩm mẫu số 127,Nông sản,958,349771,348524840,Nhà cung cấp D,Ghi chú cho sản phẩm 127
+128,SP0128,Sản phẩm mẫu số 128,Thực phẩm,983,441555,326903470,Nhà cung cấp A,Ghi chú cho sản phẩm 128
+129,SP0129,Sản phẩm mẫu số 129,Dược phẩm,962,238741,22817904,Nhà cung cấp B,Ghi chú cho sản phẩm 129
+130,SP0130,Sản phẩm mẫu số 130,Hóa chất,346,424529,163360623,Nhà cung cấp C,Ghi chú cho sản phẩm 130
+131,SP0131,Sản phẩm mẫu số 131,Vật liệu xây dựng,658,70224,473252437,Nhà cung cấp D,Ghi chú cho sản phẩm 131
+132,SP0132,Sản phẩm mẫu số 132,Nông sản,984,402292,463665456,Nhà cung cấp A,Ghi chú cho sản phẩm 132
+133,SP0133,Sản phẩm mẫu số 133,Thực phẩm,480,83259,170967860,Nhà cung cấp B,Ghi chú cho sản phẩm 133
+134,SP0134,Sản phẩm mẫu số 134,Dược phẩm,688,461224,271285015,Nhà cung cấp C,Ghi chú cho sản phẩm 134
+135,SP0135,Sản phẩm mẫu số 135,Hóa chất,64,415528,285672122,Nhà cung cấp D,Ghi chú cho sản phẩm 135
+136,SP0136,Sản phẩm mẫu số 136,Vật liệu xây dựng,226,101682,488014801,Nhà cung cấp A,Ghi chú cho sản phẩm 136
+137,SP0137,Sản phẩm mẫu số 137,Nông sản,310,439669,74062276,Nhà cung cấp B,Ghi chú cho sản phẩm 137
+138,SP0138,Sản phẩm mẫu số 138,Thực phẩm,388,443028,305119761,Nhà cung cấp C,Ghi chú cho sản phẩm 138
+139,SP0139,Sản phẩm mẫu số 139,Dược phẩm,961,290175,59426784,Nhà cung cấp D,Ghi chú cho sản phẩm 139
+140,SP0140,Sản phẩm mẫu số 140,Hóa chất,819,407161,321128583,Nhà cung cấp A,Ghi chú cho sản phẩm 140
+141,SP0141,Sản phẩm mẫu số 141,Vật liệu xây dựng,821,389330,82184054,Nhà cung cấp B,Ghi chú cho sản phẩm 141
+142,SP0142,Sản phẩm mẫu số 142,Nông sản,485,203340,44815855,Nhà cung cấp C,Ghi chú cho sản phẩm 142
+143,SP0143,Sản phẩm mẫu số 143,Thực phẩm,135,321182,106826370,Nhà cung cấp D,Ghi chú cho sản phẩm 143
+144,SP0144,Sản phẩm mẫu số 144,Dược phẩm,101,82958,49854710,Nhà cung cấp A,Ghi chú cho sản phẩm 144
+145,SP0145,Sản phẩm mẫu số 145,Hóa chất,13,156098,147204228,Nhà cung cấp B,Ghi chú cho sản phẩm 145
+146,SP0146,Sản phẩm mẫu số 146,Vật liệu xây dựng,178,168204,292141482,Nhà cung cấp C,Ghi chú cho sản phẩm 146
+147,SP0147,Sản phẩm mẫu số 147,Nông sản,145,271009,246922771,Nhà cung cấp D,Ghi chú cho sản phẩm 147
+148,SP0148,Sản phẩm mẫu số 148,Thực phẩm,968,22372,258299019,Nhà cung cấp A,Ghi chú cho sản phẩm 148
+149,SP0149,Sản phẩm mẫu số 149,Dược phẩm,745,35613,9900660,Nhà cung cấp B,Ghi chú cho sản phẩm 149
+150,SP0150,Sản phẩm mẫu số 150,Hóa chất,681,359991,287375102,Nhà cung cấp C,Ghi chú cho sản phẩm 150
+151,SP0151,Sản phẩm mẫu số 151,Vật liệu xây dựng,813,39591,283172135,Nhà cung cấp D,Ghi chú cho sản phẩm 151
+152,SP0152,Sản phẩm mẫu số 152,Nông sản,577,106491,445886657,Nhà cung cấp A,Ghi chú cho sản phẩm 152
+153,SP0153,Sản phẩm mẫu số 153,Thực phẩm,713,57691,442818838,Nhà cung cấp B,Ghi chú cho sản phẩm 153
+154,SP0154,Sản phẩm mẫu số 154,Dược phẩm,248,487902,270562872,Nhà cung cấp C,Ghi chú cho sản phẩm 154
+155,SP0155,Sản phẩm mẫu số 155,Hóa chất,998,489903,7190060,Nhà cung cấp D,Ghi chú cho sản phẩm 155
+156,SP0156,Sản phẩm mẫu số 156,Vật liệu xây dựng,572,134054,90552126,Nhà cung cấp A,Ghi chú cho sản phẩm 156
+157,SP0157,Sản phẩm mẫu số 157,Nông sản,62,220575,279800459,Nhà cung cấp B,Ghi chú cho sản phẩm 157
+158,SP0158,Sản phẩm mẫu số 158,Thực phẩm,967,36794,407497849,Nhà cung cấp C,Ghi chú cho sản phẩm 158
+159,SP0159,Sản phẩm mẫu số 159,Dược phẩm,50,298339,141462937,Nhà cung cấp D,Ghi chú cho sản phẩm 159
+160,SP0160,Sản phẩm mẫu số 160,Hóa chất,276,499381,302978072,Nhà cung cấp A,Ghi chú cho sản phẩm 160
+161,SP0161,Sản phẩm mẫu số 161,Vật liệu xây dựng,673,77817,185713104,Nhà cung cấp B,Ghi chú cho sản phẩm 161
+162,SP0162,Sản phẩm mẫu số 162,Nông sản,510,290442,320815894,Nhà cung cấp C,Ghi chú cho sản phẩm 162
+163,SP0163,Sản phẩm mẫu số 163,Thực phẩm,204,193821,115777222,Nhà cung cấp D,Ghi chú cho sản phẩm 163
+164,SP0164,Sản phẩm mẫu số 164,Dược phẩm,635,430781,484136930,Nhà cung cấp A,Ghi chú cho sản phẩm 164
+165,SP0165,Sản phẩm mẫu số 165,Hóa chất,743,363172,476450020,Nhà cung cấp B,Ghi chú cho sản phẩm 165
+166,SP0166,Sản phẩm mẫu số 166,Vật liệu xây dựng,943,321622,259845928,Nhà cung cấp C,Ghi chú cho sản phẩm 166
+167,SP0167,Sản phẩm mẫu số 167,Nông sản,871,463175,258524893,Nhà cung cấp D,Ghi chú cho sản phẩm 167
+168,SP0168,Sản phẩm mẫu số 168,Thực phẩm,470,449167,470396112,Nhà cung cấp A,Ghi chú cho sản phẩm 168
+169,SP0169,Sản phẩm mẫu số 169,Dược phẩm,124,359885,327156712,Nhà cung cấp B,Ghi chú cho sản phẩm 169
+170,SP0170,Sản phẩm mẫu số 170,Hóa chất,365,135202,217008441,Nhà cung cấp C,Ghi chú cho sản phẩm 170
+171,SP0171,Sản phẩm mẫu số 171,Vật liệu xây dựng,216,24472,17802340,Nhà cung cấp D,Ghi chú cho sản phẩm 171
+172,SP0172,Sản phẩm mẫu số 172,Nông sản,187,242803,447605184,Nhà cung cấp A,Ghi chú cho sản phẩm 172
+173,SP0173,Sản phẩm mẫu số 173,Thực phẩm,170,211740,74804920,Nhà cung cấp B,Ghi chú cho sản phẩm 173
+174,SP0174,Sản phẩm mẫu số 174,Dược phẩm,878,456716,427244482,Nhà cung cấp C,Ghi chú cho sản phẩm 174
+175,SP0175,Sản phẩm mẫu số 175,Hóa chất,684,465356,347778730,Nhà cung cấp D,Ghi chú cho sản phẩm 175
+176,SP0176,Sản phẩm mẫu số 176,Vật liệu xây dựng,823,399353,63101145,Nhà cung cấp A,Ghi chú cho sản phẩm 176
+177,SP0177,Sản phẩm mẫu số 177,Nông sản,180,468272,442504000,Nhà cung cấp B,Ghi chú cho sản phẩm 177
+178,SP0178,Sản phẩm mẫu số 178,Thực phẩm,102,180762,308733124,Nhà cung cấp C,Ghi chú cho sản phẩm 178
+179,SP0179,Sản phẩm mẫu số 179,Dược phẩm,224,24423,32179560,Nhà cung cấp D,Ghi chú cho sản phẩm 179
+180,SP0180,Sản phẩm mẫu số 180,Hóa chất,336,442582,351169115,Nhà cung cấp A,Ghi chú cho sản phẩm 180
+181,SP0181,Sản phẩm mẫu số 181,Vật liệu xây dựng,574,60858,241042009,Nhà cung cấp B,Ghi chú cho sản phẩm 181
+182,SP0182,Sản phẩm mẫu số 182,Nông sản,103,255000,457054435,Nhà cung cấp C,Ghi chú cho sản phẩm 182
+183,SP0183,Sản phẩm mẫu số 183,Thực phẩm,408,92582,80162056,Nhà cung cấp D,Ghi chú cho sản phẩm 183
+184,SP0184,Sản phẩm mẫu số 184,Dược phẩm,352,145532,92017091,Nhà cung cấp A,Ghi chú cho sản phẩm 184
+185,SP0185,Sản phẩm mẫu số 185,Hóa chất,192,178509,238760943,Nhà cung cấp B,Ghi chú cho sản phẩm 185
+186,SP0186,Sản phẩm mẫu số 186,Vật liệu xây dựng,141,204555,393199412,Nhà cung cấp C,Ghi chú cho sản phẩm 186
+187,SP0187,Sản phẩm mẫu số 187,Nông sản,140,455146,220197129,Nhà cung cấp D,Ghi chú cho sản phẩm 187
+188,SP0188,Sản phẩm mẫu số 188,Thực phẩm,445,79181,125377733,Nhà cung cấp A,Ghi chú cho sản phẩm 188
+189,SP0189,Sản phẩm mẫu số 189,Dược phẩm,596,76837,167483625,Nhà cung cấp B,Ghi chú cho sản phẩm 189
+190,SP0190,Sản phẩm mẫu số 190,Hóa chất,526,334594,260098331,Nhà cung cấp C,Ghi chú cho sản phẩm 190
+191,SP0191,Sản phẩm mẫu số 191,Vật liệu xây dựng,332,329802,206727043,Nhà cung cấp D,Ghi chú cho sản phẩm 191
+192,SP0192,Sản phẩm mẫu số 192,Nông sản,535,205529,374975367,Nhà cung cấp A,Ghi chú cho sản phẩm 192
+193,SP0193,Sản phẩm mẫu số 193,Thực phẩm,105,323857,309429927,Nhà cung cấp B,Ghi chú cho sản phẩm 193
+194,SP0194,Sản phẩm mẫu số 194,Dược phẩm,809,374706,124090957,Nhà cung cấp C,Ghi chú cho sản phẩm 194
+195,SP0195,Sản phẩm mẫu số 195,Hóa chất,286,384468,10459862,Nhà cung cấp D,Ghi chú cho sản phẩm 195
+196,SP0196,Sản phẩm mẫu số 196,Vật liệu xây dựng,667,170932,485285142,Nhà cung cấp A,Ghi chú cho sản phẩm 196
+197,SP0197,Sản phẩm mẫu số 197,Nông sản,733,278320,366440104,Nhà cung cấp B,Ghi chú cho sản phẩm 197
+198,SP0198,Sản phẩm mẫu số 198,Thực phẩm,354,193445,400048620,Nhà cung cấp C,Ghi chú cho sản phẩm 198
+199,SP0199,Sản phẩm mẫu số 199,Dược phẩm,472,261768,335889101,Nhà cung cấp D,Ghi chú cho sản phẩm 199
+200,SP0200,Sản phẩm mẫu số 200,Hóa chất,152,357110,123270924,Nhà cung cấp A,Ghi chú cho sản phẩm 200
+201,SP0201,Sản phẩm mẫu số 201,Vật liệu xây dựng,749,331155,9613988,Nhà cung cấp B,Ghi chú cho sản phẩm 201
+202,SP0202,Sản phẩm mẫu số 202,Nông sản,2,148498,485689287,Nhà cung cấp C,Ghi chú cho sản phẩm 202
+203,SP0203,Sản phẩm mẫu số 203,Thực phẩm,623,302511,383548531,Nhà cung cấp D,Ghi chú cho sản phẩm 203
+204,SP0204,Sản phẩm mẫu số 204,Dược phẩm,485,163648,154453620,Nhà cung cấp A,Ghi chú cho sản phẩm 204
+205,SP0205,Sản phẩm mẫu số 205,Hóa chất,323,136211,259621687,Nhà cung cấp B,Ghi chú cho sản phẩm 205
+206,SP0206,Sản phẩm mẫu số 206,Vật liệu xây dựng,940,66391,98777472,Nhà cung cấp C,Ghi chú cho sản phẩm 206
+207,SP0207,Sản phẩm mẫu số 207,Nông sản,755,295839,430999877,Nhà cung cấp D,Ghi chú cho sản phẩm 207
+208,SP0208,Sản phẩm mẫu số 208,Thực phẩm,785,38776,116895921,Nhà cung cấp A,Ghi chú cho sản phẩm 208
+209,SP0209,Sản phẩm mẫu số 209,Dược phẩm,928,158290,228067626,Nhà cung cấp B,Ghi chú cho sản phẩm 209
+210,SP0210,Sản phẩm mẫu số 210,Hóa chất,284,287673,98374260,Nhà cung cấp C,Ghi chú cho sản phẩm 210
+211,SP0211,Sản phẩm mẫu số 211,Vật liệu xây dựng,693,307143,38103177,Nhà cung cấp D,Ghi chú cho sản phẩm 211
+212,SP0212,Sản phẩm mẫu số 212,Nông sản,539,416444,363982745,Nhà cung cấp A,Ghi chú cho sản phẩm 212
+213,SP0213,Sản phẩm mẫu số 213,Thực phẩm,546,392564,84627109,Nhà cung cấp B,Ghi chú cho sản phẩm 213
+214,SP0214,Sản phẩm mẫu số 214,Dược phẩm,747,152787,148377400,Nhà cung cấp C,Ghi chú cho sản phẩm 214
+215,SP0215,Sản phẩm mẫu số 215,Hóa chất,535,187408,39391612,Nhà cung cấp D,Ghi chú cho sản phẩm 215
+216,SP0216,Sản phẩm mẫu số 216,Vật liệu xây dựng,490,242895,317356543,Nhà cung cấp A,Ghi chú cho sản phẩm 216
+217,SP0217,Sản phẩm mẫu số 217,Nông sản,958,449106,46723507,Nhà cung cấp B,Ghi chú cho sản phẩm 217
+218,SP0218,Sản phẩm mẫu số 218,Thực phẩm,393,273797,337887635,Nhà cung cấp C,Ghi chú cho sản phẩm 218
+219,SP0219,Sản phẩm mẫu số 219,Dược phẩm,185,31936,489956355,Nhà cung cấp D,Ghi chú cho sản phẩm 219
+220,SP0220,Sản phẩm mẫu số 220,Hóa chất,931,353452,352560470,Nhà cung cấp A,Ghi chú cho sản phẩm 220
+221,SP0221,Sản phẩm mẫu số 221,Vật liệu xây dựng,834,188251,274680480,Nhà cung cấp B,Ghi chú cho sản phẩm 221
+222,SP0222,Sản phẩm mẫu số 222,Nông sản,596,441023,307592934,Nhà cung cấp C,Ghi chú cho sản phẩm 222
+223,SP0223,Sản phẩm mẫu số 223,Thực phẩm,841,60726,192824972,Nhà cung cấp D,Ghi chú cho sản phẩm 223
+224,SP0224,Sản phẩm mẫu số 224,Dược phẩm,639,487808,395661316,Nhà cung cấp A,Ghi chú cho sản phẩm 224
+225,SP0225,Sản phẩm mẫu số 225,Hóa chất,854,372009,108788134,Nhà cung cấp B,Ghi chú cho sản phẩm 225
+226,SP0226,Sản phẩm mẫu số 226,Vật liệu xây dựng,311,259557,472824183,Nhà cung cấp C,Ghi chú cho sản phẩm 226
+227,SP0227,Sản phẩm mẫu số 227,Nông sản,696,427556,386965598,Nhà cung cấp D,Ghi chú cho sản phẩm 227
+228,SP0228,Sản phẩm mẫu số 228,Thực phẩm,241,433666,224390717,Nhà cung cấp A,Ghi chú cho sản phẩm 228
+229,SP0229,Sản phẩm mẫu số 229,Dược phẩm,184,287600,103407967,Nhà cung cấp B,Ghi chú cho sản phẩm 229
+230,SP0230,Sản phẩm mẫu số 230,Hóa chất,400,233795,486295457,Nhà cung cấp C,Ghi chú cho sản phẩm 230
+231,SP0231,Sản phẩm mẫu số 231,Vật liệu xây dựng,367,134609,403939448,Nhà cung cấp D,Ghi chú cho sản phẩm 231
+232,SP0232,Sản phẩm mẫu số 232,Nông sản,480,499929,47021316,Nhà cung cấp A,Ghi chú cho sản phẩm 232
+233,SP0233,Sản phẩm mẫu số 233,Thực phẩm,130,200433,309807937,Nhà cung cấp B,Ghi chú cho sản phẩm 233
+234,SP0234,Sản phẩm mẫu số 234,Dược phẩm,859,493455,426040094,Nhà cung cấp C,Ghi chú cho sản phẩm 234
+235,SP0235,Sản phẩm mẫu số 235,Hóa chất,408,268729,232936851,Nhà cung cấp D,Ghi chú cho sản phẩm 235
+236,SP0236,Sản phẩm mẫu số 236,Vật liệu xây dựng,89,78709,60873591,Nhà cung cấp A,Ghi chú cho sản phẩm 236
+237,SP0237,Sản phẩm mẫu số 237,Nông sản,606,286999,444503327,Nhà cung cấp B,Ghi chú cho sản phẩm 237
+238,SP0238,Sản phẩm mẫu số 238,Thực phẩm,651,50985,88086980,Nhà cung cấp C,Ghi chú cho sản phẩm 238
+239,SP0239,Sản phẩm mẫu số 239,Dược phẩm,415,337902,365583157,Nhà cung cấp D,Ghi chú cho sản phẩm 239
+240,SP0240,Sản phẩm mẫu số 240,Hóa chất,967,278498,77565853,Nhà cung cấp A,Ghi chú cho sản phẩm 240
+241,SP0241,Sản phẩm mẫu số 241,Vật liệu xây dựng,633,391864,206363849,Nhà cung cấp B,Ghi chú cho sản phẩm 241
+242,SP0242,Sản phẩm mẫu số 242,Nông sản,516,340789,100458352,Nhà cung cấp C,Ghi chú cho sản phẩm 242
+243,SP0243,Sản phẩm mẫu số 243,Thực phẩm,307,108596,175976806,Nhà cung cấp D,Ghi chú cho sản phẩm 243
+244,SP0244,Sản phẩm mẫu số 244,Dược phẩm,757,461113,239625118,Nhà cung cấp A,Ghi chú cho sản phẩm 244
+245,SP0245,Sản phẩm mẫu số 245,Hóa chất,437,144054,396323100,Nhà cung cấp B,Ghi chú cho sản phẩm 245
+246,SP0246,Sản phẩm mẫu số 246,Vật liệu xây dựng,651,465148,135725866,Nhà cung cấp C,Ghi chú cho sản phẩm 246
+247,SP0247,Sản phẩm mẫu số 247,Nông sản,984,426676,319830985,Nhà cung cấp D,Ghi chú cho sản phẩm 247
+248,SP0248,Sản phẩm mẫu số 248,Thực phẩm,997,202134,17639703,Nhà cung cấp A,Ghi chú cho sản phẩm 248
+249,SP0249,Sản phẩm mẫu số 249,Dược phẩm,723,340899,318977413,Nhà cung cấp B,Ghi chú cho sản phẩm 249
+250,SP0250,Sản phẩm mẫu số 250,Hóa chất,169,264635,203064518,Nhà cung cấp C,Ghi chú cho sản phẩm 250
+251,SP0251,Sản phẩm mẫu số 251,Vật liệu xây dựng,832,228745,221479055,Nhà cung cấp D,Ghi chú cho sản phẩm 251
+252,SP0252,Sản phẩm mẫu số 252,Nông sản,739,63509,227399230,Nhà cung cấp A,Ghi chú cho sản phẩm 252
+253,SP0253,Sản phẩm mẫu số 253,Thực phẩm,141,84936,94336019,Nhà cung cấp B,Ghi chú cho sản phẩm 253
+254,SP0254,Sản phẩm mẫu số 254,Dược phẩm,87,208079,486927608,Nhà cung cấp C,Ghi chú cho sản phẩm 254
+255,SP0255,Sản phẩm mẫu số 255,Hóa chất,867,79717,168091074,Nhà cung cấp D,Ghi chú cho sản phẩm 255
+256,SP0256,Sản phẩm mẫu số 256,Vật liệu xây dựng,622,85748,487660423,Nhà cung cấp A,Ghi chú cho sản phẩm 256
+257,SP0257,Sản phẩm mẫu số 257,Nông sản,863,328502,96007583,Nhà cung cấp B,Ghi chú cho sản phẩm 257
+258,SP0258,Sản phẩm mẫu số 258,Thực phẩm,507,43281,355027421,Nhà cung cấp C,Ghi chú cho sản phẩm 258
+259,SP0259,Sản phẩm mẫu số 259,Dược phẩm,22,169825,342600327,Nhà cung cấp D,Ghi chú cho sản phẩm 259
+260,SP0260,Sản phẩm mẫu số 260,Hóa chất,634,495194,273283576,Nhà cung cấp A,Ghi chú cho sản phẩm 260
+261,SP0261,Sản phẩm mẫu số 261,Vật liệu xây dựng,248,307747,30945623,Nhà cung cấp B,Ghi chú cho sản phẩm 261
+262,SP0262,Sản phẩm mẫu số 262,Nông sản,192,35853,473766869,Nhà cung cấp C,Ghi chú cho sản phẩm 262
+263,SP0263,Sản phẩm mẫu số 263,Thực phẩm,151,189049,434124601,Nhà cung cấp D,Ghi chú cho sản phẩm 263
+264,SP0264,Sản phẩm mẫu số 264,Dược phẩm,952,458890,485764312,Nhà cung cấp A,Ghi chú cho sản phẩm 264
+265,SP0265,Sản phẩm mẫu số 265,Hóa chất,682,64729,13065403,Nhà cung cấp B,Ghi chú cho sản phẩm 265
+266,SP0266,Sản phẩm mẫu số 266,Vật liệu xây dựng,876,489848,98789293,Nhà cung cấp C,Ghi chú cho sản phẩm 266
+267,SP0267,Sản phẩm mẫu số 267,Nông sản,413,215456,473103061,Nhà cung cấp D,Ghi chú cho sản phẩm 267
+268,SP0268,Sản phẩm mẫu số 268,Thực phẩm,191,432492,309053951,Nhà cung cấp A,Ghi chú cho sản phẩm 268
+269,SP0269,Sản phẩm mẫu số 269,Dược phẩm,839,245797,184142373,Nhà cung cấp B,Ghi chú cho sản phẩm 269
+270,SP0270,Sản phẩm mẫu số 270,Hóa chất,482,381353,349214656,Nhà cung cấp C,Ghi chú cho sản phẩm 270
+271,SP0271,Sản phẩm mẫu số 271,Vật liệu xây dựng,551,484143,162822925,Nhà cung cấp D,Ghi chú cho sản phẩm 271
+272,SP0272,Sản phẩm mẫu số 272,Nông sản,2,264535,234365775,Nhà cung cấp A,Ghi chú cho sản phẩm 272
+273,SP0273,Sản phẩm mẫu số 273,Thực phẩm,398,408242,350676234,Nhà cung cấp B,Ghi chú cho sản phẩm 273
+274,SP0274,Sản phẩm mẫu số 274,Dược phẩm,638,188609,153640594,Nhà cung cấp C,Ghi chú cho sản phẩm 274
+275,SP0275,Sản phẩm mẫu số 275,Hóa chất,285,191894,287870817,Nhà cung cấp D,Ghi chú cho sản phẩm 275
+276,SP0276,Sản phẩm mẫu số 276,Vật liệu xây dựng,645,368044,395494798,Nhà cung cấp A,Ghi chú cho sản phẩm 276
+277,SP0277,Sản phẩm mẫu số 277,Nông sản,485,77235,251508275,Nhà cung cấp B,Ghi chú cho sản phẩm 277
+278,SP0278,Sản phẩm mẫu số 278,Thực phẩm,826,42435,237792935,Nhà cung cấp C,Ghi chú cho sản phẩm 278
+279,SP0279,Sản phẩm mẫu số 279,Dược phẩm,485,458402,280810641,Nhà cung cấp D,Ghi chú cho sản phẩm 279
+280,SP0280,Sản phẩm mẫu số 280,Hóa chất,951,64439,18949440,Nhà cung cấp A,Ghi chú cho sản phẩm 280
+281,SP0281,Sản phẩm mẫu số 281,Vật liệu xây dựng,624,179417,219880620,Nhà cung cấp B,Ghi chú cho sản phẩm 281
+282,SP0282,Sản phẩm mẫu số 282,Nông sản,135,383506,358393611,Nhà cung cấp C,Ghi chú cho sản phẩm 282
+283,SP0283,Sản phẩm mẫu số 283,Thực phẩm,316,490387,256197895,Nhà cung cấp D,Ghi chú cho sản phẩm 283
+284,SP0284,Sản phẩm mẫu số 284,Dược phẩm,585,179185,86719675,Nhà cung cấp A,Ghi chú cho sản phẩm 284
+285,SP0285,Sản phẩm mẫu số 285,Hóa chất,821,298556,181772883,Nhà cung cấp B,Ghi chú cho sản phẩm 285
+286,SP0286,Sản phẩm mẫu số 286,Vật liệu xây dựng,290,303168,282527800,Nhà cung cấp C,Ghi chú cho sản phẩm 286
+287,SP0287,Sản phẩm mẫu số 287,Nông sản,761,216076,451173147,Nhà cung cấp D,Ghi chú cho sản phẩm 287
+288,SP0288,Sản phẩm mẫu số 288,Thực phẩm,501,106490,256211902,Nhà cung cấp A,Ghi chú cho sản phẩm 288
+289,SP0289,Sản phẩm mẫu số 289,Dược phẩm,319,55971,352138356,Nhà cung cấp B,Ghi chú cho sản phẩm 289
+290,SP0290,Sản phẩm mẫu số 290,Hóa chất,887,224090,144712448,Nhà cung cấp C,Ghi chú cho sản phẩm 290
+291,SP0291,Sản phẩm mẫu số 291,Vật liệu xây dựng,209,354547,233195648,Nhà cung cấp D,Ghi chú cho sản phẩm 291
+292,SP0292,Sản phẩm mẫu số 292,Nông sản,843,497774,219951269,Nhà cung cấp A,Ghi chú cho sản phẩm 292
+293,SP0293,Sản phẩm mẫu số 293,Thực phẩm,599,359187,35033594,Nhà cung cấp B,Ghi chú cho sản phẩm 293
+294,SP0294,Sản phẩm mẫu số 294,Dược phẩm,831,357121,330526339,Nhà cung cấp C,Ghi chú cho sản phẩm 294
+295,SP0295,Sản phẩm mẫu số 295,Hóa chất,254,199028,414048926,Nhà cung cấp D,Ghi chú cho sản phẩm 295
+296,SP0296,Sản phẩm mẫu số 296,Vật liệu xây dựng,117,164146,347560908,Nhà cung cấp A,Ghi chú cho sản phẩm 296
+297,SP0297,Sản phẩm mẫu số 297,Nông sản,323,10043,359381101,Nhà cung cấp B,Ghi chú cho sản phẩm 297
+298,SP0298,Sản phẩm mẫu số 298,Thực phẩm,749,297628,135754808,Nhà cung cấp C,Ghi chú cho sản phẩm 298
+299,SP0299,Sản phẩm mẫu số 299,Dược phẩm,418,467054,464301792,Nhà cung cấp D,Ghi chú cho sản phẩm 299
+300,SP0300,Sản phẩm mẫu số 300,Hóa chất,339,445372,75170485,Nhà cung cấp A,Ghi chú cho sản phẩm 300
+301,SP0301,Sản phẩm mẫu số 301,Vật liệu xây dựng,723,445381,166414520,Nhà cung cấp B,Ghi chú cho sản phẩm 301
+302,SP0302,Sản phẩm mẫu số 302,Nông sản,120,30599,310093870,Nhà cung cấp C,Ghi chú cho sản phẩm 302
+303,SP0303,Sản phẩm mẫu số 303,Thực phẩm,657,89501,287879004,Nhà cung cấp D,Ghi chú cho sản phẩm 303
+304,SP0304,Sản phẩm mẫu số 304,Dược phẩm,667,155207,172731218,Nhà cung cấp A,Ghi chú cho sản phẩm 304
+305,SP0305,Sản phẩm mẫu số 305,Hóa chất,79,478692,409992625,Nhà cung cấp B,Ghi chú cho sản phẩm 305
+306,SP0306,Sản phẩm mẫu số 306,Vật liệu xây dựng,903,367493,283127364,Nhà cung cấp C,Ghi chú cho sản phẩm 306
+307,SP0307,Sản phẩm mẫu số 307,Nông sản,587,57953,433061015,Nhà cung cấp D,Ghi chú cho sản phẩm 307
+308,SP0308,Sản phẩm mẫu số 308,Thực phẩm,821,148804,100573789,Nhà cung cấp A,Ghi chú cho sản phẩm 308
+309,SP0309,Sản phẩm mẫu số 309,Dược phẩm,586,488673,474945301,Nhà cung cấp B,Ghi chú cho sản phẩm 309
+310,SP0310,Sản phẩm mẫu số 310,Hóa chất,286,453209,437809888,Nhà cung cấp C,Ghi chú cho sản phẩm 310
+311,SP0311,Sản phẩm mẫu số 311,Vật liệu xây dựng,565,45456,290466578,Nhà cung cấp D,Ghi chú cho sản phẩm 311
+312,SP0312,Sản phẩm mẫu số 312,Nông sản,512,418611,318294925,Nhà cung cấp A,Ghi chú cho sản phẩm 312
+313,SP0313,Sản phẩm mẫu số 313,Thực phẩm,706,343955,466428588,Nhà cung cấp B,Ghi chú cho sản phẩm 313
+314,SP0314,Sản phẩm mẫu số 314,Dược phẩm,283,438123,88166323,Nhà cung cấp C,Ghi chú cho sản phẩm 314
+315,SP0315,Sản phẩm mẫu số 315,Hóa chất,621,123432,132340082,Nhà cung cấp D,Ghi chú cho sản phẩm 315
+316,SP0316,Sản phẩm mẫu số 316,Vật liệu xây dựng,155,256481,136388328,Nhà cung cấp A,Ghi chú cho sản phẩm 316
+317,SP0317,Sản phẩm mẫu số 317,Nông sản,643,271786,369612098,Nhà cung cấp B,Ghi chú cho sản phẩm 317
+318,SP0318,Sản phẩm mẫu số 318,Thực phẩm,657,99015,470377164,Nhà cung cấp C,Ghi chú cho sản phẩm 318
+319,SP0319,Sản phẩm mẫu số 319,Dược phẩm,602,318658,354983788,Nhà cung cấp D,Ghi chú cho sản phẩm 319
+320,SP0320,Sản phẩm mẫu số 320,Hóa chất,909,163187,13569760,Nhà cung cấp A,Ghi chú cho sản phẩm 320
+321,SP0321,Sản phẩm mẫu số 321,Vật liệu xây dựng,642,239048,393456150,Nhà cung cấp B,Ghi chú cho sản phẩm 321
+322,SP0322,Sản phẩm mẫu số 322,Nông sản,340,44384,217774837,Nhà cung cấp C,Ghi chú cho sản phẩm 322
+323,SP0323,Sản phẩm mẫu số 323,Thực phẩm,728,199892,164112072,Nhà cung cấp D,Ghi chú cho sản phẩm 323
+324,SP0324,Sản phẩm mẫu số 324,Dược phẩm,389,390629,258777389,Nhà cung cấp A,Ghi chú cho sản phẩm 324
+325,SP0325,Sản phẩm mẫu số 325,Hóa chất,822,355956,218836287,Nhà cung cấp B,Ghi chú cho sản phẩm 325
+326,SP0326,Sản phẩm mẫu số 326,Vật liệu xây dựng,310,349767,422633124,Nhà cung cấp C,Ghi chú cho sản phẩm 326
+327,SP0327,Sản phẩm mẫu số 327,Nông sản,269,347147,17505144,Nhà cung cấp D,Ghi chú cho sản phẩm 327
+328,SP0328,Sản phẩm mẫu số 328,Thực phẩm,521,483998,468013555,Nhà cung cấp A,Ghi chú cho sản phẩm 328
+329,SP0329,Sản phẩm mẫu số 329,Dược phẩm,116,304801,162663390,Nhà cung cấp B,Ghi chú cho sản phẩm 329
+330,SP0330,Sản phẩm mẫu số 330,Hóa chất,264,383616,264262035,Nhà cung cấp C,Ghi chú cho sản phẩm 330
+331,SP0331,Sản phẩm mẫu số 331,Vật liệu xây dựng,126,353253,150669827,Nhà cung cấp D,Ghi chú cho sản phẩm 331
+332,SP0332,Sản phẩm mẫu số 332,Nông sản,934,424398,237963748,Nhà cung cấp A,Ghi chú cho sản phẩm 332
+333,SP0333,Sản phẩm mẫu số 333,Thực phẩm,85,87497,132942710,Nhà cung cấp B,Ghi chú cho sản phẩm 333
+334,SP0334,Sản phẩm mẫu số 334,Dược phẩm,120,115007,230322524,Nhà cung cấp C,Ghi chú cho sản phẩm 334
+335,SP0335,Sản phẩm mẫu số 335,Hóa chất,871,342153,456380691,Nhà cung cấp D,Ghi chú cho sản phẩm 335
+336,SP0336,Sản phẩm mẫu số 336,Vật liệu xây dựng,271,291751,362360209,Nhà cung cấp A,Ghi chú cho sản phẩm 336
+337,SP0337,Sản phẩm mẫu số 337,Nông sản,871,299294,310726427,Nhà cung cấp B,Ghi chú cho sản phẩm 337
+338,SP0338,Sản phẩm mẫu số 338,Thực phẩm,692,99788,388222424,Nhà cung cấp C,Ghi chú cho sản phẩm 338
+339,SP0339,Sản phẩm mẫu số 339,Dược phẩm,158,257190,465266666,Nhà cung cấp D,Ghi chú cho sản phẩm 339
+340,SP0340,Sản phẩm mẫu số 340,Hóa chất,639,380262,198101061,Nhà cung cấp A,Ghi chú cho sản phẩm 340
+341,SP0341,Sản phẩm mẫu số 341,Vật liệu xây dựng,818,178137,447806831,Nhà cung cấp B,Ghi chú cho sản phẩm 341
+342,SP0342,Sản phẩm mẫu số 342,Nông sản,595,262133,233423481,Nhà cung cấp C,Ghi chú cho sản phẩm 342
+343,SP0343,Sản phẩm mẫu số 343,Thực phẩm,659,480934,7740001,Nhà cung cấp D,Ghi chú cho sản phẩm 343
+344,SP0344,Sản phẩm mẫu số 344,Dược phẩm,526,407221,338631079,Nhà cung cấp A,Ghi chú cho sản phẩm 344
+345,SP0345,Sản phẩm mẫu số 345,Hóa chất,745,277580,379863079,Nhà cung cấp B,Ghi chú cho sản phẩm 345
+346,SP0346,Sản phẩm mẫu số 346,Vật liệu xây dựng,519,184361,255512343,Nhà cung cấp C,Ghi chú cho sản phẩm 346
+347,SP0347,Sản phẩm mẫu số 347,Nông sản,318,43800,36073620,Nhà cung cấp D,Ghi chú cho sản phẩm 347
+348,SP0348,Sản phẩm mẫu số 348,Thực phẩm,65,406761,92403975,Nhà cung cấp A,Ghi chú cho sản phẩm 348
+349,SP0349,Sản phẩm mẫu số 349,Dược phẩm,802,495365,426333629,Nhà cung cấp B,Ghi chú cho sản phẩm 349
+350,SP0350,Sản phẩm mẫu số 350,Hóa chất,425,258514,336997497,Nhà cung cấp C,Ghi chú cho sản phẩm 350
+351,SP0351,Sản phẩm mẫu số 351,Vật liệu xây dựng,658,198214,209489610,Nhà cung cấp D,Ghi chú cho sản phẩm 351
+352,SP0352,Sản phẩm mẫu số 352,Nông sản,680,304568,139502566,Nhà cung cấp A,Ghi chú cho sản phẩm 352
+353,SP0353,Sản phẩm mẫu số 353,Thực phẩm,444,326366,393028787,Nhà cung cấp B,Ghi chú cho sản phẩm 353
+354,SP0354,Sản phẩm mẫu số 354,Dược phẩm,742,208237,264177937,Nhà cung cấp C,Ghi chú cho sản phẩm 354
+355,SP0355,Sản phẩm mẫu số 355,Hóa chất,380,446201,253933593,Nhà cung cấp D,Ghi chú cho sản phẩm 355
+356,SP0356,Sản phẩm mẫu số 356,Vật liệu xây dựng,503,276373,238691989,Nhà cung cấp A,Ghi chú cho sản phẩm 356
+357,SP0357,Sản phẩm mẫu số 357,Nông sản,361,327133,26484038,Nhà cung cấp B,Ghi chú cho sản phẩm 357
+358,SP0358,Sản phẩm mẫu số 358,Thực phẩm,301,18849,446744692,Nhà cung cấp C,Ghi chú cho sản phẩm 358
+359,SP0359,Sản phẩm mẫu số 359,Dược phẩm,690,465763,90248174,Nhà cung cấp D,Ghi chú cho sản phẩm 359
+360,SP0360,Sản phẩm mẫu số 360,Hóa chất,280,456254,23749073,Nhà cung cấp A,Ghi chú cho sản phẩm 360
+361,SP0361,Sản phẩm mẫu số 361,Vật liệu xây dựng,229,244951,231549778,Nhà cung cấp B,Ghi chú cho sản phẩm 361
+362,SP0362,Sản phẩm mẫu số 362,Nông sản,923,275990,399819070,Nhà cung cấp C,Ghi chú cho sản phẩm 362
+363,SP0363,Sản phẩm mẫu số 363,Thực phẩm,508,385479,457968478,Nhà cung cấp D,Ghi chú cho sản phẩm 363
+364,SP0364,Sản phẩm mẫu số 364,Dược phẩm,450,197893,203256076,Nhà cung cấp A,Ghi chú cho sản phẩm 364
+365,SP0365,Sản phẩm mẫu số 365,Hóa chất,47,218517,183637236,Nhà cung cấp B,Ghi chú cho sản phẩm 365
+366,SP0366,Sản phẩm mẫu số 366,Vật liệu xây dựng,133,37797,312468400,Nhà cung cấp C,Ghi chú cho sản phẩm 366
+367,SP0367,Sản phẩm mẫu số 367,Nông sản,328,391358,72724260,Nhà cung cấp D,Ghi chú cho sản phẩm 367
+368,SP0368,Sản phẩm mẫu số 368,Thực phẩm,367,28380,188856227,Nhà cung cấp A,Ghi chú cho sản phẩm 368
+369,SP0369,Sản phẩm mẫu số 369,Dược phẩm,710,40216,96558384,Nhà cung cấp B,Ghi chú cho sản phẩm 369
+370,SP0370,Sản phẩm mẫu số 370,Hóa chất,517,56385,329189660,Nhà cung cấp C,Ghi chú cho sản phẩm 370
+371,SP0371,Sản phẩm mẫu số 371,Vật liệu xây dựng,459,90231,478837202,Nhà cung cấp D,Ghi chú cho sản phẩm 371
+372,SP0372,Sản phẩm mẫu số 372,Nông sản,834,132281,12258136,Nhà cung cấp A,Ghi chú cho sản phẩm 372
+373,SP0373,Sản phẩm mẫu số 373,Thực phẩm,599,131080,162897938,Nhà cung cấp B,Ghi chú cho sản phẩm 373
+374,SP0374,Sản phẩm mẫu số 374,Dược phẩm,75,151379,38530789,Nhà cung cấp C,Ghi chú cho sản phẩm 374
+375,SP0375,Sản phẩm mẫu số 375,Hóa chất,714,100457,255122158,Nhà cung cấp D,Ghi chú cho sản phẩm 375
+376,SP0376,Sản phẩm mẫu số 376,Vật liệu xây dựng,426,106426,396330967,Nhà cung cấp A,Ghi chú cho sản phẩm 376
+377,SP0377,Sản phẩm mẫu số 377,Nông sản,733,218494,369478540,Nhà cung cấp B,Ghi chú cho sản phẩm 377
+378,SP0378,Sản phẩm mẫu số 378,Thực phẩm,1,480324,281266939,Nhà cung cấp C,Ghi chú cho sản phẩm 378
+379,SP0379,Sản phẩm mẫu số 379,Dược phẩm,866,80625,53219220,Nhà cung cấp D,Ghi chú cho sản phẩm 379
+380,SP0380,Sản phẩm mẫu số 380,Hóa chất,557,83118,497560926,Nhà cung cấp A,Ghi chú cho sản phẩm 380
+381,SP0381,Sản phẩm mẫu số 381,Vật liệu xây dựng,685,324883,262073461,Nhà cung cấp B,Ghi chú cho sản phẩm 381
+382,SP0382,Sản phẩm mẫu số 382,Nông sản,40,91175,259402686,Nhà cung cấp C,Ghi chú cho sản phẩm 382
+383,SP0383,Sản phẩm mẫu số 383,Thực phẩm,135,324467,236667942,Nhà cung cấp D,Ghi chú cho sản phẩm 383
+384,SP0384,Sản phẩm mẫu số 384,Dược phẩm,15,186407,106506074,Nhà cung cấp A,Ghi chú cho sản phẩm 384
+385,SP0385,Sản phẩm mẫu số 385,Hóa chất,421,328946,272655500,Nhà cung cấp B,Ghi chú cho sản phẩm 385
+386,SP0386,Sản phẩm mẫu số 386,Vật liệu xây dựng,222,219399,411222099,Nhà cung cấp C,Ghi chú cho sản phẩm 386
+387,SP0387,Sản phẩm mẫu số 387,Nông sản,299,164915,328185998,Nhà cung cấp D,Ghi chú cho sản phẩm 387
+388,SP0388,Sản phẩm mẫu số 388,Thực phẩm,41,439409,85664647,Nhà cung cấp A,Ghi chú cho sản phẩm 388
+389,SP0389,Sản phẩm mẫu số 389,Dược phẩm,887,382577,264220638,Nhà cung cấp B,Ghi chú cho sản phẩm 389
+390,SP0390,Sản phẩm mẫu số 390,Hóa chất,9,33278,86586207,Nhà cung cấp C,Ghi chú cho sản phẩm 390
+391,SP0391,Sản phẩm mẫu số 391,Vật liệu xây dựng,288,66246,314038883,Nhà cung cấp D,Ghi chú cho sản phẩm 391
+392,SP0392,Sản phẩm mẫu số 392,Nông sản,904,185860,144263604,Nhà cung cấp A,Ghi chú cho sản phẩm 392
+393,SP0393,Sản phẩm mẫu số 393,Thực phẩm,119,486144,232156746,Nhà cung cấp B,Ghi chú cho sản phẩm 393
+394,SP0394,Sản phẩm mẫu số 394,Dược phẩm,44,332716,355434984,Nhà cung cấp C,Ghi chú cho sản phẩm 394
+395,SP0395,Sản phẩm mẫu số 395,Hóa chất,77,379079,482615306,Nhà cung cấp D,Ghi chú cho sản phẩm 395
+396,SP0396,Sản phẩm mẫu số 396,Vật liệu xây dựng,528,75117,159864324,Nhà cung cấp A,Ghi chú cho sản phẩm 396
+397,SP0397,Sản phẩm mẫu số 397,Nông sản,865,455963,413868846,Nhà cung cấp B,Ghi chú cho sản phẩm 397
+398,SP0398,Sản phẩm mẫu số 398,Thực phẩm,825,476705,367995322,Nhà cung cấp C,Ghi chú cho sản phẩm 398
+399,SP0399,Sản phẩm mẫu số 399,Dược phẩm,746,40403,475530732,Nhà cung cấp D,Ghi chú cho sản phẩm 399
+400,SP0400,Sản phẩm mẫu số 400,Hóa chất,200,395915,113744907,Nhà cung cấp A,Ghi chú cho sản phẩm 400
+401,SP0401,Sản phẩm mẫu số 401,Vật liệu xây dựng,254,81624,471670605,Nhà cung cấp B,Ghi chú cho sản phẩm 401
+402,SP0402,Sản phẩm mẫu số 402,Nông sản,535,141079,239773478,Nhà cung cấp C,Ghi chú cho sản phẩm 402
+403,SP0403,Sản phẩm mẫu số 403,Thực phẩm,930,418973,393392563,Nhà cung cấp D,Ghi chú cho sản phẩm 403
+404,SP0404,Sản phẩm mẫu số 404,Dược phẩm,49,254096,398209986,Nhà cung cấp A,Ghi chú cho sản phẩm 404
+405,SP0405,Sản phẩm mẫu số 405,Hóa chất,551,182069,406098202,Nhà cung cấp B,Ghi chú cho sản phẩm 405
+406,SP0406,Sản phẩm mẫu số 406,Vật liệu xây dựng,895,146793,19674782,Nhà cung cấp C,Ghi chú cho sản phẩm 406
+407,SP0407,Sản phẩm mẫu số 407,Nông sản,360,337831,212353714,Nhà cung cấp D,Ghi chú cho sản phẩm 407
+408,SP0408,Sản phẩm mẫu số 408,Thực phẩm,187,409363,249440022,Nhà cung cấp A,Ghi chú cho sản phẩm 408
+409,SP0409,Sản phẩm mẫu số 409,Dược phẩm,476,155357,158016997,Nhà cung cấp B,Ghi chú cho sản phẩm 409
+410,SP0410,Sản phẩm mẫu số 410,Hóa chất,240,128155,30984857,Nhà cung cấp C,Ghi chú cho sản phẩm 410
+411,SP0411,Sản phẩm mẫu số 411,Vật liệu xây dựng,877,317015,349998943,Nhà cung cấp D,Ghi chú cho sản phẩm 411
+412,SP0412,Sản phẩm mẫu số 412,Nông sản,988,169962,139493936,Nhà cung cấp A,Ghi chú cho sản phẩm 412
+413,SP0413,Sản phẩm mẫu số 413,Thực phẩm,397,159643,411566636,Nhà cung cấp B,Ghi chú cho sản phẩm 413
+414,SP0414,Sản phẩm mẫu số 414,Dược phẩm,964,343996,35616905,Nhà cung cấp C,Ghi chú cho sản phẩm 414
+415,SP0415,Sản phẩm mẫu số 415,Hóa chất,667,457142,196601392,Nhà cung cấp D,Ghi chú cho sản phẩm 415
+416,SP0416,Sản phẩm mẫu số 416,Vật liệu xây dựng,689,271309,447920281,Nhà cung cấp A,Ghi chú cho sản phẩm 416
+417,SP0417,Sản phẩm mẫu số 417,Nông sản,836,472948,479885313,Nhà cung cấp B,Ghi chú cho sản phẩm 417
+418,SP0418,Sản phẩm mẫu số 418,Thực phẩm,417,252673,407445592,Nhà cung cấp C,Ghi chú cho sản phẩm 418
+419,SP0419,Sản phẩm mẫu số 419,Dược phẩm,385,223396,95431700,Nhà cung cấp D,Ghi chú cho sản phẩm 419
+420,SP0420,Sản phẩm mẫu số 420,Hóa chất,738,370029,330425457,Nhà cung cấp A,Ghi chú cho sản phẩm 420
+421,SP0421,Sản phẩm mẫu số 421,Vật liệu xây dựng,580,206031,148546731,Nhà cung cấp B,Ghi chú cho sản phẩm 421
+422,SP0422,Sản phẩm mẫu số 422,Nông sản,790,264908,352275029,Nhà cung cấp C,Ghi chú cho sản phẩm 422
+423,SP0423,Sản phẩm mẫu số 423,Thực phẩm,227,17326,401991671,Nhà cung cấp D,Ghi chú cho sản phẩm 423
+424,SP0424,Sản phẩm mẫu số 424,Dược phẩm,504,491222,141900052,Nhà cung cấp A,Ghi chú cho sản phẩm 424
+425,SP0425,Sản phẩm mẫu số 425,Hóa chất,944,100513,20221817,Nhà cung cấp B,Ghi chú cho sản phẩm 425
+426,SP0426,Sản phẩm mẫu số 426,Vật liệu xây dựng,666,111540,318141455,Nhà cung cấp C,Ghi chú cho sản phẩm 426
+427,SP0427,Sản phẩm mẫu số 427,Nông sản,525,65788,173922612,Nhà cung cấp D,Ghi chú cho sản phẩm 427
+428,SP0428,Sản phẩm mẫu số 428,Thực phẩm,599,381502,189679616,Nhà cung cấp A,Ghi chú cho sản phẩm 428
+429,SP0429,Sản phẩm mẫu số 429,Dược phẩm,813,240979,78812100,Nhà cung cấp B,Ghi chú cho sản phẩm 429
+430,SP0430,Sản phẩm mẫu số 430,Hóa chất,621,55336,111491180,Nhà cung cấp C,Ghi chú cho sản phẩm 430
+431,SP0431,Sản phẩm mẫu số 431,Vật liệu xây dựng,949,136191,288084810,Nhà cung cấp D,Ghi chú cho sản phẩm 431
+432,SP0432,Sản phẩm mẫu số 432,Nông sản,476,147678,190526017,Nhà cung cấp A,Ghi chú cho sản phẩm 432
+433,SP0433,Sản phẩm mẫu số 433,Thực phẩm,540,499717,312346772,Nhà cung cấp B,Ghi chú cho sản phẩm 433
+434,SP0434,Sản phẩm mẫu số 434,Dược phẩm,10,164213,175406577,Nhà cung cấp C,Ghi chú cho sản phẩm 434
+435,SP0435,Sản phẩm mẫu số 435,Hóa chất,220,242426,198977925,Nhà cung cấp D,Ghi chú cho sản phẩm 435
+436,SP0436,Sản phẩm mẫu số 436,Vật liệu xây dựng,985,357062,404140758,Nhà cung cấp A,Ghi chú cho sản phẩm 436
+437,SP0437,Sản phẩm mẫu số 437,Nông sản,361,119342,133133289,Nhà cung cấp B,Ghi chú cho sản phẩm 437
+438,SP0438,Sản phẩm mẫu số 438,Thực phẩm,296,245517,328838781,Nhà cung cấp C,Ghi chú cho sản phẩm 438
+439,SP0439,Sản phẩm mẫu số 439,Dược phẩm,588,116213,467930370,Nhà cung cấp D,Ghi chú cho sản phẩm 439
+440,SP0440,Sản phẩm mẫu số 440,Hóa chất,385,341174,354651819,Nhà cung cấp A,Ghi chú cho sản phẩm 440
+441,SP0441,Sản phẩm mẫu số 441,Vật liệu xây dựng,528,456720,466617341,Nhà cung cấp B,Ghi chú cho sản phẩm 441
+442,SP0442,Sản phẩm mẫu số 442,Nông sản,510,413110,17705109,Nhà cung cấp C,Ghi chú cho sản phẩm 442
+443,SP0443,Sản phẩm mẫu số 443,Thực phẩm,492,179228,184638080,Nhà cung cấp D,Ghi chú cho sản phẩm 443
+444,SP0444,Sản phẩm mẫu số 444,Dược phẩm,926,181734,211831292,Nhà cung cấp A,Ghi chú cho sản phẩm 444
+445,SP0445,Sản phẩm mẫu số 445,Hóa chất,442,297991,94946783,Nhà cung cấp B,Ghi chú cho sản phẩm 445
+446,SP0446,Sản phẩm mẫu số 446,Vật liệu xây dựng,908,411468,166760804,Nhà cung cấp C,Ghi chú cho sản phẩm 446
+447,SP0447,Sản phẩm mẫu số 447,Nông sản,668,421278,368023733,Nhà cung cấp D,Ghi chú cho sản phẩm 447
+448,SP0448,Sản phẩm mẫu số 448,Thực phẩm,540,399951,309818838,Nhà cung cấp A,Ghi chú cho sản phẩm 448
+449,SP0449,Sản phẩm mẫu số 449,Dược phẩm,150,73523,57386689,Nhà cung cấp B,Ghi chú cho sản phẩm 449
+450,SP0450,Sản phẩm mẫu số 450,Hóa chất,774,414947,131438141,Nhà cung cấp C,Ghi chú cho sản phẩm 450
+451,SP0451,Sản phẩm mẫu số 451,Vật liệu xây dựng,854,358751,320900448,Nhà cung cấp D,Ghi chú cho sản phẩm 451
+452,SP0452,Sản phẩm mẫu số 452,Nông sản,828,229022,206556988,Nhà cung cấp A,Ghi chú cho sản phẩm 452
+453,SP0453,Sản phẩm mẫu số 453,Thực phẩm,499,248626,218789905,Nhà cung cấp B,Ghi chú cho sản phẩm 453
+454,SP0454,Sản phẩm mẫu số 454,Dược phẩm,362,495617,285408186,Nhà cung cấp C,Ghi chú cho sản phẩm 454
+455,SP0455,Sản phẩm mẫu số 455,Hóa chất,332,337956,245518551,Nhà cung cấp D,Ghi chú cho sản phẩm 455
+456,SP0456,Sản phẩm mẫu số 456,Vật liệu xây dựng,363,312991,58497900,Nhà cung cấp A,Ghi chú cho sản phẩm 456
+457,SP0457,Sản phẩm mẫu số 457,Nông sản,706,259354,299948550,Nhà cung cấp B,Ghi chú cho sản phẩm 457
+458,SP0458,Sản phẩm mẫu số 458,Thực phẩm,742,59359,21347592,Nhà cung cấp C,Ghi chú cho sản phẩm 458
+459,SP0459,Sản phẩm mẫu số 459,Dược phẩm,997,26564,182647902,Nhà cung cấp D,Ghi chú cho sản phẩm 459
+460,SP0460,Sản phẩm mẫu số 460,Hóa chất,626,489604,417276339,Nhà cung cấp A,Ghi chú cho sản phẩm 460
+461,SP0461,Sản phẩm mẫu số 461,Vật liệu xây dựng,799,238853,477051746,Nhà cung cấp B,Ghi chú cho sản phẩm 461
+462,SP0462,Sản phẩm mẫu số 462,Nông sản,917,456649,403162859,Nhà cung cấp C,Ghi chú cho sản phẩm 462
+463,SP0463,Sản phẩm mẫu số 463,Thực phẩm,987,316207,237517602,Nhà cung cấp D,Ghi chú cho sản phẩm 463
+464,SP0464,Sản phẩm mẫu số 464,Dược phẩm,497,202192,315860749,Nhà cung cấp A,Ghi chú cho sản phẩm 464
+465,SP0465,Sản phẩm mẫu số 465,Hóa chất,503,391773,461907987,Nhà cung cấp B,Ghi chú cho sản phẩm 465
+466,SP0466,Sản phẩm mẫu số 466,Vật liệu xây dựng,822,393014,112740599,Nhà cung cấp C,Ghi chú cho sản phẩm 466
+467,SP0467,Sản phẩm mẫu số 467,Nông sản,473,496622,178444458,Nhà cung cấp D,Ghi chú cho sản phẩm 467
+468,SP0468,Sản phẩm mẫu số 468,Thực phẩm,83,97214,41447863,Nhà cung cấp A,Ghi chú cho sản phẩm 468
+469,SP0469,Sản phẩm mẫu số 469,Dược phẩm,781,147736,73150711,Nhà cung cấp B,Ghi chú cho sản phẩm 469
+470,SP0470,Sản phẩm mẫu số 470,Hóa chất,227,295605,441213721,Nhà cung cấp C,Ghi chú cho sản phẩm 470
+471,SP0471,Sản phẩm mẫu số 471,Vật liệu xây dựng,394,57768,310109718,Nhà cung cấp D,Ghi chú cho sản phẩm 471
+472,SP0472,Sản phẩm mẫu số 472,Nông sản,5,308520,223119596,Nhà cung cấp A,Ghi chú cho sản phẩm 472
+473,SP0473,Sản phẩm mẫu số 473,Thực phẩm,411,165960,322500568,Nhà cung cấp B,Ghi chú cho sản phẩm 473
+474,SP0474,Sản phẩm mẫu số 474,Dược phẩm,518,391932,360808161,Nhà cung cấp C,Ghi chú cho sản phẩm 474
+475,SP0475,Sản phẩm mẫu số 475,Hóa chất,421,85549,97849179,Nhà cung cấp D,Ghi chú cho sản phẩm 475
+476,SP0476,Sản phẩm mẫu số 476,Vật liệu xây dựng,940,432312,335831683,Nhà cung cấp A,Ghi chú cho sản phẩm 476
+477,SP0477,Sản phẩm mẫu số 477,Nông sản,172,261068,231028153,Nhà cung cấp B,Ghi chú cho sản phẩm 477
+478,SP0478,Sản phẩm mẫu số 478,Thực phẩm,793,50446,324361808,Nhà cung cấp C,Ghi chú cho sản phẩm 478
+479,SP0479,Sản phẩm mẫu số 479,Dược phẩm,443,394040,494040256,Nhà cung cấp D,Ghi chú cho sản phẩm 479
+480,SP0480,Sản phẩm mẫu số 480,Hóa chất,554,354974,343870768,Nhà cung cấp A,Ghi chú cho sản phẩm 480
+481,SP0481,Sản phẩm mẫu số 481,Vật liệu xây dựng,859,418828,131063204,Nhà cung cấp B,Ghi chú cho sản phẩm 481
+482,SP0482,Sản phẩm mẫu số 482,Nông sản,105,96003,227973618,Nhà cung cấp C,Ghi chú cho sản phẩm 482
+483,SP0483,Sản phẩm mẫu số 483,Thực phẩm,758,360819,217377937,Nhà cung cấp D,Ghi chú cho sản phẩm 483
+484,SP0484,Sản phẩm mẫu số 484,Dược phẩm,54,494025,135491948,Nhà cung cấp A,Ghi chú cho sản phẩm 484
+485,SP0485,Sản phẩm mẫu số 485,Hóa chất,781,38727,96066473,Nhà cung cấp B,Ghi chú cho sản phẩm 485
+486,SP0486,Sản phẩm mẫu số 486,Vật liệu xây dựng,909,269956,93063622,Nhà cung cấp C,Ghi chú cho sản phẩm 486
+487,SP0487,Sản phẩm mẫu số 487,Nông sản,417,223320,411799996,Nhà cung cấp D,Ghi chú cho sản phẩm 487
+488,SP0488,Sản phẩm mẫu số 488,Thực phẩm,592,419753,380644227,Nhà cung cấp A,Ghi chú cho sản phẩm 488
+489,SP0489,Sản phẩm mẫu số 489,Dược phẩm,745,288575,319648710,Nhà cung cấp B,Ghi chú cho sản phẩm 489
+490,SP0490,Sản phẩm mẫu số 490,Hóa chất,62,407821,358685509,Nhà cung cấp C,Ghi chú cho sản phẩm 490
+491,SP0491,Sản phẩm mẫu số 491,Vật liệu xây dựng,413,175759,192906755,Nhà cung cấp D,Ghi chú cho sản phẩm 491
+492,SP0492,Sản phẩm mẫu số 492,Nông sản,658,359871,362256569,Nhà cung cấp A,Ghi chú cho sản phẩm 492
+493,SP0493,Sản phẩm mẫu số 493,Thực phẩm,893,272700,296586657,Nhà cung cấp B,Ghi chú cho sản phẩm 493
+494,SP0494,Sản phẩm mẫu số 494,Dược phẩm,932,327151,494432527,Nhà cung cấp C,Ghi chú cho sản phẩm 494
+495,SP0495,Sản phẩm mẫu số 495,Hóa chất,451,389094,37589245,Nhà cung cấp D,Ghi chú cho sản phẩm 495
+496,SP0496,Sản phẩm mẫu số 496,Vật liệu xây dựng,832,461979,2272058,Nhà cung cấp A,Ghi chú cho sản phẩm 496
+497,SP0497,Sản phẩm mẫu số 497,Nông sản,172,15221,293434817,Nhà cung cấp B,Ghi chú cho sản phẩm 497
+498,SP0498,Sản phẩm mẫu số 498,Thực phẩm,568,272942,125672959,Nhà cung cấp C,Ghi chú cho sản phẩm 498
+499,SP0499,Sản phẩm mẫu số 499,Dược phẩm,22,334928,357288779,Nhà cung cấp D,Ghi chú cho sản phẩm 499
+500,SP0500,Sản phẩm mẫu số 500,Hóa chất,863,438426,389530995,Nhà cung cấp A,Ghi chú cho sản phẩm 500
+501,SP0501,Sản phẩm mẫu số 501,Vật liệu xây dựng,749,452744,436771088,Nhà cung cấp B,Ghi chú cho sản phẩm 501
+502,SP0502,Sản phẩm mẫu số 502,Nông sản,246,297987,501354,Nhà cung cấp C,Ghi chú cho sản phẩm 502
+503,SP0503,Sản phẩm mẫu số 503,Thực phẩm,32,238950,264461416,Nhà cung cấp D,Ghi chú cho sản phẩm 503
+504,SP0504,Sản phẩm mẫu số 504,Dược phẩm,408,313889,82811641,Nhà cung cấp A,Ghi chú cho sản phẩm 504
+505,SP0505,Sản phẩm mẫu số 505,Hóa chất,309,201918,381503316,Nhà cung cấp B,Ghi chú cho sản phẩm 505
+506,SP0506,Sản phẩm mẫu số 506,Vật liệu xây dựng,433,259820,73223698,Nhà cung cấp C,Ghi chú cho sản phẩm 506
+507,SP0507,Sản phẩm mẫu số 507,Nông sản,686,31567,334244048,Nhà cung cấp D,Ghi chú cho sản phẩm 507
+508,SP0508,Sản phẩm mẫu số 508,Thực phẩm,173,468078,442987897,Nhà cung cấp A,Ghi chú cho sản phẩm 508
+509,SP0509,Sản phẩm mẫu số 509,Dược phẩm,354,101706,108242504,Nhà cung cấp B,Ghi chú cho sản phẩm 509
+510,SP0510,Sản phẩm mẫu số 510,Hóa chất,163,71529,413494943,Nhà cung cấp C,Ghi chú cho sản phẩm 510
+511,SP0511,Sản phẩm mẫu số 511,Vật liệu xây dựng,655,308579,469361081,Nhà cung cấp D,Ghi chú cho sản phẩm 511
+512,SP0512,Sản phẩm mẫu số 512,Nông sản,70,396349,89880566,Nhà cung cấp A,Ghi chú cho sản phẩm 512
+513,SP0513,Sản phẩm mẫu số 513,Thực phẩm,627,459019,136951891,Nhà cung cấp B,Ghi chú cho sản phẩm 513
+514,SP0514,Sản phẩm mẫu số 514,Dược phẩm,533,140892,242262228,Nhà cung cấp C,Ghi chú cho sản phẩm 514
+515,SP0515,Sản phẩm mẫu số 515,Hóa chất,873,307656,287208225,Nhà cung cấp D,Ghi chú cho sản phẩm 515
+516,SP0516,Sản phẩm mẫu số 516,Vật liệu xây dựng,588,303681,254062928,Nhà cung cấp A,Ghi chú cho sản phẩm 516
+517,SP0517,Sản phẩm mẫu số 517,Nông sản,848,385322,145519582,Nhà cung cấp B,Ghi chú cho sản phẩm 517
+518,SP0518,Sản phẩm mẫu số 518,Thực phẩm,751,248867,227944560,Nhà cung cấp C,Ghi chú cho sản phẩm 518
+519,SP0519,Sản phẩm mẫu số 519,Dược phẩm,841,255144,84788101,Nhà cung cấp D,Ghi chú cho sản phẩm 519
+520,SP0520,Sản phẩm mẫu số 520,Hóa chất,536,291290,464879223,Nhà cung cấp A,Ghi chú cho sản phẩm 520
+521,SP0521,Sản phẩm mẫu số 521,Vật liệu xây dựng,579,325030,459303928,Nhà cung cấp B,Ghi chú cho sản phẩm 521
+522,SP0522,Sản phẩm mẫu số 522,Nông sản,111,411943,169447933,Nhà cung cấp C,Ghi chú cho sản phẩm 522
+523,SP0523,Sản phẩm mẫu số 523,Thực phẩm,667,223758,197618885,Nhà cung cấp D,Ghi chú cho sản phẩm 523
+524,SP0524,Sản phẩm mẫu số 524,Dược phẩm,150,484949,352209557,Nhà cung cấp A,Ghi chú cho sản phẩm 524
+525,SP0525,Sản phẩm mẫu số 525,Hóa chất,2,205375,422715794,Nhà cung cấp B,Ghi chú cho sản phẩm 525
+526,SP0526,Sản phẩm mẫu số 526,Vật liệu xây dựng,256,466344,126417123,Nhà cung cấp C,Ghi chú cho sản phẩm 526
+527,SP0527,Sản phẩm mẫu số 527,Nông sản,464,397114,220939330,Nhà cung cấp D,Ghi chú cho sản phẩm 527
+528,SP0528,Sản phẩm mẫu số 528,Thực phẩm,152,226027,277856439,Nhà cung cấp A,Ghi chú cho sản phẩm 528
+529,SP0529,Sản phẩm mẫu số 529,Dược phẩm,817,247824,18538848,Nhà cung cấp B,Ghi chú cho sản phẩm 529
+530,SP0530,Sản phẩm mẫu số 530,Hóa chất,111,480567,270561192,Nhà cung cấp C,Ghi chú cho sản phẩm 530
+531,SP0531,Sản phẩm mẫu số 531,Vật liệu xây dựng,82,390813,455886498,Nhà cung cấp D,Ghi chú cho sản phẩm 531
+532,SP0532,Sản phẩm mẫu số 532,Nông sản,243,418445,123428312,Nhà cung cấp A,Ghi chú cho sản phẩm 532
+533,SP0533,Sản phẩm mẫu số 533,Thực phẩm,783,139720,483155738,Nhà cung cấp B,Ghi chú cho sản phẩm 533
+534,SP0534,Sản phẩm mẫu số 534,Dược phẩm,782,27539,87889479,Nhà cung cấp C,Ghi chú cho sản phẩm 534
+535,SP0535,Sản phẩm mẫu số 535,Hóa chất,547,100571,355108590,Nhà cung cấp D,Ghi chú cho sản phẩm 535
+536,SP0536,Sản phẩm mẫu số 536,Vật liệu xây dựng,440,335759,412589386,Nhà cung cấp A,Ghi chú cho sản phẩm 536
+537,SP0537,Sản phẩm mẫu số 537,Nông sản,75,181210,314072362,Nhà cung cấp B,Ghi chú cho sản phẩm 537
+538,SP0538,Sản phẩm mẫu số 538,Thực phẩm,133,395580,234991254,Nhà cung cấp C,Ghi chú cho sản phẩm 538
+539,SP0539,Sản phẩm mẫu số 539,Dược phẩm,951,313599,310819228,Nhà cung cấp D,Ghi chú cho sản phẩm 539
+540,SP0540,Sản phẩm mẫu số 540,Hóa chất,33,228712,170998111,Nhà cung cấp A,Ghi chú cho sản phẩm 540
+541,SP0541,Sản phẩm mẫu số 541,Vật liệu xây dựng,372,499605,318458653,Nhà cung cấp B,Ghi chú cho sản phẩm 541
+542,SP0542,Sản phẩm mẫu số 542,Nông sản,818,246423,208493343,Nhà cung cấp C,Ghi chú cho sản phẩm 542
+543,SP0543,Sản phẩm mẫu số 543,Thực phẩm,164,168751,240496305,Nhà cung cấp D,Ghi chú cho sản phẩm 543
+544,SP0544,Sản phẩm mẫu số 544,Dược phẩm,333,334959,420178645,Nhà cung cấp A,Ghi chú cho sản phẩm 544
+545,SP0545,Sản phẩm mẫu số 545,Hóa chất,539,89262,130580294,Nhà cung cấp B,Ghi chú cho sản phẩm 545
+546,SP0546,Sản phẩm mẫu số 546,Vật liệu xây dựng,820,462897,148166854,Nhà cung cấp C,Ghi chú cho sản phẩm 546
+547,SP0547,Sản phẩm mẫu số 547,Nông sản,857,138057,219218361,Nhà cung cấp D,Ghi chú cho sản phẩm 547
+548,SP0548,Sản phẩm mẫu số 548,Thực phẩm,77,498130,172767658,Nhà cung cấp A,Ghi chú cho sản phẩm 548
+549,SP0549,Sản phẩm mẫu số 549,Dược phẩm,131,107896,204788824,Nhà cung cấp B,Ghi chú cho sản phẩm 549
+550,SP0550,Sản phẩm mẫu số 550,Hóa chất,333,456213,892910,Nhà cung cấp C,Ghi chú cho sản phẩm 550
+551,SP0551,Sản phẩm mẫu số 551,Vật liệu xây dựng,138,122053,425047872,Nhà cung cấp D,Ghi chú cho sản phẩm 551
+552,SP0552,Sản phẩm mẫu số 552,Nông sản,676,341333,407720088,Nhà cung cấp A,Ghi chú cho sản phẩm 552
+553,SP0553,Sản phẩm mẫu số 553,Thực phẩm,708,20416,25340460,Nhà cung cấp B,Ghi chú cho sản phẩm 553
+554,SP0554,Sản phẩm mẫu số 554,Dược phẩm,616,132595,226602167,Nhà cung cấp C,Ghi chú cho sản phẩm 554
+555,SP0555,Sản phẩm mẫu số 555,Hóa chất,734,257869,352281489,Nhà cung cấp D,Ghi chú cho sản phẩm 555
+556,SP0556,Sản phẩm mẫu số 556,Vật liệu xây dựng,902,277096,254560921,Nhà cung cấp A,Ghi chú cho sản phẩm 556
+557,SP0557,Sản phẩm mẫu số 557,Nông sản,617,359980,147636455,Nhà cung cấp B,Ghi chú cho sản phẩm 557
+558,SP0558,Sản phẩm mẫu số 558,Thực phẩm,499,321805,12909245,Nhà cung cấp C,Ghi chú cho sản phẩm 558
+559,SP0559,Sản phẩm mẫu số 559,Dược phẩm,209,296889,286409785,Nhà cung cấp D,Ghi chú cho sản phẩm 559
+560,SP0560,Sản phẩm mẫu số 560,Hóa chất,111,383331,190350490,Nhà cung cấp A,Ghi chú cho sản phẩm 560
+561,SP0561,Sản phẩm mẫu số 561,Vật liệu xây dựng,689,80758,137642700,Nhà cung cấp B,Ghi chú cho sản phẩm 561
+562,SP0562,Sản phẩm mẫu số 562,Nông sản,796,399771,45108895,Nhà cung cấp C,Ghi chú cho sản phẩm 562
+563,SP0563,Sản phẩm mẫu số 563,Thực phẩm,725,163232,157202103,Nhà cung cấp D,Ghi chú cho sản phẩm 563
+564,SP0564,Sản phẩm mẫu số 564,Dược phẩm,397,30694,469403972,Nhà cung cấp A,Ghi chú cho sản phẩm 564
+565,SP0565,Sản phẩm mẫu số 565,Hóa chất,653,260123,404559289,Nhà cung cấp B,Ghi chú cho sản phẩm 565
+566,SP0566,Sản phẩm mẫu số 566,Vật liệu xây dựng,229,359830,28769768,Nhà cung cấp C,Ghi chú cho sản phẩm 566
+567,SP0567,Sản phẩm mẫu số 567,Nông sản,194,190550,386764865,Nhà cung cấp D,Ghi chú cho sản phẩm 567
+568,SP0568,Sản phẩm mẫu số 568,Thực phẩm,913,344830,96901012,Nhà cung cấp A,Ghi chú cho sản phẩm 568
+569,SP0569,Sản phẩm mẫu số 569,Dược phẩm,971,149955,176204380,Nhà cung cấp B,Ghi chú cho sản phẩm 569
+570,SP0570,Sản phẩm mẫu số 570,Hóa chất,144,340043,312028939,Nhà cung cấp C,Ghi chú cho sản phẩm 570
+571,SP0571,Sản phẩm mẫu số 571,Vật liệu xây dựng,121,308695,450630577,Nhà cung cấp D,Ghi chú cho sản phẩm 571
+572,SP0572,Sản phẩm mẫu số 572,Nông sản,538,26233,445825009,Nhà cung cấp A,Ghi chú cho sản phẩm 572
+573,SP0573,Sản phẩm mẫu số 573,Thực phẩm,57,220208,153836410,Nhà cung cấp B,Ghi chú cho sản phẩm 573
+574,SP0574,Sản phẩm mẫu số 574,Dược phẩm,511,285424,403992504,Nhà cung cấp C,Ghi chú cho sản phẩm 574
+575,SP0575,Sản phẩm mẫu số 575,Hóa chất,525,406115,239812297,Nhà cung cấp D,Ghi chú cho sản phẩm 575
+576,SP0576,Sản phẩm mẫu số 576,Vật liệu xây dựng,439,299099,48472535,Nhà cung cấp A,Ghi chú cho sản phẩm 576
+577,SP0577,Sản phẩm mẫu số 577,Nông sản,239,183842,236911877,Nhà cung cấp B,Ghi chú cho sản phẩm 577
+578,SP0578,Sản phẩm mẫu số 578,Thực phẩm,845,394976,171890895,Nhà cung cấp C,Ghi chú cho sản phẩm 578
+579,SP0579,Sản phẩm mẫu số 579,Dược phẩm,933,449681,30384002,Nhà cung cấp D,Ghi chú cho sản phẩm 579
+580,SP0580,Sản phẩm mẫu số 580,Hóa chất,278,203628,198307846,Nhà cung cấp A,Ghi chú cho sản phẩm 580
+581,SP0581,Sản phẩm mẫu số 581,Vật liệu xây dựng,219,288091,241952562,Nhà cung cấp B,Ghi chú cho sản phẩm 581
+582,SP0582,Sản phẩm mẫu số 582,Nông sản,868,59521,64475187,Nhà cung cấp C,Ghi chú cho sản phẩm 582
+583,SP0583,Sản phẩm mẫu số 583,Thực phẩm,296,100567,335895222,Nhà cung cấp D,Ghi chú cho sản phẩm 583
+584,SP0584,Sản phẩm mẫu số 584,Dược phẩm,737,431642,181400002,Nhà cung cấp A,Ghi chú cho sản phẩm 584
+585,SP0585,Sản phẩm mẫu số 585,Hóa chất,516,495924,430172266,Nhà cung cấp B,Ghi chú cho sản phẩm 585
+586,SP0586,Sản phẩm mẫu số 586,Vật liệu xây dựng,120,460278,400964873,Nhà cung cấp C,Ghi chú cho sản phẩm 586
+587,SP0587,Sản phẩm mẫu số 587,Nông sản,691,477689,126558978,Nhà cung cấp D,Ghi chú cho sản phẩm 587
+588,SP0588,Sản phẩm mẫu số 588,Thực phẩm,636,300599,221178592,Nhà cung cấp A,Ghi chú cho sản phẩm 588
+589,SP0589,Sản phẩm mẫu số 589,Dược phẩm,990,271686,189351338,Nhà cung cấp B,Ghi chú cho sản phẩm 589
+590,SP0590,Sản phẩm mẫu số 590,Hóa chất,215,126862,415496982,Nhà cung cấp C,Ghi chú cho sản phẩm 590
+591,SP0591,Sản phẩm mẫu số 591,Vật liệu xây dựng,6,321633,480084276,Nhà cung cấp D,Ghi chú cho sản phẩm 591
+592,SP0592,Sản phẩm mẫu số 592,Nông sản,916,185553,105655360,Nhà cung cấp A,Ghi chú cho sản phẩm 592
+593,SP0593,Sản phẩm mẫu số 593,Thực phẩm,454,496106,351173417,Nhà cung cấp B,Ghi chú cho sản phẩm 593
+594,SP0594,Sản phẩm mẫu số 594,Dược phẩm,213,60773,322006953,Nhà cung cấp C,Ghi chú cho sản phẩm 594
+595,SP0595,Sản phẩm mẫu số 595,Hóa chất,325,98947,27135120,Nhà cung cấp D,Ghi chú cho sản phẩm 595
+596,SP0596,Sản phẩm mẫu số 596,Vật liệu xây dựng,994,401587,364937896,Nhà cung cấp A,Ghi chú cho sản phẩm 596
+597,SP0597,Sản phẩm mẫu số 597,Nông sản,873,408722,94097701,Nhà cung cấp B,Ghi chú cho sản phẩm 597
+598,SP0598,Sản phẩm mẫu số 598,Thực phẩm,992,112509,322425710,Nhà cung cấp C,Ghi chú cho sản phẩm 598
+599,SP0599,Sản phẩm mẫu số 599,Dược phẩm,312,444901,328039790,Nhà cung cấp D,Ghi chú cho sản phẩm 599
+600,SP0600,Sản phẩm mẫu số 600,Hóa chất,740,51437,48659589,Nhà cung cấp A,Ghi chú cho sản phẩm 600
+601,SP0601,Sản phẩm mẫu số 601,Vật liệu xây dựng,782,283508,220390734,Nhà cung cấp B,Ghi chú cho sản phẩm 601
+602,SP0602,Sản phẩm mẫu số 602,Nông sản,45,260257,258256617,Nhà cung cấp C,Ghi chú cho sản phẩm 602
+603,SP0603,Sản phẩm mẫu số 603,Thực phẩm,956,139085,399303184,Nhà cung cấp D,Ghi chú cho sản phẩm 603
+604,SP0604,Sản phẩm mẫu số 604,Dược phẩm,973,64620,98671309,Nhà cung cấp A,Ghi chú cho sản phẩm 604
+605,SP0605,Sản phẩm mẫu số 605,Hóa chất,261,425984,227184376,Nhà cung cấp B,Ghi chú cho sản phẩm 605
+606,SP0606,Sản phẩm mẫu số 606,Vật liệu xây dựng,765,96555,8553991,Nhà cung cấp C,Ghi chú cho sản phẩm 606
+607,SP0607,Sản phẩm mẫu số 607,Nông sản,958,100443,339059088,Nhà cung cấp D,Ghi chú cho sản phẩm 607
+608,SP0608,Sản phẩm mẫu số 608,Thực phẩm,806,337818,303157550,Nhà cung cấp A,Ghi chú cho sản phẩm 608
+609,SP0609,Sản phẩm mẫu số 609,Dược phẩm,222,444193,1288637,Nhà cung cấp B,Ghi chú cho sản phẩm 609
+610,SP0610,Sản phẩm mẫu số 610,Hóa chất,759,122731,189454482,Nhà cung cấp C,Ghi chú cho sản phẩm 610
+611,SP0611,Sản phẩm mẫu số 611,Vật liệu xây dựng,403,244553,331074485,Nhà cung cấp D,Ghi chú cho sản phẩm 611
+612,SP0612,Sản phẩm mẫu số 612,Nông sản,807,102474,81781755,Nhà cung cấp A,Ghi chú cho sản phẩm 612
+613,SP0613,Sản phẩm mẫu số 613,Thực phẩm,599,112876,424910563,Nhà cung cấp B,Ghi chú cho sản phẩm 613
+614,SP0614,Sản phẩm mẫu số 614,Dược phẩm,609,354359,64251628,Nhà cung cấp C,Ghi chú cho sản phẩm 614
+615,SP0615,Sản phẩm mẫu số 615,Hóa chất,776,194571,245938089,Nhà cung cấp D,Ghi chú cho sản phẩm 615
+616,SP0616,Sản phẩm mẫu số 616,Vật liệu xây dựng,138,431970,136003269,Nhà cung cấp A,Ghi chú cho sản phẩm 616
+617,SP0617,Sản phẩm mẫu số 617,Nông sản,108,360960,346679028,Nhà cung cấp B,Ghi chú cho sản phẩm 617
+618,SP0618,Sản phẩm mẫu số 618,Thực phẩm,27,490762,18446518,Nhà cung cấp C,Ghi chú cho sản phẩm 618
+619,SP0619,Sản phẩm mẫu số 619,Dược phẩm,262,218816,304174053,Nhà cung cấp D,Ghi chú cho sản phẩm 619
+620,SP0620,Sản phẩm mẫu số 620,Hóa chất,597,384516,367185763,Nhà cung cấp A,Ghi chú cho sản phẩm 620
+621,SP0621,Sản phẩm mẫu số 621,Vật liệu xây dựng,177,428617,83186617,Nhà cung cấp B,Ghi chú cho sản phẩm 621
+622,SP0622,Sản phẩm mẫu số 622,Nông sản,921,395715,223916078,Nhà cung cấp C,Ghi chú cho sản phẩm 622
+623,SP0623,Sản phẩm mẫu số 623,Thực phẩm,294,430385,269373275,Nhà cung cấp D,Ghi chú cho sản phẩm 623
+624,SP0624,Sản phẩm mẫu số 624,Dược phẩm,406,454338,127717792,Nhà cung cấp A,Ghi chú cho sản phẩm 624
+625,SP0625,Sản phẩm mẫu số 625,Hóa chất,762,64960,333821651,Nhà cung cấp B,Ghi chú cho sản phẩm 625
+626,SP0626,Sản phẩm mẫu số 626,Vật liệu xây dựng,894,274818,125710347,Nhà cung cấp C,Ghi chú cho sản phẩm 626
+627,SP0627,Sản phẩm mẫu số 627,Nông sản,937,433216,71668311,Nhà cung cấp D,Ghi chú cho sản phẩm 627
+628,SP0628,Sản phẩm mẫu số 628,Thực phẩm,54,293364,191051238,Nhà cung cấp A,Ghi chú cho sản phẩm 628
+629,SP0629,Sản phẩm mẫu số 629,Dược phẩm,699,449721,344947381,Nhà cung cấp B,Ghi chú cho sản phẩm 629
+630,SP0630,Sản phẩm mẫu số 630,Hóa chất,56,434302,230521372,Nhà cung cấp C,Ghi chú cho sản phẩm 630
+631,SP0631,Sản phẩm mẫu số 631,Vật liệu xây dựng,751,246752,142239836,Nhà cung cấp D,Ghi chú cho sản phẩm 631
+632,SP0632,Sản phẩm mẫu số 632,Nông sản,97,414854,7045424,Nhà cung cấp A,Ghi chú cho sản phẩm 632
+633,SP0633,Sản phẩm mẫu số 633,Thực phẩm,804,270776,157254732,Nhà cung cấp B,Ghi chú cho sản phẩm 633
+634,SP0634,Sản phẩm mẫu số 634,Dược phẩm,553,183003,444834955,Nhà cung cấp C,Ghi chú cho sản phẩm 634
+635,SP0635,Sản phẩm mẫu số 635,Hóa chất,810,255485,396243137,Nhà cung cấp D,Ghi chú cho sản phẩm 635
+636,SP0636,Sản phẩm mẫu số 636,Vật liệu xây dựng,37,324629,95805502,Nhà cung cấp A,Ghi chú cho sản phẩm 636
+637,SP0637,Sản phẩm mẫu số 637,Nông sản,978,228232,152037188,Nhà cung cấp B,Ghi chú cho sản phẩm 637
+638,SP0638,Sản phẩm mẫu số 638,Thực phẩm,375,469808,435770308,Nhà cung cấp C,Ghi chú cho sản phẩm 638
+639,SP0639,Sản phẩm mẫu số 639,Dược phẩm,568,478864,338753349,Nhà cung cấp D,Ghi chú cho sản phẩm 639
+640,SP0640,Sản phẩm mẫu số 640,Hóa chất,654,283224,45751372,Nhà cung cấp A,Ghi chú cho sản phẩm 640
+641,SP0641,Sản phẩm mẫu số 641,Vật liệu xây dựng,590,11284,178607337,Nhà cung cấp B,Ghi chú cho sản phẩm 641
+642,SP0642,Sản phẩm mẫu số 642,Nông sản,965,333250,144706271,Nhà cung cấp C,Ghi chú cho sản phẩm 642
+643,SP0643,Sản phẩm mẫu số 643,Thực phẩm,814,460477,198752396,Nhà cung cấp D,Ghi chú cho sản phẩm 643
+644,SP0644,Sản phẩm mẫu số 644,Dược phẩm,465,257655,283091430,Nhà cung cấp A,Ghi chú cho sản phẩm 644
+645,SP0645,Sản phẩm mẫu số 645,Hóa chất,14,111983,7309490,Nhà cung cấp B,Ghi chú cho sản phẩm 645
+646,SP0646,Sản phẩm mẫu số 646,Vật liệu xây dựng,781,303711,174252587,Nhà cung cấp C,Ghi chú cho sản phẩm 646
+647,SP0647,Sản phẩm mẫu số 647,Nông sản,765,73914,73508731,Nhà cung cấp D,Ghi chú cho sản phẩm 647
+648,SP0648,Sản phẩm mẫu số 648,Thực phẩm,811,86754,6693815,Nhà cung cấp A,Ghi chú cho sản phẩm 648
+649,SP0649,Sản phẩm mẫu số 649,Dược phẩm,481,304424,439607851,Nhà cung cấp B,Ghi chú cho sản phẩm 649
+650,SP0650,Sản phẩm mẫu số 650,Hóa chất,986,449870,101780999,Nhà cung cấp C,Ghi chú cho sản phẩm 650
+651,SP0651,Sản phẩm mẫu số 651,Vật liệu xây dựng,792,210630,112185569,Nhà cung cấp D,Ghi chú cho sản phẩm 651
+652,SP0652,Sản phẩm mẫu số 652,Nông sản,996,382271,181341059,Nhà cung cấp A,Ghi chú cho sản phẩm 652
+653,SP0653,Sản phẩm mẫu số 653,Thực phẩm,237,124305,152862791,Nhà cung cấp B,Ghi chú cho sản phẩm 653
+654,SP0654,Sản phẩm mẫu số 654,Dược phẩm,690,89754,177544697,Nhà cung cấp C,Ghi chú cho sản phẩm 654
+655,SP0655,Sản phẩm mẫu số 655,Hóa chất,669,186907,383862967,Nhà cung cấp D,Ghi chú cho sản phẩm 655
+656,SP0656,Sản phẩm mẫu số 656,Vật liệu xây dựng,223,121394,249852192,Nhà cung cấp A,Ghi chú cho sản phẩm 656
+657,SP0657,Sản phẩm mẫu số 657,Nông sản,383,48596,123048557,Nhà cung cấp B,Ghi chú cho sản phẩm 657
+658,SP0658,Sản phẩm mẫu số 658,Thực phẩm,441,69874,99143940,Nhà cung cấp C,Ghi chú cho sản phẩm 658
+659,SP0659,Sản phẩm mẫu số 659,Dược phẩm,130,294167,269559030,Nhà cung cấp D,Ghi chú cho sản phẩm 659
+660,SP0660,Sản phẩm mẫu số 660,Hóa chất,194,69190,449976720,Nhà cung cấp A,Ghi chú cho sản phẩm 660
+661,SP0661,Sản phẩm mẫu số 661,Vật liệu xây dựng,896,72883,296483860,Nhà cung cấp B,Ghi chú cho sản phẩm 661
+662,SP0662,Sản phẩm mẫu số 662,Nông sản,220,181708,280273849,Nhà cung cấp C,Ghi chú cho sản phẩm 662
+663,SP0663,Sản phẩm mẫu số 663,Thực phẩm,67,454602,389539119,Nhà cung cấp D,Ghi chú cho sản phẩm 663
+664,SP0664,Sản phẩm mẫu số 664,Dược phẩm,92,173430,271028407,Nhà cung cấp A,Ghi chú cho sản phẩm 664
+665,SP0665,Sản phẩm mẫu số 665,Hóa chất,417,117836,25958207,Nhà cung cấp B,Ghi chú cho sản phẩm 665
+666,SP0666,Sản phẩm mẫu số 666,Vật liệu xây dựng,924,244769,234537935,Nhà cung cấp C,Ghi chú cho sản phẩm 666
+667,SP0667,Sản phẩm mẫu số 667,Nông sản,284,88871,82481538,Nhà cung cấp D,Ghi chú cho sản phẩm 667
+668,SP0668,Sản phẩm mẫu số 668,Thực phẩm,776,92868,74821058,Nhà cung cấp A,Ghi chú cho sản phẩm 668
+669,SP0669,Sản phẩm mẫu số 669,Dược phẩm,56,89961,225164077,Nhà cung cấp B,Ghi chú cho sản phẩm 669
+670,SP0670,Sản phẩm mẫu số 670,Hóa chất,990,63784,454056300,Nhà cung cấp C,Ghi chú cho sản phẩm 670
+671,SP0671,Sản phẩm mẫu số 671,Vật liệu xây dựng,823,215640,362932417,Nhà cung cấp D,Ghi chú cho sản phẩm 671
+672,SP0672,Sản phẩm mẫu số 672,Nông sản,770,105390,47414350,Nhà cung cấp A,Ghi chú cho sản phẩm 672
+673,SP0673,Sản phẩm mẫu số 673,Thực phẩm,596,145462,258701299,Nhà cung cấp B,Ghi chú cho sản phẩm 673
+674,SP0674,Sản phẩm mẫu số 674,Dược phẩm,48,341549,496271056,Nhà cung cấp C,Ghi chú cho sản phẩm 674
+675,SP0675,Sản phẩm mẫu số 675,Hóa chất,738,113094,1205787,Nhà cung cấp D,Ghi chú cho sản phẩm 675
+676,SP0676,Sản phẩm mẫu số 676,Vật liệu xây dựng,314,19317,4468851,Nhà cung cấp A,Ghi chú cho sản phẩm 676
+677,SP0677,Sản phẩm mẫu số 677,Nông sản,342,351846,468171776,Nhà cung cấp B,Ghi chú cho sản phẩm 677
+678,SP0678,Sản phẩm mẫu số 678,Thực phẩm,304,414954,241427176,Nhà cung cấp C,Ghi chú cho sản phẩm 678
+679,SP0679,Sản phẩm mẫu số 679,Dược phẩm,265,483745,169224130,Nhà cung cấp D,Ghi chú cho sản phẩm 679
+680,SP0680,Sản phẩm mẫu số 680,Hóa chất,304,486635,169161048,Nhà cung cấp A,Ghi chú cho sản phẩm 680
+681,SP0681,Sản phẩm mẫu số 681,Vật liệu xây dựng,861,467140,160139114,Nhà cung cấp B,Ghi chú cho sản phẩm 681
+682,SP0682,Sản phẩm mẫu số 682,Nông sản,478,337013,23674253,Nhà cung cấp C,Ghi chú cho sản phẩm 682
+683,SP0683,Sản phẩm mẫu số 683,Thực phẩm,472,429982,133955909,Nhà cung cấp D,Ghi chú cho sản phẩm 683
+684,SP0684,Sản phẩm mẫu số 684,Dược phẩm,412,350218,351620589,Nhà cung cấp A,Ghi chú cho sản phẩm 684
+685,SP0685,Sản phẩm mẫu số 685,Hóa chất,376,76743,65791502,Nhà cung cấp B,Ghi chú cho sản phẩm 685
+686,SP0686,Sản phẩm mẫu số 686,Vật liệu xây dựng,177,394393,102282503,Nhà cung cấp C,Ghi chú cho sản phẩm 686
+687,SP0687,Sản phẩm mẫu số 687,Nông sản,51,467834,303004459,Nhà cung cấp D,Ghi chú cho sản phẩm 687
+688,SP0688,Sản phẩm mẫu số 688,Thực phẩm,640,275204,115013165,Nhà cung cấp A,Ghi chú cho sản phẩm 688
+689,SP0689,Sản phẩm mẫu số 689,Dược phẩm,633,482992,50390432,Nhà cung cấp B,Ghi chú cho sản phẩm 689
+690,SP0690,Sản phẩm mẫu số 690,Hóa chất,669,454217,266749525,Nhà cung cấp C,Ghi chú cho sản phẩm 690
+691,SP0691,Sản phẩm mẫu số 691,Vật liệu xây dựng,281,216498,495629544,Nhà cung cấp D,Ghi chú cho sản phẩm 691
+692,SP0692,Sản phẩm mẫu số 692,Nông sản,203,216221,220971890,Nhà cung cấp A,Ghi chú cho sản phẩm 692
+693,SP0693,Sản phẩm mẫu số 693,Thực phẩm,502,85000,53139112,Nhà cung cấp B,Ghi chú cho sản phẩm 693
+694,SP0694,Sản phẩm mẫu số 694,Dược phẩm,363,469904,203440003,Nhà cung cấp C,Ghi chú cho sản phẩm 694
+695,SP0695,Sản phẩm mẫu số 695,Hóa chất,153,391050,445118774,Nhà cung cấp D,Ghi chú cho sản phẩm 695
+696,SP0696,Sản phẩm mẫu số 696,Vật liệu xây dựng,876,71427,253087413,Nhà cung cấp A,Ghi chú cho sản phẩm 696
+697,SP0697,Sản phẩm mẫu số 697,Nông sản,568,458415,479698997,Nhà cung cấp B,Ghi chú cho sản phẩm 697
+698,SP0698,Sản phẩm mẫu số 698,Thực phẩm,38,160935,420659328,Nhà cung cấp C,Ghi chú cho sản phẩm 698
+699,SP0699,Sản phẩm mẫu số 699,Dược phẩm,197,122400,466183501,Nhà cung cấp D,Ghi chú cho sản phẩm 699
+700,SP0700,Sản phẩm mẫu số 700,Hóa chất,834,16351,181806672,Nhà cung cấp A,Ghi chú cho sản phẩm 700
+701,SP0701,Sản phẩm mẫu số 701,Vật liệu xây dựng,167,371625,52709938,Nhà cung cấp B,Ghi chú cho sản phẩm 701
+702,SP0702,Sản phẩm mẫu số 702,Nông sản,626,39731,24113695,Nhà cung cấp C,Ghi chú cho sản phẩm 702
+703,SP0703,Sản phẩm mẫu số 703,Thực phẩm,799,24842,211411085,Nhà cung cấp D,Ghi chú cho sản phẩm 703
+704,SP0704,Sản phẩm mẫu số 704,Dược phẩm,89,381491,37493639,Nhà cung cấp A,Ghi chú cho sản phẩm 704
+705,SP0705,Sản phẩm mẫu số 705,Hóa chất,415,219806,438610788,Nhà cung cấp B,Ghi chú cho sản phẩm 705
+706,SP0706,Sản phẩm mẫu số 706,Vật liệu xây dựng,563,490393,122421483,Nhà cung cấp C,Ghi chú cho sản phẩm 706
+707,SP0707,Sản phẩm mẫu số 707,Nông sản,592,417823,158559622,Nhà cung cấp D,Ghi chú cho sản phẩm 707
+708,SP0708,Sản phẩm mẫu số 708,Thực phẩm,260,388311,498580415,Nhà cung cấp A,Ghi chú cho sản phẩm 708
+709,SP0709,Sản phẩm mẫu số 709,Dược phẩm,701,188208,433205125,Nhà cung cấp B,Ghi chú cho sản phẩm 709
+710,SP0710,Sản phẩm mẫu số 710,Hóa chất,893,29890,27776613,Nhà cung cấp C,Ghi chú cho sản phẩm 710
+711,SP0711,Sản phẩm mẫu số 711,Vật liệu xây dựng,590,252864,130324384,Nhà cung cấp D,Ghi chú cho sản phẩm 711
+712,SP0712,Sản phẩm mẫu số 712,Nông sản,744,480042,498315895,Nhà cung cấp A,Ghi chú cho sản phẩm 712
+713,SP0713,Sản phẩm mẫu số 713,Thực phẩm,839,49328,203758440,Nhà cung cấp B,Ghi chú cho sản phẩm 713
+714,SP0714,Sản phẩm mẫu số 714,Dược phẩm,593,85529,296718741,Nhà cung cấp C,Ghi chú cho sản phẩm 714
+715,SP0715,Sản phẩm mẫu số 715,Hóa chất,336,105796,394545215,Nhà cung cấp D,Ghi chú cho sản phẩm 715
+716,SP0716,Sản phẩm mẫu số 716,Vật liệu xây dựng,923,119939,179887055,Nhà cung cấp A,Ghi chú cho sản phẩm 716
+717,SP0717,Sản phẩm mẫu số 717,Nông sản,29,62143,62340823,Nhà cung cấp B,Ghi chú cho sản phẩm 717
+718,SP0718,Sản phẩm mẫu số 718,Thực phẩm,748,130277,47596099,Nhà cung cấp C,Ghi chú cho sản phẩm 718
+719,SP0719,Sản phẩm mẫu số 719,Dược phẩm,405,417544,282092999,Nhà cung cấp D,Ghi chú cho sản phẩm 719
+720,SP0720,Sản phẩm mẫu số 720,Hóa chất,991,64967,449602430,Nhà cung cấp A,Ghi chú cho sản phẩm 720
+721,SP0721,Sản phẩm mẫu số 721,Vật liệu xây dựng,522,316204,111234510,Nhà cung cấp B,Ghi chú cho sản phẩm 721
+722,SP0722,Sản phẩm mẫu số 722,Nông sản,836,325492,45405196,Nhà cung cấp C,Ghi chú cho sản phẩm 722
+723,SP0723,Sản phẩm mẫu số 723,Thực phẩm,976,200494,460690976,Nhà cung cấp D,Ghi chú cho sản phẩm 723
+724,SP0724,Sản phẩm mẫu số 724,Dược phẩm,240,325940,24063025,Nhà cung cấp A,Ghi chú cho sản phẩm 724
+725,SP0725,Sản phẩm mẫu số 725,Hóa chất,650,256435,294439722,Nhà cung cấp B,Ghi chú cho sản phẩm 725
+726,SP0726,Sản phẩm mẫu số 726,Vật liệu xây dựng,911,348243,84056405,Nhà cung cấp C,Ghi chú cho sản phẩm 726
+727,SP0727,Sản phẩm mẫu số 727,Nông sản,256,83843,195821597,Nhà cung cấp D,Ghi chú cho sản phẩm 727
+728,SP0728,Sản phẩm mẫu số 728,Thực phẩm,78,316649,398348700,Nhà cung cấp A,Ghi chú cho sản phẩm 728
+729,SP0729,Sản phẩm mẫu số 729,Dược phẩm,931,329643,420651165,Nhà cung cấp B,Ghi chú cho sản phẩm 729
+730,SP0730,Sản phẩm mẫu số 730,Hóa chất,316,154273,329144836,Nhà cung cấp C,Ghi chú cho sản phẩm 730
+731,SP0731,Sản phẩm mẫu số 731,Vật liệu xây dựng,992,255061,311479416,Nhà cung cấp D,Ghi chú cho sản phẩm 731
+732,SP0732,Sản phẩm mẫu số 732,Nông sản,569,412047,62461589,Nhà cung cấp A,Ghi chú cho sản phẩm 732
+733,SP0733,Sản phẩm mẫu số 733,Thực phẩm,276,387811,33127944,Nhà cung cấp B,Ghi chú cho sản phẩm 733
+734,SP0734,Sản phẩm mẫu số 734,Dược phẩm,134,361541,260996099,Nhà cung cấp C,Ghi chú cho sản phẩm 734
+735,SP0735,Sản phẩm mẫu số 735,Hóa chất,826,83174,61279681,Nhà cung cấp D,Ghi chú cho sản phẩm 735
+736,SP0736,Sản phẩm mẫu số 736,Vật liệu xây dựng,964,392683,358869487,Nhà cung cấp A,Ghi chú cho sản phẩm 736
+737,SP0737,Sản phẩm mẫu số 737,Nông sản,463,188840,417246578,Nhà cung cấp B,Ghi chú cho sản phẩm 737
+738,SP0738,Sản phẩm mẫu số 738,Thực phẩm,411,428314,180188759,Nhà cung cấp C,Ghi chú cho sản phẩm 738
+739,SP0739,Sản phẩm mẫu số 739,Dược phẩm,887,137477,180181910,Nhà cung cấp D,Ghi chú cho sản phẩm 739
+740,SP0740,Sản phẩm mẫu số 740,Hóa chất,1,227844,372552500,Nhà cung cấp A,Ghi chú cho sản phẩm 740
+741,SP0741,Sản phẩm mẫu số 741,Vật liệu xây dựng,71,300160,126171494,Nhà cung cấp B,Ghi chú cho sản phẩm 741
+742,SP0742,Sản phẩm mẫu số 742,Nông sản,101,313493,82733256,Nhà cung cấp C,Ghi chú cho sản phẩm 742
+743,SP0743,Sản phẩm mẫu số 743,Thực phẩm,762,64178,462620743,Nhà cung cấp D,Ghi chú cho sản phẩm 743
+744,SP0744,Sản phẩm mẫu số 744,Dược phẩm,290,205732,497329538,Nhà cung cấp A,Ghi chú cho sản phẩm 744
+745,SP0745,Sản phẩm mẫu số 745,Hóa chất,552,139632,163660104,Nhà cung cấp B,Ghi chú cho sản phẩm 745
+746,SP0746,Sản phẩm mẫu số 746,Vật liệu xây dựng,667,43948,352279822,Nhà cung cấp C,Ghi chú cho sản phẩm 746
+747,SP0747,Sản phẩm mẫu số 747,Nông sản,360,50070,82344273,Nhà cung cấp D,Ghi chú cho sản phẩm 747
+748,SP0748,Sản phẩm mẫu số 748,Thực phẩm,961,61075,236075447,Nhà cung cấp A,Ghi chú cho sản phẩm 748
+749,SP0749,Sản phẩm mẫu số 749,Dược phẩm,130,114318,148140826,Nhà cung cấp B,Ghi chú cho sản phẩm 749
+750,SP0750,Sản phẩm mẫu số 750,Hóa chất,444,233491,117736083,Nhà cung cấp C,Ghi chú cho sản phẩm 750
+751,SP0751,Sản phẩm mẫu số 751,Vật liệu xây dựng,970,62980,33709756,Nhà cung cấp D,Ghi chú cho sản phẩm 751
+752,SP0752,Sản phẩm mẫu số 752,Nông sản,457,464598,450463540,Nhà cung cấp A,Ghi chú cho sản phẩm 752
+753,SP0753,Sản phẩm mẫu số 753,Thực phẩm,477,416413,480762618,Nhà cung cấp B,Ghi chú cho sản phẩm 753
+754,SP0754,Sản phẩm mẫu số 754,Dược phẩm,569,327392,375450295,Nhà cung cấp C,Ghi chú cho sản phẩm 754
+755,SP0755,Sản phẩm mẫu số 755,Hóa chất,931,55793,351786712,Nhà cung cấp D,Ghi chú cho sản phẩm 755
+756,SP0756,Sản phẩm mẫu số 756,Vật liệu xây dựng,622,172212,326785511,Nhà cung cấp A,Ghi chú cho sản phẩm 756
+757,SP0757,Sản phẩm mẫu số 757,Nông sản,765,219082,169474009,Nhà cung cấp B,Ghi chú cho sản phẩm 757
+758,SP0758,Sản phẩm mẫu số 758,Thực phẩm,109,270839,238043946,Nhà cung cấp C,Ghi chú cho sản phẩm 758
+759,SP0759,Sản phẩm mẫu số 759,Dược phẩm,388,62623,134507118,Nhà cung cấp D,Ghi chú cho sản phẩm 759
+760,SP0760,Sản phẩm mẫu số 760,Hóa chất,303,270946,296446049,Nhà cung cấp A,Ghi chú cho sản phẩm 760
+761,SP0761,Sản phẩm mẫu số 761,Vật liệu xây dựng,389,261753,273974881,Nhà cung cấp B,Ghi chú cho sản phẩm 761
+762,SP0762,Sản phẩm mẫu số 762,Nông sản,94,240572,60748602,Nhà cung cấp C,Ghi chú cho sản phẩm 762
+763,SP0763,Sản phẩm mẫu số 763,Thực phẩm,460,333278,304890364,Nhà cung cấp D,Ghi chú cho sản phẩm 763
+764,SP0764,Sản phẩm mẫu số 764,Dược phẩm,484,465533,68455682,Nhà cung cấp A,Ghi chú cho sản phẩm 764
+765,SP0765,Sản phẩm mẫu số 765,Hóa chất,207,346504,210273340,Nhà cung cấp B,Ghi chú cho sản phẩm 765
+766,SP0766,Sản phẩm mẫu số 766,Vật liệu xây dựng,896,280414,168321940,Nhà cung cấp C,Ghi chú cho sản phẩm 766
+767,SP0767,Sản phẩm mẫu số 767,Nông sản,259,86305,202604351,Nhà cung cấp D,Ghi chú cho sản phẩm 767
+768,SP0768,Sản phẩm mẫu số 768,Thực phẩm,683,344086,180250724,Nhà cung cấp A,Ghi chú cho sản phẩm 768
+769,SP0769,Sản phẩm mẫu số 769,Dược phẩm,66,466111,198686756,Nhà cung cấp B,Ghi chú cho sản phẩm 769
+770,SP0770,Sản phẩm mẫu số 770,Hóa chất,139,383698,333580908,Nhà cung cấp C,Ghi chú cho sản phẩm 770
+771,SP0771,Sản phẩm mẫu số 771,Vật liệu xây dựng,142,391693,203922556,Nhà cung cấp D,Ghi chú cho sản phẩm 771
+772,SP0772,Sản phẩm mẫu số 772,Nông sản,463,479524,179725227,Nhà cung cấp A,Ghi chú cho sản phẩm 772
+773,SP0773,Sản phẩm mẫu số 773,Thực phẩm,48,217067,460335058,Nhà cung cấp B,Ghi chú cho sản phẩm 773
+774,SP0774,Sản phẩm mẫu số 774,Dược phẩm,427,387492,394116832,Nhà cung cấp C,Ghi chú cho sản phẩm 774
+775,SP0775,Sản phẩm mẫu số 775,Hóa chất,638,353725,493655889,Nhà cung cấp D,Ghi chú cho sản phẩm 775
+776,SP0776,Sản phẩm mẫu số 776,Vật liệu xây dựng,287,498747,226769791,Nhà cung cấp A,Ghi chú cho sản phẩm 776
+777,SP0777,Sản phẩm mẫu số 777,Nông sản,365,189467,170270961,Nhà cung cấp B,Ghi chú cho sản phẩm 777
+778,SP0778,Sản phẩm mẫu số 778,Thực phẩm,990,166109,312388480,Nhà cung cấp C,Ghi chú cho sản phẩm 778
+779,SP0779,Sản phẩm mẫu số 779,Dược phẩm,369,374313,393642538,Nhà cung cấp D,Ghi chú cho sản phẩm 779
+780,SP0780,Sản phẩm mẫu số 780,Hóa chất,749,95932,184080380,Nhà cung cấp A,Ghi chú cho sản phẩm 780
+781,SP0781,Sản phẩm mẫu số 781,Vật liệu xây dựng,930,326333,435413047,Nhà cung cấp B,Ghi chú cho sản phẩm 781
+782,SP0782,Sản phẩm mẫu số 782,Nông sản,294,423760,244213972,Nhà cung cấp C,Ghi chú cho sản phẩm 782
+783,SP0783,Sản phẩm mẫu số 783,Thực phẩm,70,467025,455977677,Nhà cung cấp D,Ghi chú cho sản phẩm 783
+784,SP0784,Sản phẩm mẫu số 784,Dược phẩm,698,443394,381463965,Nhà cung cấp A,Ghi chú cho sản phẩm 784
+785,SP0785,Sản phẩm mẫu số 785,Hóa chất,152,384562,731378,Nhà cung cấp B,Ghi chú cho sản phẩm 785
+786,SP0786,Sản phẩm mẫu số 786,Vật liệu xây dựng,687,467384,412309762,Nhà cung cấp C,Ghi chú cho sản phẩm 786
+787,SP0787,Sản phẩm mẫu số 787,Nông sản,495,135422,396181637,Nhà cung cấp D,Ghi chú cho sản phẩm 787
+788,SP0788,Sản phẩm mẫu số 788,Thực phẩm,673,488643,256984297,Nhà cung cấp A,Ghi chú cho sản phẩm 788
+789,SP0789,Sản phẩm mẫu số 789,Dược phẩm,554,120506,9542666,Nhà cung cấp B,Ghi chú cho sản phẩm 789
+790,SP0790,Sản phẩm mẫu số 790,Hóa chất,232,72483,453794013,Nhà cung cấp C,Ghi chú cho sản phẩm 790
+791,SP0791,Sản phẩm mẫu số 791,Vật liệu xây dựng,498,220305,232845714,Nhà cung cấp D,Ghi chú cho sản phẩm 791
+792,SP0792,Sản phẩm mẫu số 792,Nông sản,696,139801,425680543,Nhà cung cấp A,Ghi chú cho sản phẩm 792
+793,SP0793,Sản phẩm mẫu số 793,Thực phẩm,410,311813,404475258,Nhà cung cấp B,Ghi chú cho sản phẩm 793
+794,SP0794,Sản phẩm mẫu số 794,Dược phẩm,327,350740,39228346,Nhà cung cấp C,Ghi chú cho sản phẩm 794
+795,SP0795,Sản phẩm mẫu số 795,Hóa chất,810,391908,141624050,Nhà cung cấp D,Ghi chú cho sản phẩm 795
+796,SP0796,Sản phẩm mẫu số 796,Vật liệu xây dựng,250,383881,216062579,Nhà cung cấp A,Ghi chú cho sản phẩm 796
+797,SP0797,Sản phẩm mẫu số 797,Nông sản,697,323464,9340471,Nhà cung cấp B,Ghi chú cho sản phẩm 797
+798,SP0798,Sản phẩm mẫu số 798,Thực phẩm,517,351107,423565876,Nhà cung cấp C,Ghi chú cho sản phẩm 798
+799,SP0799,Sản phẩm mẫu số 799,Dược phẩm,377,310190,91648245,Nhà cung cấp D,Ghi chú cho sản phẩm 799
+800,SP0800,Sản phẩm mẫu số 800,Hóa chất,472,408951,192833334,Nhà cung cấp A,Ghi chú cho sản phẩm 800
+801,SP0801,Sản phẩm mẫu số 801,Vật liệu xây dựng,236,112991,56464170,Nhà cung cấp B,Ghi chú cho sản phẩm 801
+802,SP0802,Sản phẩm mẫu số 802,Nông sản,532,401917,243301241,Nhà cung cấp C,Ghi chú cho sản phẩm 802
+803,SP0803,Sản phẩm mẫu số 803,Thực phẩm,67,389162,265981262,Nhà cung cấp D,Ghi chú cho sản phẩm 803
+804,SP0804,Sản phẩm mẫu số 804,Dược phẩm,106,421087,124551570,Nhà cung cấp A,Ghi chú cho sản phẩm 804
+805,SP0805,Sản phẩm mẫu số 805,Hóa chất,897,386757,325530710,Nhà cung cấp B,Ghi chú cho sản phẩm 805
+806,SP0806,Sản phẩm mẫu số 806,Vật liệu xây dựng,519,323257,92331476,Nhà cung cấp C,Ghi chú cho sản phẩm 806
+807,SP0807,Sản phẩm mẫu số 807,Nông sản,140,122395,265401308,Nhà cung cấp D,Ghi chú cho sản phẩm 807
+808,SP0808,Sản phẩm mẫu số 808,Thực phẩm,261,257234,257700143,Nhà cung cấp A,Ghi chú cho sản phẩm 808
+809,SP0809,Sản phẩm mẫu số 809,Dược phẩm,149,336511,338977128,Nhà cung cấp B,Ghi chú cho sản phẩm 809
+810,SP0810,Sản phẩm mẫu số 810,Hóa chất,823,495603,96960647,Nhà cung cấp C,Ghi chú cho sản phẩm 810
+811,SP0811,Sản phẩm mẫu số 811,Vật liệu xây dựng,728,197036,283370435,Nhà cung cấp D,Ghi chú cho sản phẩm 811
+812,SP0812,Sản phẩm mẫu số 812,Nông sản,185,120120,114093931,Nhà cung cấp A,Ghi chú cho sản phẩm 812
+813,SP0813,Sản phẩm mẫu số 813,Thực phẩm,128,215477,496833561,Nhà cung cấp B,Ghi chú cho sản phẩm 813
+814,SP0814,Sản phẩm mẫu số 814,Dược phẩm,640,336076,237915252,Nhà cung cấp C,Ghi chú cho sản phẩm 814
+815,SP0815,Sản phẩm mẫu số 815,Hóa chất,260,497895,16515460,Nhà cung cấp D,Ghi chú cho sản phẩm 815
+816,SP0816,Sản phẩm mẫu số 816,Vật liệu xây dựng,279,384593,153803559,Nhà cung cấp A,Ghi chú cho sản phẩm 816
+817,SP0817,Sản phẩm mẫu số 817,Nông sản,78,16665,487635312,Nhà cung cấp B,Ghi chú cho sản phẩm 817
+818,SP0818,Sản phẩm mẫu số 818,Thực phẩm,362,218929,12563744,Nhà cung cấp C,Ghi chú cho sản phẩm 818
+819,SP0819,Sản phẩm mẫu số 819,Dược phẩm,458,266525,378877657,Nhà cung cấp D,Ghi chú cho sản phẩm 819
+820,SP0820,Sản phẩm mẫu số 820,Hóa chất,977,183319,315539376,Nhà cung cấp A,Ghi chú cho sản phẩm 820
+821,SP0821,Sản phẩm mẫu số 821,Vật liệu xây dựng,913,227144,442642282,Nhà cung cấp B,Ghi chú cho sản phẩm 821
+822,SP0822,Sản phẩm mẫu số 822,Nông sản,108,305285,93580555,Nhà cung cấp C,Ghi chú cho sản phẩm 822
+823,SP0823,Sản phẩm mẫu số 823,Thực phẩm,175,225593,368718283,Nhà cung cấp D,Ghi chú cho sản phẩm 823
+824,SP0824,Sản phẩm mẫu số 824,Dược phẩm,558,54501,50843723,Nhà cung cấp A,Ghi chú cho sản phẩm 824
+825,SP0825,Sản phẩm mẫu số 825,Hóa chất,347,344657,109278240,Nhà cung cấp B,Ghi chú cho sản phẩm 825
+826,SP0826,Sản phẩm mẫu số 826,Vật liệu xây dựng,693,328872,353296138,Nhà cung cấp C,Ghi chú cho sản phẩm 826
+827,SP0827,Sản phẩm mẫu số 827,Nông sản,223,188861,79215715,Nhà cung cấp D,Ghi chú cho sản phẩm 827
+828,SP0828,Sản phẩm mẫu số 828,Thực phẩm,90,439504,142280166,Nhà cung cấp A,Ghi chú cho sản phẩm 828
+829,SP0829,Sản phẩm mẫu số 829,Dược phẩm,821,286382,50112961,Nhà cung cấp B,Ghi chú cho sản phẩm 829
+830,SP0830,Sản phẩm mẫu số 830,Hóa chất,779,370688,106304006,Nhà cung cấp C,Ghi chú cho sản phẩm 830
+831,SP0831,Sản phẩm mẫu số 831,Vật liệu xây dựng,961,331825,151325104,Nhà cung cấp D,Ghi chú cho sản phẩm 831
+832,SP0832,Sản phẩm mẫu số 832,Nông sản,16,132155,304289554,Nhà cung cấp A,Ghi chú cho sản phẩm 832
+833,SP0833,Sản phẩm mẫu số 833,Thực phẩm,132,449180,332275767,Nhà cung cấp B,Ghi chú cho sản phẩm 833
+834,SP0834,Sản phẩm mẫu số 834,Dược phẩm,448,155225,240146949,Nhà cung cấp C,Ghi chú cho sản phẩm 834
+835,SP0835,Sản phẩm mẫu số 835,Hóa chất,187,467625,451004136,Nhà cung cấp D,Ghi chú cho sản phẩm 835
+836,SP0836,Sản phẩm mẫu số 836,Vật liệu xây dựng,470,338457,191226433,Nhà cung cấp A,Ghi chú cho sản phẩm 836
+837,SP0837,Sản phẩm mẫu số 837,Nông sản,433,123474,345844104,Nhà cung cấp B,Ghi chú cho sản phẩm 837
+838,SP0838,Sản phẩm mẫu số 838,Thực phẩm,127,261880,324626471,Nhà cung cấp C,Ghi chú cho sản phẩm 838
+839,SP0839,Sản phẩm mẫu số 839,Dược phẩm,716,277730,343721862,Nhà cung cấp D,Ghi chú cho sản phẩm 839
+840,SP0840,Sản phẩm mẫu số 840,Hóa chất,526,50396,349645776,Nhà cung cấp A,Ghi chú cho sản phẩm 840
+841,SP0841,Sản phẩm mẫu số 841,Vật liệu xây dựng,889,167353,426856941,Nhà cung cấp B,Ghi chú cho sản phẩm 841
+842,SP0842,Sản phẩm mẫu số 842,Nông sản,930,447510,196973509,Nhà cung cấp C,Ghi chú cho sản phẩm 842
+843,SP0843,Sản phẩm mẫu số 843,Thực phẩm,665,123524,428143867,Nhà cung cấp D,Ghi chú cho sản phẩm 843
+844,SP0844,Sản phẩm mẫu số 844,Dược phẩm,167,199952,312537349,Nhà cung cấp A,Ghi chú cho sản phẩm 844
+845,SP0845,Sản phẩm mẫu số 845,Hóa chất,382,372800,18943668,Nhà cung cấp B,Ghi chú cho sản phẩm 845
+846,SP0846,Sản phẩm mẫu số 846,Vật liệu xây dựng,289,30927,367912834,Nhà cung cấp C,Ghi chú cho sản phẩm 846
+847,SP0847,Sản phẩm mẫu số 847,Nông sản,413,163051,127151849,Nhà cung cấp D,Ghi chú cho sản phẩm 847
+848,SP0848,Sản phẩm mẫu số 848,Thực phẩm,39,466318,329472322,Nhà cung cấp A,Ghi chú cho sản phẩm 848
+849,SP0849,Sản phẩm mẫu số 849,Dược phẩm,441,269742,450073035,Nhà cung cấp B,Ghi chú cho sản phẩm 849
+850,SP0850,Sản phẩm mẫu số 850,Hóa chất,835,96817,474059310,Nhà cung cấp C,Ghi chú cho sản phẩm 850
+851,SP0851,Sản phẩm mẫu số 851,Vật liệu xây dựng,140,224858,161347586,Nhà cung cấp D,Ghi chú cho sản phẩm 851
+852,SP0852,Sản phẩm mẫu số 852,Nông sản,809,440834,199698878,Nhà cung cấp A,Ghi chú cho sản phẩm 852
+853,SP0853,Sản phẩm mẫu số 853,Thực phẩm,964,19677,75891909,Nhà cung cấp B,Ghi chú cho sản phẩm 853
+854,SP0854,Sản phẩm mẫu số 854,Dược phẩm,847,267436,68657886,Nhà cung cấp C,Ghi chú cho sản phẩm 854
+855,SP0855,Sản phẩm mẫu số 855,Hóa chất,481,169605,9393021,Nhà cung cấp D,Ghi chú cho sản phẩm 855
+856,SP0856,Sản phẩm mẫu số 856,Vật liệu xây dựng,906,469945,75348298,Nhà cung cấp A,Ghi chú cho sản phẩm 856
+857,SP0857,Sản phẩm mẫu số 857,Nông sản,685,352089,451568048,Nhà cung cấp B,Ghi chú cho sản phẩm 857
+858,SP0858,Sản phẩm mẫu số 858,Thực phẩm,34,171957,95930735,Nhà cung cấp C,Ghi chú cho sản phẩm 858
+859,SP0859,Sản phẩm mẫu số 859,Dược phẩm,419,224742,10249874,Nhà cung cấp D,Ghi chú cho sản phẩm 859
+860,SP0860,Sản phẩm mẫu số 860,Hóa chất,416,270022,357838138,Nhà cung cấp A,Ghi chú cho sản phẩm 860
+861,SP0861,Sản phẩm mẫu số 861,Vật liệu xây dựng,1,18254,90552392,Nhà cung cấp B,Ghi chú cho sản phẩm 861
+862,SP0862,Sản phẩm mẫu số 862,Nông sản,737,393114,104217613,Nhà cung cấp C,Ghi chú cho sản phẩm 862
+863,SP0863,Sản phẩm mẫu số 863,Thực phẩm,584,297449,385200991,Nhà cung cấp D,Ghi chú cho sản phẩm 863
+864,SP0864,Sản phẩm mẫu số 864,Dược phẩm,711,475421,439494995,Nhà cung cấp A,Ghi chú cho sản phẩm 864
+865,SP0865,Sản phẩm mẫu số 865,Hóa chất,429,347157,304687978,Nhà cung cấp B,Ghi chú cho sản phẩm 865
+866,SP0866,Sản phẩm mẫu số 866,Vật liệu xây dựng,53,403889,1295700,Nhà cung cấp C,Ghi chú cho sản phẩm 866
+867,SP0867,Sản phẩm mẫu số 867,Nông sản,745,222751,157262263,Nhà cung cấp D,Ghi chú cho sản phẩm 867
+868,SP0868,Sản phẩm mẫu số 868,Thực phẩm,80,188677,323023793,Nhà cung cấp A,Ghi chú cho sản phẩm 868
+869,SP0869,Sản phẩm mẫu số 869,Dược phẩm,657,38129,66144423,Nhà cung cấp B,Ghi chú cho sản phẩm 869
+870,SP0870,Sản phẩm mẫu số 870,Hóa chất,146,374836,393590202,Nhà cung cấp C,Ghi chú cho sản phẩm 870
+871,SP0871,Sản phẩm mẫu số 871,Vật liệu xây dựng,181,206199,97271729,Nhà cung cấp D,Ghi chú cho sản phẩm 871
+872,SP0872,Sản phẩm mẫu số 872,Nông sản,796,355570,336700126,Nhà cung cấp A,Ghi chú cho sản phẩm 872
+873,SP0873,Sản phẩm mẫu số 873,Thực phẩm,957,53722,367529610,Nhà cung cấp B,Ghi chú cho sản phẩm 873
+874,SP0874,Sản phẩm mẫu số 874,Dược phẩm,680,105806,487007413,Nhà cung cấp C,Ghi chú cho sản phẩm 874
+875,SP0875,Sản phẩm mẫu số 875,Hóa chất,980,70545,285731031,Nhà cung cấp D,Ghi chú cho sản phẩm 875
+876,SP0876,Sản phẩm mẫu số 876,Vật liệu xây dựng,127,104739,398365147,Nhà cung cấp A,Ghi chú cho sản phẩm 876
+877,SP0877,Sản phẩm mẫu số 877,Nông sản,718,492893,238231680,Nhà cung cấp B,Ghi chú cho sản phẩm 877
+878,SP0878,Sản phẩm mẫu số 878,Thực phẩm,782,389004,87427489,Nhà cung cấp C,Ghi chú cho sản phẩm 878
+879,SP0879,Sản phẩm mẫu số 879,Dược phẩm,3,389740,46806505,Nhà cung cấp D,Ghi chú cho sản phẩm 879
+880,SP0880,Sản phẩm mẫu số 880,Hóa chất,913,427316,236752093,Nhà cung cấp A,Ghi chú cho sản phẩm 880
+881,SP0881,Sản phẩm mẫu số 881,Vật liệu xây dựng,814,352336,371038692,Nhà cung cấp B,Ghi chú cho sản phẩm 881
+882,SP0882,Sản phẩm mẫu số 882,Nông sản,397,120910,263643973,Nhà cung cấp C,Ghi chú cho sản phẩm 882
+883,SP0883,Sản phẩm mẫu số 883,Thực phẩm,72,67270,284388781,Nhà cung cấp D,Ghi chú cho sản phẩm 883
+884,SP0884,Sản phẩm mẫu số 884,Dược phẩm,851,186992,135279411,Nhà cung cấp A,Ghi chú cho sản phẩm 884
+885,SP0885,Sản phẩm mẫu số 885,Hóa chất,10,191241,368921592,Nhà cung cấp B,Ghi chú cho sản phẩm 885
+886,SP0886,Sản phẩm mẫu số 886,Vật liệu xây dựng,544,72192,108404629,Nhà cung cấp C,Ghi chú cho sản phẩm 886
+887,SP0887,Sản phẩm mẫu số 887,Nông sản,666,444039,8918390,Nhà cung cấp D,Ghi chú cho sản phẩm 887
+888,SP0888,Sản phẩm mẫu số 888,Thực phẩm,795,107097,253434866,Nhà cung cấp A,Ghi chú cho sản phẩm 888
+889,SP0889,Sản phẩm mẫu số 889,Dược phẩm,156,288586,166914922,Nhà cung cấp B,Ghi chú cho sản phẩm 889
+890,SP0890,Sản phẩm mẫu số 890,Hóa chất,350,427982,293152231,Nhà cung cấp C,Ghi chú cho sản phẩm 890
+891,SP0891,Sản phẩm mẫu số 891,Vật liệu xây dựng,75,335073,23319842,Nhà cung cấp D,Ghi chú cho sản phẩm 891
+892,SP0892,Sản phẩm mẫu số 892,Nông sản,862,240312,466394104,Nhà cung cấp A,Ghi chú cho sản phẩm 892
+893,SP0893,Sản phẩm mẫu số 893,Thực phẩm,174,29238,205795770,Nhà cung cấp B,Ghi chú cho sản phẩm 893
+894,SP0894,Sản phẩm mẫu số 894,Dược phẩm,552,278739,66923785,Nhà cung cấp C,Ghi chú cho sản phẩm 894
+895,SP0895,Sản phẩm mẫu số 895,Hóa chất,133,17950,183886332,Nhà cung cấp D,Ghi chú cho sản phẩm 895
+896,SP0896,Sản phẩm mẫu số 896,Vật liệu xây dựng,190,333548,53537421,Nhà cung cấp A,Ghi chú cho sản phẩm 896
+897,SP0897,Sản phẩm mẫu số 897,Nông sản,5,25118,488037768,Nhà cung cấp B,Ghi chú cho sản phẩm 897
+898,SP0898,Sản phẩm mẫu số 898,Thực phẩm,983,353819,486475234,Nhà cung cấp C,Ghi chú cho sản phẩm 898
+899,SP0899,Sản phẩm mẫu số 899,Dược phẩm,771,255458,481741697,Nhà cung cấp D,Ghi chú cho sản phẩm 899
+900,SP0900,Sản phẩm mẫu số 900,Hóa chất,137,113936,222481595,Nhà cung cấp A,Ghi chú cho sản phẩm 900
+901,SP0901,Sản phẩm mẫu số 901,Vật liệu xây dựng,635,386941,11087400,Nhà cung cấp B,Ghi chú cho sản phẩm 901
+902,SP0902,Sản phẩm mẫu số 902,Nông sản,591,289511,134454585,Nhà cung cấp C,Ghi chú cho sản phẩm 902
+903,SP0903,Sản phẩm mẫu số 903,Thực phẩm,116,223170,131420367,Nhà cung cấp D,Ghi chú cho sản phẩm 903
+904,SP0904,Sản phẩm mẫu số 904,Dược phẩm,522,207799,220133344,Nhà cung cấp A,Ghi chú cho sản phẩm 904
+905,SP0905,Sản phẩm mẫu số 905,Hóa chất,226,498353,151870127,Nhà cung cấp B,Ghi chú cho sản phẩm 905
+906,SP0906,Sản phẩm mẫu số 906,Vật liệu xây dựng,136,358808,331174946,Nhà cung cấp C,Ghi chú cho sản phẩm 906
+907,SP0907,Sản phẩm mẫu số 907,Nông sản,243,185331,208477453,Nhà cung cấp D,Ghi chú cho sản phẩm 907
+908,SP0908,Sản phẩm mẫu số 908,Thực phẩm,888,431913,496252020,Nhà cung cấp A,Ghi chú cho sản phẩm 908
+909,SP0909,Sản phẩm mẫu số 909,Dược phẩm,532,395835,127849839,Nhà cung cấp B,Ghi chú cho sản phẩm 909
+910,SP0910,Sản phẩm mẫu số 910,Hóa chất,217,60552,205948900,Nhà cung cấp C,Ghi chú cho sản phẩm 910
+911,SP0911,Sản phẩm mẫu số 911,Vật liệu xây dựng,396,68452,102870076,Nhà cung cấp D,Ghi chú cho sản phẩm 911
+912,SP0912,Sản phẩm mẫu số 912,Nông sản,350,121998,375626035,Nhà cung cấp A,Ghi chú cho sản phẩm 912
+913,SP0913,Sản phẩm mẫu số 913,Thực phẩm,471,316927,133635405,Nhà cung cấp B,Ghi chú cho sản phẩm 913
+914,SP0914,Sản phẩm mẫu số 914,Dược phẩm,92,304359,379405554,Nhà cung cấp C,Ghi chú cho sản phẩm 914
+915,SP0915,Sản phẩm mẫu số 915,Hóa chất,832,115113,405832446,Nhà cung cấp D,Ghi chú cho sản phẩm 915
+916,SP0916,Sản phẩm mẫu số 916,Vật liệu xây dựng,124,57778,152172236,Nhà cung cấp A,Ghi chú cho sản phẩm 916
+917,SP0917,Sản phẩm mẫu số 917,Nông sản,505,155667,476742788,Nhà cung cấp B,Ghi chú cho sản phẩm 917
+918,SP0918,Sản phẩm mẫu số 918,Thực phẩm,953,367289,348886581,Nhà cung cấp C,Ghi chú cho sản phẩm 918
+919,SP0919,Sản phẩm mẫu số 919,Dược phẩm,100,408359,366811133,Nhà cung cấp D,Ghi chú cho sản phẩm 919
+920,SP0920,Sản phẩm mẫu số 920,Hóa chất,208,160328,72646394,Nhà cung cấp A,Ghi chú cho sản phẩm 920
+921,SP0921,Sản phẩm mẫu số 921,Vật liệu xây dựng,295,187255,259418734,Nhà cung cấp B,Ghi chú cho sản phẩm 921
+922,SP0922,Sản phẩm mẫu số 922,Nông sản,912,364903,461059909,Nhà cung cấp C,Ghi chú cho sản phẩm 922
+923,SP0923,Sản phẩm mẫu số 923,Thực phẩm,283,131626,32871136,Nhà cung cấp D,Ghi chú cho sản phẩm 923
+924,SP0924,Sản phẩm mẫu số 924,Dược phẩm,395,321636,198067096,Nhà cung cấp A,Ghi chú cho sản phẩm 924
+925,SP0925,Sản phẩm mẫu số 925,Hóa chất,48,198455,404491849,Nhà cung cấp B,Ghi chú cho sản phẩm 925
+926,SP0926,Sản phẩm mẫu số 926,Vật liệu xây dựng,88,226879,379471777,Nhà cung cấp C,Ghi chú cho sản phẩm 926
+927,SP0927,Sản phẩm mẫu số 927,Nông sản,74,453651,70623834,Nhà cung cấp D,Ghi chú cho sản phẩm 927
+928,SP0928,Sản phẩm mẫu số 928,Thực phẩm,961,322421,227178486,Nhà cung cấp A,Ghi chú cho sản phẩm 928
+929,SP0929,Sản phẩm mẫu số 929,Dược phẩm,143,401978,253606800,Nhà cung cấp B,Ghi chú cho sản phẩm 929
+930,SP0930,Sản phẩm mẫu số 930,Hóa chất,120,347618,248700562,Nhà cung cấp C,Ghi chú cho sản phẩm 930
+931,SP0931,Sản phẩm mẫu số 931,Vật liệu xây dựng,380,179156,224485776,Nhà cung cấp D,Ghi chú cho sản phẩm 931
+932,SP0932,Sản phẩm mẫu số 932,Nông sản,735,144785,173210816,Nhà cung cấp A,Ghi chú cho sản phẩm 932
+933,SP0933,Sản phẩm mẫu số 933,Thực phẩm,89,396315,308470474,Nhà cung cấp B,Ghi chú cho sản phẩm 933
+934,SP0934,Sản phẩm mẫu số 934,Dược phẩm,131,484516,208978512,Nhà cung cấp C,Ghi chú cho sản phẩm 934
+935,SP0935,Sản phẩm mẫu số 935,Hóa chất,384,212754,431042919,Nhà cung cấp D,Ghi chú cho sản phẩm 935
+936,SP0936,Sản phẩm mẫu số 936,Vật liệu xây dựng,693,203728,322414594,Nhà cung cấp A,Ghi chú cho sản phẩm 936
+937,SP0937,Sản phẩm mẫu số 937,Nông sản,681,67729,373844596,Nhà cung cấp B,Ghi chú cho sản phẩm 937
+938,SP0938,Sản phẩm mẫu số 938,Thực phẩm,775,402967,453682065,Nhà cung cấp C,Ghi chú cho sản phẩm 938
+939,SP0939,Sản phẩm mẫu số 939,Dược phẩm,110,388275,77654003,Nhà cung cấp D,Ghi chú cho sản phẩm 939
+940,SP0940,Sản phẩm mẫu số 940,Hóa chất,477,359616,432366012,Nhà cung cấp A,Ghi chú cho sản phẩm 940
+941,SP0941,Sản phẩm mẫu số 941,Vật liệu xây dựng,334,313830,115151768,Nhà cung cấp B,Ghi chú cho sản phẩm 941
+942,SP0942,Sản phẩm mẫu số 942,Nông sản,380,319211,79030567,Nhà cung cấp C,Ghi chú cho sản phẩm 942
+943,SP0943,Sản phẩm mẫu số 943,Thực phẩm,34,312430,178782831,Nhà cung cấp D,Ghi chú cho sản phẩm 943
+944,SP0944,Sản phẩm mẫu số 944,Dược phẩm,605,41301,211942123,Nhà cung cấp A,Ghi chú cho sản phẩm 944
+945,SP0945,Sản phẩm mẫu số 945,Hóa chất,657,498610,159512918,Nhà cung cấp B,Ghi chú cho sản phẩm 945
+946,SP0946,Sản phẩm mẫu số 946,Vật liệu xây dựng,172,22069,26339128,Nhà cung cấp C,Ghi chú cho sản phẩm 946
+947,SP0947,Sản phẩm mẫu số 947,Nông sản,48,285890,117502047,Nhà cung cấp D,Ghi chú cho sản phẩm 947
+948,SP0948,Sản phẩm mẫu số 948,Thực phẩm,126,333823,439594074,Nhà cung cấp A,Ghi chú cho sản phẩm 948
+949,SP0949,Sản phẩm mẫu số 949,Dược phẩm,794,486618,129967696,Nhà cung cấp B,Ghi chú cho sản phẩm 949
+950,SP0950,Sản phẩm mẫu số 950,Hóa chất,323,184075,359974904,Nhà cung cấp C,Ghi chú cho sản phẩm 950
+951,SP0951,Sản phẩm mẫu số 951,Vật liệu xây dựng,912,66965,139306287,Nhà cung cấp D,Ghi chú cho sản phẩm 951
+952,SP0952,Sản phẩm mẫu số 952,Nông sản,569,215351,206253433,Nhà cung cấp A,Ghi chú cho sản phẩm 952
+953,SP0953,Sản phẩm mẫu số 953,Thực phẩm,657,42863,238533046,Nhà cung cấp B,Ghi chú cho sản phẩm 953
+954,SP0954,Sản phẩm mẫu số 954,Dược phẩm,732,137781,135767683,Nhà cung cấp C,Ghi chú cho sản phẩm 954
+955,SP0955,Sản phẩm mẫu số 955,Hóa chất,419,127442,261877275,Nhà cung cấp D,Ghi chú cho sản phẩm 955
+956,SP0956,Sản phẩm mẫu số 956,Vật liệu xây dựng,139,412726,481654198,Nhà cung cấp A,Ghi chú cho sản phẩm 956
+957,SP0957,Sản phẩm mẫu số 957,Nông sản,408,64015,151225774,Nhà cung cấp B,Ghi chú cho sản phẩm 957
+958,SP0958,Sản phẩm mẫu số 958,Thực phẩm,731,124914,146593052,Nhà cung cấp C,Ghi chú cho sản phẩm 958
+959,SP0959,Sản phẩm mẫu số 959,Dược phẩm,894,16308,456013710,Nhà cung cấp D,Ghi chú cho sản phẩm 959
+960,SP0960,Sản phẩm mẫu số 960,Hóa chất,655,61942,131187944,Nhà cung cấp A,Ghi chú cho sản phẩm 960
+961,SP0961,Sản phẩm mẫu số 961,Vật liệu xây dựng,431,173055,226442704,Nhà cung cấp B,Ghi chú cho sản phẩm 961
+962,SP0962,Sản phẩm mẫu số 962,Nông sản,664,351570,431863142,Nhà cung cấp C,Ghi chú cho sản phẩm 962
+963,SP0963,Sản phẩm mẫu số 963,Thực phẩm,704,444773,238001462,Nhà cung cấp D,Ghi chú cho sản phẩm 963
+964,SP0964,Sản phẩm mẫu số 964,Dược phẩm,419,445396,23069855,Nhà cung cấp A,Ghi chú cho sản phẩm 964
+965,SP0965,Sản phẩm mẫu số 965,Hóa chất,783,440031,329180970,Nhà cung cấp B,Ghi chú cho sản phẩm 965
+966,SP0966,Sản phẩm mẫu số 966,Vật liệu xây dựng,942,84890,19981318,Nhà cung cấp C,Ghi chú cho sản phẩm 966
+967,SP0967,Sản phẩm mẫu số 967,Nông sản,726,247446,456119445,Nhà cung cấp D,Ghi chú cho sản phẩm 967
+968,SP0968,Sản phẩm mẫu số 968,Thực phẩm,762,453043,92736982,Nhà cung cấp A,Ghi chú cho sản phẩm 968
+969,SP0969,Sản phẩm mẫu số 969,Dược phẩm,211,464425,2203671,Nhà cung cấp B,Ghi chú cho sản phẩm 969
+970,SP0970,Sản phẩm mẫu số 970,Hóa chất,375,57107,131007632,Nhà cung cấp C,Ghi chú cho sản phẩm 970
+971,SP0971,Sản phẩm mẫu số 971,Vật liệu xây dựng,735,53141,260065917,Nhà cung cấp D,Ghi chú cho sản phẩm 971
+972,SP0972,Sản phẩm mẫu số 972,Nông sản,969,173720,490163715,Nhà cung cấp A,Ghi chú cho sản phẩm 972
+973,SP0973,Sản phẩm mẫu số 973,Thực phẩm,844,304288,365690752,Nhà cung cấp B,Ghi chú cho sản phẩm 973
+974,SP0974,Sản phẩm mẫu số 974,Dược phẩm,442,105470,491325152,Nhà cung cấp C,Ghi chú cho sản phẩm 974
+975,SP0975,Sản phẩm mẫu số 975,Hóa chất,620,212125,252669099,Nhà cung cấp D,Ghi chú cho sản phẩm 975
+976,SP0976,Sản phẩm mẫu số 976,Vật liệu xây dựng,343,30591,163473195,Nhà cung cấp A,Ghi chú cho sản phẩm 976
+977,SP0977,Sản phẩm mẫu số 977,Nông sản,849,253411,354085863,Nhà cung cấp B,Ghi chú cho sản phẩm 977
+978,SP0978,Sản phẩm mẫu số 978,Thực phẩm,325,413333,276668742,Nhà cung cấp C,Ghi chú cho sản phẩm 978
+979,SP0979,Sản phẩm mẫu số 979,Dược phẩm,667,455319,242741212,Nhà cung cấp D,Ghi chú cho sản phẩm 979
+980,SP0980,Sản phẩm mẫu số 980,Hóa chất,155,57514,155360079,Nhà cung cấp A,Ghi chú cho sản phẩm 980
+981,SP0981,Sản phẩm mẫu số 981,Vật liệu xây dựng,536,427957,66645741,Nhà cung cấp B,Ghi chú cho sản phẩm 981
+982,SP0982,Sản phẩm mẫu số 982,Nông sản,71,465855,429978294,Nhà cung cấp C,Ghi chú cho sản phẩm 982
+983,SP0983,Sản phẩm mẫu số 983,Thực phẩm,746,424868,83873884,Nhà cung cấp D,Ghi chú cho sản phẩm 983
+984,SP0984,Sản phẩm mẫu số 984,Dược phẩm,31,315094,365679691,Nhà cung cấp A,Ghi chú cho sản phẩm 984
+985,SP0985,Sản phẩm mẫu số 985,Hóa chất,557,472605,397032726,Nhà cung cấp B,Ghi chú cho sản phẩm 985
+986,SP0986,Sản phẩm mẫu số 986,Vật liệu xây dựng,967,449580,150132873,Nhà cung cấp C,Ghi chú cho sản phẩm 986
+987,SP0987,Sản phẩm mẫu số 987,Nông sản,713,147930,292902898,Nhà cung cấp D,Ghi chú cho sản phẩm 987
+988,SP0988,Sản phẩm mẫu số 988,Thực phẩm,559,384681,252724336,Nhà cung cấp A,Ghi chú cho sản phẩm 988
+989,SP0989,Sản phẩm mẫu số 989,Dược phẩm,319,121655,316767776,Nhà cung cấp B,Ghi chú cho sản phẩm 989
+990,SP0990,Sản phẩm mẫu số 990,Hóa chất,681,105694,415392333,Nhà cung cấp C,Ghi chú cho sản phẩm 990
+991,SP0991,Sản phẩm mẫu số 991,Vật liệu xây dựng,96,240413,243034988,Nhà cung cấp D,Ghi chú cho sản phẩm 991
+992,SP0992,Sản phẩm mẫu số 992,Nông sản,204,253632,75263763,Nhà cung cấp A,Ghi chú cho sản phẩm 992
+993,SP0993,Sản phẩm mẫu số 993,Thực phẩm,238,374794,445616588,Nhà cung cấp B,Ghi chú cho sản phẩm 993
+994,SP0994,Sản phẩm mẫu số 994,Dược phẩm,231,404048,35279387,Nhà cung cấp C,Ghi chú cho sản phẩm 994
+995,SP0995,Sản phẩm mẫu số 995,Hóa chất,242,78504,454234412,Nhà cung cấp D,Ghi chú cho sản phẩm 995
+996,SP0996,Sản phẩm mẫu số 996,Vật liệu xây dựng,125,296571,219828836,Nhà cung cấp A,Ghi chú cho sản phẩm 996
+997,SP0997,Sản phẩm mẫu số 997,Nông sản,973,27595,231906915,Nhà cung cấp B,Ghi chú cho sản phẩm 997
+998,SP0998,Sản phẩm mẫu số 998,Thực phẩm,921,414230,253640164,Nhà cung cấp C,Ghi chú cho sản phẩm 998
+999,SP0999,Sản phẩm mẫu số 999,Dược phẩm,775,442300,338801362,Nhà cung cấp D,Ghi chú cho sản phẩm 999
+1000,SP1000,Sản phẩm mẫu số 1000,Hóa chất,973,169193,316530085,Nhà cung cấp A,Ghi chú cho sản phẩm 1000

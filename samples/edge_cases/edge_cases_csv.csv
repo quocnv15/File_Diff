@@ -1,0 +1,8 @@
+STT,Mã SP,Tên sản phẩm,Mô tả,Số lượng,Đơn giá,Thành tiền,Ghi chú
+1,SP001,Sản phẩm bình thường,Mô tả đầy đủ,100,50000,5000000,Bình thường
+2,SP002,Sản phẩm thiếu thông tin,,,,,Thiếu dữ liệu
+3,SP003,Sản phẩm ký tự đặc biệt !@#$%^&*(),Mô tả có dấu: Nguyễn Văn A,5.5,33333.33,183333.32,Đặc biệt
+4,,Sản phẩm không có mã,Sản phẩm thiếu mã,-10,100000,-1000000,Trả hàng
+5,SP005,Sản phẩm với số 0,Kiểm tra giá trị 0,0,0,0,Giá trị bằng 0
+6,SP006,Sản phẩm có dấu tiếng Việt,"Sản phẩm: Áo Đầm, Váy Công Sở",25,250000,6250000,Tiếng Việt
+7,SP007,Sản phẩm dài,Tên sản phẩm rất dài để kiểm tra xử lý văn bản dài trong file CSV,1,1000000,1000000,Dài
