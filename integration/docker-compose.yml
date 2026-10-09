@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  # Backend Service
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: file-comparison-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backend:/app
+      - ./storage:/app/storage
+      - ./config/.env:/app/.env
+    environment:
+      - ENVIRONMENT=development
+      - DEBUG=true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - file-comparison-network
+
+  # Frontend Service
+  frontend:
+    image: nginx:alpine
+    container_name: file-comparison-frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - ../frontend:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - file-comparison-network
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: file-comparison-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    networks:
+      - file-comparison-network
+
+  # Volume for shared storage
+  storage:
+    image: busybox
+    container_name: file-comparison-storage
+    volumes:
+      - storage_data:/app/storage
+
+volumes:
+  redis_data:
+  storage_data:
+
+networks:
+  file-comparison-network:
+    driver: bridge

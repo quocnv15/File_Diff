@@ -1,0 +1,6659 @@
+{
+  "timestamp": "2025-10-15T21:56:35.430418",
+  "total_components": 496,
+  "components": [
+    {
+      "name": "check_response_structure",
+      "type": "function",
+      "file_path": "check_response_structure.py",
+      "line_number": 9,
+      "complexity": 4,
+      "dependencies": [
+        "print",
+        "get",
+        "len",
+        "list",
+        "keys",
+        "json",
+        "dumps",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "CodeComponent",
+      "type": "class",
+      "file_path": "doc_mapper.py",
+      "line_number": 22,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "DocumentationMapper",
+      "type": "class",
+      "file_path": "doc_mapper.py",
+      "line_number": 33,
+      "complexity": 60,
+      "dependencies": [
+        "walk",
+        "set",
+        "save_mappings",
+        "append",
+        "upper",
+        "count",
+        "strftime",
+        "open",
+        "split",
+        "reversed",
+        "isoformat",
+        "CodeComponent",
+        "defaultdict",
+        "now",
+        "values",
+        "items",
+        "analyze_javascript_file",
+        "rfind",
+        "str",
+        "extract_js_docstring",
+        "log",
+        "scan_python_files",
+        "extract_dependencies",
+        "generate_git_changes_doc",
+        "generate_api_documentation",
+        "bool",
+        "start",
+        "extend",
+        "print",
+        "any",
+        "get_docstring",
+        "scan_javascript_files",
+        "Path",
+        "generate_component_documentation",
+        "estimate_js_complexity",
+        "write",
+        "mkdir",
+        "parse",
+        "enumerate",
+        "dump",
+        "find",
+        "calculate_complexity",
+        "get_git_changes",
+        "join",
+        "isinstance",
+        "findall",
+        "relative_to",
+        "run",
+        "strip",
+        "analyze_python_file",
+        "group",
+        "sort",
+        "read",
+        "sum",
+        "len",
+        "finditer",
+        "list",
+        "resolve",
+        "title",
+        "glob"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 492,
+      "complexity": 7,
+      "dependencies": [
+        "run_full_analysis",
+        "extend",
+        "print",
+        "DocumentationMapper",
+        "scan_javascript_files",
+        "analyze_python_file",
+        "generate_component_documentation",
+        "len",
+        "analyze_javascript_file",
+        "get_git_changes",
+        "scan_python_files",
+        "generate_git_changes_doc"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 36,
+      "complexity": 1,
+      "dependencies": [
+        "Path",
+        "resolve",
+        "defaultdict"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "log",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 42,
+      "complexity": 1,
+      "dependencies": [
+        "strftime",
+        "print",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "scan_python_files",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 47,
+      "complexity": 2,
+      "dependencies": [
+        "extend",
+        "any",
+        "len",
+        "str",
+        "log",
+        "glob"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "scan_javascript_files",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 63,
+      "complexity": 2,
+      "dependencies": [
+        "extend",
+        "any",
+        "len",
+        "str",
+        "log",
+        "glob"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "analyze_python_file",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 78,
+      "complexity": 6,
+      "dependencies": [
+        "walk",
+        "isinstance",
+        "relative_to",
+        "append",
+        "open",
+        "read",
+        "CodeComponent",
+        "parse",
+        "calculate_complexity",
+        "str",
+        "log",
+        "extract_dependencies",
+        "get_docstring"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "analyze_javascript_file",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 119,
+      "complexity": 5,
+      "dependencies": [
+        "start",
+        "relative_to",
+        "append",
+        "group",
+        "count",
+        "open",
+        "estimate_js_complexity",
+        "read",
+        "CodeComponent",
+        "finditer",
+        "str",
+        "extract_js_docstring",
+        "log"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "calculate_complexity",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 158,
+      "complexity": 5,
+      "dependencies": [
+        "walk",
+        "isinstance",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "extract_dependencies",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 172,
+      "complexity": 5,
+      "dependencies": [
+        "walk",
+        "isinstance",
+        "set",
+        "append",
+        "list"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "extract_js_docstring",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 185,
+      "complexity": 4,
+      "dependencies": [
+        "strip",
+        "split",
+        "reversed",
+        "find",
+        "rfind"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "estimate_js_complexity",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 202,
+      "complexity": 7,
+      "dependencies": [
+        "start",
+        "enumerate",
+        "find",
+        "count"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_git_changes",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 233,
+      "complexity": 7,
+      "dependencies": [
+        "append",
+        "strip",
+        "split",
+        "log",
+        "run"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "generate_component_documentation",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 267,
+      "complexity": 8,
+      "dependencies": [
+        "extend",
+        "append",
+        "strip",
+        "title",
+        "strftime",
+        "sort",
+        "sum",
+        "items",
+        "len",
+        "now",
+        "defaultdict",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "generate_api_documentation",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 329,
+      "complexity": 6,
+      "dependencies": [
+        "findall",
+        "extend",
+        "relative_to",
+        "upper",
+        "strftime",
+        "open",
+        "read",
+        "list",
+        "log",
+        "now",
+        "join",
+        "glob"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "save_mappings",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 372,
+      "complexity": 2,
+      "dependencies": [
+        "open",
+        "isoformat",
+        "mkdir",
+        "len",
+        "dump",
+        "log",
+        "now",
+        "bool"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run_full_analysis",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 399,
+      "complexity": 7,
+      "dependencies": [
+        "save_mappings",
+        "extend",
+        "any",
+        "analyze_python_file",
+        "scan_javascript_files",
+        "open",
+        "generate_component_documentation",
+        "write",
+        "mkdir",
+        "get_git_changes",
+        "values",
+        "len",
+        "analyze_javascript_file",
+        "log",
+        "scan_python_files",
+        "generate_git_changes_doc",
+        "generate_api_documentation"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "generate_git_changes_doc",
+      "type": "function",
+      "file_path": "doc_mapper.py",
+      "line_number": 446,
+      "complexity": 7,
+      "dependencies": [
+        "extend",
+        "append",
+        "strftime",
+        "len",
+        "now",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ProjectRunner",
+      "type": "class",
+      "file_path": "run_project.py",
+      "line_number": 15,
+      "complexity": 53,
+      "dependencies": [
+        "iter",
+        "terminate",
+        "open",
+        "Thread",
+        "split",
+        "signal",
+        "startswith",
+        "Popen",
+        "check_prerequisites",
+        "input",
+        "kill",
+        "lower",
+        "str",
+        "wait",
+        "kill_existing_servers",
+        "sleep",
+        "start",
+        "print",
+        "exists",
+        "run_tests",
+        "Path",
+        "cleanup",
+        "process_iter",
+        "join",
+        "strip",
+        "Exception",
+        "exit",
+        "run"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 388,
+      "complexity": 11,
+      "dependencies": [
+        "print",
+        "run_tests",
+        "ProjectRunner",
+        "run_backend",
+        "lower",
+        "signal",
+        "len",
+        "check_prerequisites",
+        "run_frontend",
+        "run",
+        "cleanup"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 16,
+      "complexity": 1,
+      "dependencies": [
+        "Path"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "check_prerequisites",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 22,
+      "complexity": 6,
+      "dependencies": [
+        "print",
+        "exists"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run_backend",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 60,
+      "complexity": 10,
+      "dependencies": [
+        "print",
+        "iter",
+        "strip",
+        "exists",
+        "Popen",
+        "startswith",
+        "str",
+        "wait",
+        "Exception",
+        "kill_existing_servers",
+        "run",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run_frontend",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 119,
+      "complexity": 7,
+      "dependencies": [
+        "print",
+        "iter",
+        "wait",
+        "strip",
+        "str",
+        "Popen",
+        "kill_existing_servers",
+        "run",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run_tests",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 175,
+      "complexity": 12,
+      "dependencies": [
+        "print",
+        "strip",
+        "exists",
+        "lower",
+        "startswith",
+        "Exception",
+        "str",
+        "input",
+        "run"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run_browser",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 250,
+      "complexity": 2,
+      "dependencies": [
+        "open",
+        "print",
+        "sleep"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "cleanup",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 263,
+      "complexity": 4,
+      "dependencies": [
+        "terminate",
+        "kill",
+        "print",
+        "wait"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "signal_handler",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 277,
+      "complexity": 1,
+      "dependencies": [
+        "exit",
+        "print",
+        "cleanup"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "kill_existing_servers",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 283,
+      "complexity": 14,
+      "dependencies": [
+        "print",
+        "strip",
+        "terminate",
+        "split",
+        "wait",
+        "run",
+        "sleep",
+        "process_iter"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run",
+      "type": "function",
+      "file_path": "run_project.py",
+      "line_number": 335,
+      "complexity": 5,
+      "dependencies": [
+        "start",
+        "print",
+        "run_tests",
+        "Thread",
+        "sleep",
+        "signal",
+        "kill_existing_servers",
+        "check_prerequisites",
+        "cleanup"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_test_files",
+      "type": "function",
+      "file_path": "frontend/create_test_files.py",
+      "line_number": 11,
+      "complexity": 1,
+      "dependencies": [
+        "DataFrame",
+        "to_csv",
+        "print",
+        "to_excel"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "run_command",
+      "type": "function",
+      "file_path": "backend/run_tests.py",
+      "line_number": 12,
+      "complexity": 4,
+      "dependencies": [
+        "print",
+        "run",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "backend/run_tests.py",
+      "line_number": 34,
+      "complexity": 13,
+      "dependencies": [
+        "extend",
+        "chdir",
+        "append",
+        "print",
+        "add_argument",
+        "Path",
+        "run_command",
+        "parse_args",
+        "ArgumentParser",
+        "exit",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_structure",
+      "type": "function",
+      "file_path": "backend/simple_test.py",
+      "line_number": 9,
+      "complexity": 4,
+      "dependencies": [
+        "print",
+        "append",
+        "exists"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_sample_files",
+      "type": "function",
+      "file_path": "backend/simple_test.py",
+      "line_number": 47,
+      "complexity": 2,
+      "dependencies": [
+        "print",
+        "any",
+        "endswith",
+        "exists",
+        "listdir"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_basic_logic",
+      "type": "function",
+      "file_path": "backend/simple_test.py",
+      "line_number": 68,
+      "complexity": 8,
+      "dependencies": [
+        "compare_numbers",
+        "print",
+        "abs",
+        "max"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_project_structure",
+      "type": "function",
+      "file_path": "backend/simple_test.py",
+      "line_number": 107,
+      "complexity": 3,
+      "dependencies": [
+        "exists",
+        "print",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "backend/simple_test.py",
+      "line_number": 131,
+      "complexity": 4,
+      "dependencies": [
+        "test",
+        "print",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "compare_numbers",
+      "type": "function",
+      "file_path": "backend/simple_test.py",
+      "line_number": 74,
+      "complexity": 5,
+      "dependencies": [
+        "max",
+        "abs"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "Settings",
+      "type": "class",
+      "file_path": "backend/app/config.py",
+      "line_number": 10,
+      "complexity": 1,
+      "dependencies": [
+        "SettingsConfigDict"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_settings",
+      "type": "function",
+      "file_path": "backend/app/config.py",
+      "line_number": 83,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "create_directories",
+      "type": "function",
+      "file_path": "backend/app/config.py",
+      "line_number": 88,
+      "complexity": 4,
+      "dependencies": [
+        "dirname",
+        "makedirs",
+        "exists"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ProcessingStatus",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 11,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "FileType",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 20,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "DifferenceSeverity",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 28,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ExportFormat",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 36,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonType",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 44,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "FileInfo",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 53,
+      "complexity": 1,
+      "dependencies": [
+        "isoformat"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ProcessingOptions",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 76,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ToleranceSettings",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 88,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonOptions",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 97,
+      "complexity": 1,
+      "dependencies": [
+        "ToleranceSettings"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonSummary",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 109,
+      "complexity": 1,
+      "dependencies": [
+        "round"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "DifferenceDetail",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 123,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonResult",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 136,
+      "complexity": 1,
+      "dependencies": [
+        "isoformat"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonSummaryResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 153,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ExportOptions",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 162,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "FormattingOptions",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 174,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ExportRequest",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 183,
+      "complexity": 1,
+      "dependencies": [
+        "ExportOptions"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ExportResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 191,
+      "complexity": 1,
+      "dependencies": [
+        "isoformat"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "FileUploadResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 209,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "FileProcessResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 215,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "CompareFilesRequest",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 221,
+      "complexity": 1,
+      "dependencies": [
+        "ComparisonOptions"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "CompareFilesResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 228,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "ValidationError",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 234,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "APIError",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 241,
+      "complexity": 1,
+      "dependencies": [
+        "isoformat"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "HealthResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 255,
+      "complexity": 1,
+      "dependencies": [
+        "isoformat"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "SupportedFormat",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 271,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "SupportedFormatsResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 280,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "FileValidationRequest",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 286,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "FileValidationResponse",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 294,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "StatisticsCard",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 303,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "TableData",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 310,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "TableRow",
+      "type": "class",
+      "file_path": "backend/app/models.py",
+      "line_number": 317,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "round_accuracy_rate",
+      "type": "function",
+      "file_path": "backend/app/models.py",
+      "line_number": 119,
+      "complexity": 1,
+      "dependencies": [
+        "round"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "create_application",
+      "type": "function",
+      "file_path": "backend/app/main.py",
+      "line_number": 58,
+      "complexity": 1,
+      "dependencies": [
+        "setup_events",
+        "setup_routes",
+        "setup_middleware",
+        "setup_exception_handlers",
+        "FastAPI"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_middleware",
+      "type": "function",
+      "file_path": "backend/app/main.py",
+      "line_number": 85,
+      "complexity": 2,
+      "dependencies": [
+        "middleware",
+        "add_middleware"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_exception_handlers",
+      "type": "function",
+      "file_path": "backend/app/main.py",
+      "line_number": 105,
+      "complexity": 1,
+      "dependencies": [
+        "exception_handler",
+        "getattr",
+        "JSONResponse",
+        "isoformat",
+        "error",
+        "str",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_routes",
+      "type": "function",
+      "file_path": "backend/app/main.py",
+      "line_number": 161,
+      "complexity": 10,
+      "dependencies": [
+        "insert",
+        "error",
+        "HealthResponse",
+        "now",
+        "get",
+        "str",
+        "disk_usage",
+        "info",
+        "virtual_memory",
+        "int",
+        "exists",
+        "cpu_percent",
+        "time",
+        "dirname",
+        "round",
+        "include_router",
+        "abspath",
+        "statvfs",
+        "warning"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_events",
+      "type": "function",
+      "file_path": "backend/app/main.py",
+      "line_number": 284,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "get_storage_path",
+      "type": "function",
+      "file_path": "backend/app/dependencies.py",
+      "line_number": 104,
+      "complexity": 1,
+      "dependencies": [
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_file_extension",
+      "type": "function",
+      "file_path": "backend/app/dependencies.py",
+      "line_number": 133,
+      "complexity": 1,
+      "dependencies": [
+        "split",
+        "lower"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "is_supported_file",
+      "type": "function",
+      "file_path": "backend/app/dependencies.py",
+      "line_number": 138,
+      "complexity": 2,
+      "dependencies": [
+        "get_file_extension"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "DataComparator",
+      "type": "class",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 21,
+      "complexity": 38,
+      "dependencies": [
+        "uuid4",
+        "append",
+        "_extract_table_data",
+        "_perform_comparison",
+        "min",
+        "_apply_field_mapping",
+        "error",
+        "max",
+        "now",
+        "get",
+        "_compare_numbers",
+        "lower",
+        "ComparisonSummary",
+        "update",
+        "items",
+        "_get_max_severity",
+        "str",
+        "info",
+        "_is_numeric",
+        "__init__",
+        "time",
+        "_get_field_tolerance",
+        "_determine_severity",
+        "_parse_numeric",
+        "dict",
+        "_create_difference_detail",
+        "DifferenceDetail",
+        "strip",
+        "abs",
+        "_compare_rows",
+        "zip",
+        "round",
+        "DifferenceSeverity",
+        "range",
+        "ComparisonFailedError",
+        "len",
+        "_calculate_percentage_difference",
+        "_normalize_value",
+        "super",
+        "_values_match"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 24,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_extract_table_data",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 74,
+      "complexity": 4,
+      "dependencies": [
+        "error",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_values_match",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 239,
+      "complexity": 9,
+      "dependencies": [
+        "strip",
+        "_is_numeric",
+        "_compare_numbers",
+        "lower",
+        "_get_field_tolerance",
+        "error",
+        "str",
+        "_parse_numeric"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_get_field_tolerance",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 268,
+      "complexity": 3,
+      "dependencies": [
+        "items",
+        "lower"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_create_difference_detail",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 280,
+      "complexity": 6,
+      "dependencies": [
+        "_is_numeric",
+        "DifferenceDetail",
+        "abs",
+        "DifferenceSeverity",
+        "_determine_severity",
+        "_calculate_percentage_difference",
+        "error",
+        "str",
+        "_parse_numeric"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_get_max_severity",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 317,
+      "complexity": 4,
+      "dependencies": [
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_apply_field_mapping",
+      "type": "function",
+      "file_path": "backend/comparators/data_comparator.py",
+      "line_number": 336,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "DiffAnalyzer",
+      "type": "class",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 14,
+      "complexity": 45,
+      "dependencies": [
+        "append",
+        "isoformat",
+        "_is_numeric_difference",
+        "categorize_differences",
+        "_generate_summary",
+        "error",
+        "max",
+        "now",
+        "get",
+        "get_field_analysis",
+        "_get_top_issues",
+        "values",
+        "_get_max_severity",
+        "items",
+        "update",
+        "str",
+        "generate_recommendations",
+        "sorted",
+        "join",
+        "analyze_differences",
+        "sum",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 17,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": false
+    },
+    {
+      "name": "analyze_differences",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 25,
+      "complexity": 7,
+      "dependencies": [
+        "get",
+        "values",
+        "sum",
+        "len",
+        "_generate_summary",
+        "error",
+        "str"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_generate_summary",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 74,
+      "complexity": 10,
+      "dependencies": [
+        "append",
+        "get",
+        "error",
+        "max",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "categorize_differences",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 113,
+      "complexity": 4,
+      "dependencies": [
+        "append",
+        "error",
+        "str"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_field_analysis",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 134,
+      "complexity": 8,
+      "dependencies": [
+        "append",
+        "_is_numeric_difference",
+        "sum",
+        "_get_max_severity",
+        "items",
+        "len",
+        "error",
+        "str",
+        "update",
+        "max"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_is_numeric_difference",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 186,
+      "complexity": 2,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "_get_max_severity",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 190,
+      "complexity": 4,
+      "dependencies": [
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "generate_recommendations",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 209,
+      "complexity": 12,
+      "dependencies": [
+        "append",
+        "get",
+        "get_field_analysis",
+        "categorize_differences",
+        "items",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_comparison_report",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 250,
+      "complexity": 2,
+      "dependencies": [
+        "analyze_differences",
+        "get_field_analysis",
+        "isoformat",
+        "_get_top_issues",
+        "categorize_differences",
+        "error",
+        "str",
+        "now",
+        "generate_recommendations"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_get_top_issues",
+      "type": "function",
+      "file_path": "backend/comparators/diff_analyzer.py",
+      "line_number": 276,
+      "complexity": 4,
+      "dependencies": [
+        "append",
+        "sorted",
+        "error",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "BaseComparator",
+      "type": "class",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 14,
+      "complexity": 24,
+      "dependencies": [
+        "isinstance",
+        "any",
+        "strip",
+        "abs",
+        "float",
+        "get_process_logger",
+        "lower",
+        "str",
+        "replace",
+        "max"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 17,
+      "complexity": 1,
+      "dependencies": [
+        "get_process_logger"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_normalize_value",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 40,
+      "complexity": 4,
+      "dependencies": [
+        "isinstance",
+        "strip",
+        "float",
+        "lower",
+        "str"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_is_numeric",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 51,
+      "complexity": 2,
+      "dependencies": [
+        "float"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_numeric",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 59,
+      "complexity": 3,
+      "dependencies": [
+        "replace",
+        "isinstance",
+        "strip",
+        "float"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_compare_numbers",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 70,
+      "complexity": 5,
+      "dependencies": [
+        "max",
+        "abs"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_calculate_percentage_difference",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 80,
+      "complexity": 4,
+      "dependencies": [
+        "abs"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_determine_severity",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 89,
+      "complexity": 11,
+      "dependencies": [
+        "any",
+        "lower"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_comparator_info",
+      "type": "function",
+      "file_path": "backend/comparators/base_comparator.py",
+      "line_number": 119,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_file_data",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 17,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_structured_data",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 30,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_comparison_result",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 46,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_user",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 74,
+      "complexity": 1,
+      "dependencies": [
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "temp_file",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 86,
+      "complexity": 3,
+      "dependencies": [
+        "exists",
+        "Path",
+        "open",
+        "gettempdir",
+        "write",
+        "unlink"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_logger",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 98,
+      "complexity": 1,
+      "dependencies": [
+        "Mock"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "sample_log_entries",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 109,
+      "complexity": 1,
+      "dependencies": [
+        "isoformat",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestDataFactory",
+      "type": "class",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 132,
+      "complexity": 3,
+      "dependencies": [
+        "uuid4",
+        "append",
+        "range",
+        "update",
+        "str",
+        "now",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_data_factory",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 200,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "pytest_configure",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 206,
+      "complexity": 1,
+      "dependencies": [
+        "addinivalue_line"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_excel_data",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 136,
+      "complexity": 2,
+      "dependencies": [
+        "append",
+        "range"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_csv_data",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 148,
+      "complexity": 2,
+      "dependencies": [
+        "str",
+        "append",
+        "range",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_mock_file",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 165,
+      "complexity": 1,
+      "dependencies": [
+        "uuid4",
+        "update",
+        "now",
+        "str"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_mock_comparison_result",
+      "type": "function",
+      "file_path": "backend/tests/conftest.py",
+      "line_number": 180,
+      "complexity": 1,
+      "dependencies": [
+        "uuid4",
+        "update",
+        "str"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestProcessLogger",
+      "type": "class",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 16,
+      "complexity": 4,
+      "dependencies": [
+        "object",
+        "start_process",
+        "end_process",
+        "ValueError",
+        "ProcessLogger",
+        "assert_called_once",
+        "len",
+        "log_step",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestLoggingUtilities",
+      "type": "class",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 76,
+      "complexity": 3,
+      "dependencies": [
+        "format",
+        "loads",
+        "LogRecord",
+        "Mock",
+        "assert_called_once",
+        "ColoredFormatter",
+        "patch",
+        "StructuredFormatter",
+        "log_comparison_operation",
+        "log_file_operation"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestBaseProcessor",
+      "type": "class",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 159,
+      "complexity": 5,
+      "dependencies": [
+        "stat",
+        "MockProcessor",
+        "append",
+        "validate_file",
+        "endswith",
+        "Mock",
+        "len",
+        "str",
+        "fromtimestamp",
+        "join",
+        "_create_markdown_table"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestBaseComparator",
+      "type": "class",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 239,
+      "complexity": 14,
+      "dependencies": [
+        "isinstance",
+        "_is_numeric",
+        "strip",
+        "abs",
+        "float",
+        "_compare_numbers",
+        "Mock",
+        "lower",
+        "_normalize_value",
+        "_calculate_percentage_difference",
+        "str",
+        "replace",
+        "MockComparator",
+        "_parse_numeric",
+        "max"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_method",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 19,
+      "complexity": 1,
+      "dependencies": [
+        "ProcessLogger"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_start_process",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 24,
+      "complexity": 1,
+      "dependencies": [
+        "len",
+        "start_process"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_end_process",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 33,
+      "complexity": 2,
+      "dependencies": [
+        "object",
+        "start_process",
+        "end_process",
+        "assert_called_once",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_log_step",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 47,
+      "complexity": 2,
+      "dependencies": [
+        "log_step",
+        "object",
+        "assert_called_once",
+        "start_process"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_log_error",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 59,
+      "complexity": 2,
+      "dependencies": [
+        "object",
+        "start_process",
+        "ValueError",
+        "assert_called_once",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_structured_formatter",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 79,
+      "complexity": 1,
+      "dependencies": [
+        "StructuredFormatter",
+        "LogRecord",
+        "format",
+        "loads"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_colored_formatter",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 103,
+      "complexity": 1,
+      "dependencies": [
+        "LogRecord",
+        "format",
+        "ColoredFormatter"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_operation_logging",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 125,
+      "complexity": 2,
+      "dependencies": [
+        "patch",
+        "assert_called_once",
+        "Mock",
+        "log_file_operation"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_comparison_operation_logging",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 140,
+      "complexity": 2,
+      "dependencies": [
+        "log_comparison_operation",
+        "patch",
+        "assert_called_once",
+        "Mock"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_method",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 162,
+      "complexity": 5,
+      "dependencies": [
+        "stat",
+        "MockProcessor",
+        "append",
+        "Mock",
+        "len",
+        "str",
+        "fromtimestamp",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_validate_file_extensions",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 198,
+      "complexity": 1,
+      "dependencies": [
+        "validate_file",
+        "endswith"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_create_markdown_table",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 210,
+      "complexity": 1,
+      "dependencies": [
+        "_create_markdown_table"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_create_markdown_table_empty",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 227,
+      "complexity": 1,
+      "dependencies": [
+        "_create_markdown_table"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_method",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 242,
+      "complexity": 14,
+      "dependencies": [
+        "isinstance",
+        "strip",
+        "abs",
+        "float",
+        "Mock",
+        "lower",
+        "str",
+        "replace",
+        "MockComparator",
+        "max"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_normalize_value",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 298,
+      "complexity": 1,
+      "dependencies": [
+        "_normalize_value"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_is_numeric",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 306,
+      "complexity": 1,
+      "dependencies": [
+        "_is_numeric"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_parse_numeric",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 315,
+      "complexity": 1,
+      "dependencies": [
+        "_parse_numeric"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_compare_numbers",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 323,
+      "complexity": 1,
+      "dependencies": [
+        "_compare_numbers"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_calculate_percentage_difference",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 330,
+      "complexity": 1,
+      "dependencies": [
+        "_calculate_percentage_difference"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_tolerance_settings",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 338,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "MockProcessor",
+      "type": "class",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 164,
+      "complexity": 5,
+      "dependencies": [
+        "stat",
+        "append",
+        "Mock",
+        "len",
+        "str",
+        "join",
+        "fromtimestamp"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "validate_file",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 201,
+      "complexity": 1,
+      "dependencies": [
+        "endswith"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "MockComparator",
+      "type": "class",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 244,
+      "complexity": 14,
+      "dependencies": [
+        "isinstance",
+        "strip",
+        "abs",
+        "float",
+        "Mock",
+        "lower",
+        "str",
+        "replace",
+        "max"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 165,
+      "complexity": 1,
+      "dependencies": [
+        "Mock"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_create_markdown_table",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 169,
+      "complexity": 4,
+      "dependencies": [
+        "len",
+        "str",
+        "append",
+        "join"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_extract_metadata",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 181,
+      "complexity": 2,
+      "dependencies": [
+        "stat",
+        "fromtimestamp"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 245,
+      "complexity": 1,
+      "dependencies": [
+        "Mock"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_normalize_value",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 253,
+      "complexity": 4,
+      "dependencies": [
+        "isinstance",
+        "strip",
+        "float",
+        "lower",
+        "str"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_is_numeric",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 263,
+      "complexity": 2,
+      "dependencies": [
+        "float"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_parse_numeric",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 270,
+      "complexity": 3,
+      "dependencies": [
+        "replace",
+        "isinstance",
+        "strip",
+        "float"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_compare_numbers",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 279,
+      "complexity": 5,
+      "dependencies": [
+        "max",
+        "abs"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "_calculate_percentage_difference",
+      "type": "function",
+      "file_path": "backend/tests/test_core_functionality.py",
+      "line_number": 288,
+      "complexity": 4,
+      "dependencies": [
+        "abs"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "TestFileUploadAPI",
+      "type": "class",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 24,
+      "complexity": 3,
+      "dependencies": [
+        "close",
+        "get",
+        "skipif",
+        "NamedTemporaryFile",
+        "open",
+        "write",
+        "unlink",
+        "TestClient",
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestComparisonAPI",
+      "type": "class",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 194,
+      "complexity": 2,
+      "dependencies": [
+        "AsyncMock",
+        "isinstance",
+        "get",
+        "skipif",
+        "Mock",
+        "TestClient",
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "TestHealthAPI",
+      "type": "class",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 360,
+      "complexity": 2,
+      "dependencies": [
+        "get",
+        "skipif",
+        "TestClient",
+        "patch",
+        "json"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "client",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 28,
+      "complexity": 1,
+      "dependencies": [
+        "TestClient"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_user",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 33,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "sample_excel_file",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 42,
+      "complexity": 2,
+      "dependencies": [
+        "NamedTemporaryFile",
+        "write",
+        "close",
+        "unlink"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_upload_success",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 62,
+      "complexity": 2,
+      "dependencies": [
+        "patch",
+        "open",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_upload_no_file",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 99,
+      "complexity": 1,
+      "dependencies": [
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_upload_unsupported_type",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 115,
+      "complexity": 1,
+      "dependencies": [
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_get_supported_formats",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 130,
+      "complexity": 1,
+      "dependencies": [
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_validate_file_success",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 147,
+      "complexity": 1,
+      "dependencies": [
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_process_file_success",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 167,
+      "complexity": 1,
+      "dependencies": [
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "client",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 198,
+      "complexity": 1,
+      "dependencies": [
+        "TestClient"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_user",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 203,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "sample_comparison_request",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 212,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "mock_file_data",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 230,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "test_compare_files_success",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 253,
+      "complexity": 1,
+      "dependencies": [
+        "AsyncMock",
+        "Mock",
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_compare_files_missing_ids",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 301,
+      "complexity": 1,
+      "dependencies": [
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_compare_files_same_file",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 317,
+      "complexity": 1,
+      "dependencies": [
+        "patch",
+        "json",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_get_comparison_types",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 332,
+      "complexity": 2,
+      "dependencies": [
+        "isinstance",
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "client",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 364,
+      "complexity": 1,
+      "dependencies": [
+        "TestClient"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_health_check",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 368,
+      "complexity": 2,
+      "dependencies": [
+        "patch",
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_root_endpoint",
+      "type": "function",
+      "file_path": "backend/tests/test_api_endpoints.py",
+      "line_number": 390,
+      "complexity": 1,
+      "dependencies": [
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ProcessLogger",
+      "type": "class",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 15,
+      "complexity": 7,
+      "dependencies": [
+        "info",
+        "uuid4",
+        "type",
+        "append",
+        "pop",
+        "time",
+        "round",
+        "isoformat",
+        "getLogger",
+        "update",
+        "items",
+        "error",
+        "str",
+        "warning",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "with_process_logging",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 160,
+      "complexity": 6,
+      "dependencies": [
+        "type",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "wraps",
+        "len",
+        "iscoroutinefunction",
+        "list",
+        "func",
+        "keys",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "process_context",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 214,
+      "complexity": 2,
+      "dependencies": [
+        "end_process",
+        "start_process",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_process_logger",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 230,
+      "complexity": 2,
+      "dependencies": [
+        "ProcessLogger"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "log_file_operation",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 237,
+      "complexity": 2,
+      "dependencies": [
+        "info",
+        "isoformat",
+        "now",
+        "getLogger"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "log_comparison_operation",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 253,
+      "complexity": 1,
+      "dependencies": [
+        "info",
+        "isoformat",
+        "now",
+        "getLogger"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "StructuredFormatter",
+      "type": "class",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 271,
+      "complexity": 7,
+      "dependencies": [
+        "getMessage",
+        "hasattr",
+        "isoformat",
+        "str",
+        "fromtimestamp",
+        "format_exception",
+        "dumps"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ColoredFormatter",
+      "type": "class",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 310,
+      "complexity": 2,
+      "dependencies": [
+        "formatTime",
+        "formatException",
+        "get",
+        "getMessage"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "setup_logging",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 340,
+      "complexity": 3,
+      "dependencies": [
+        "getattr",
+        "RotatingFileHandler",
+        "print",
+        "Path",
+        "StreamHandler",
+        "mkdir",
+        "getLogger",
+        "clear",
+        "setFormatter",
+        "setLevel",
+        "get_settings",
+        "ColoredFormatter",
+        "StructuredFormatter",
+        "addHandler"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 18,
+      "complexity": 1,
+      "dependencies": [
+        "getLogger"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "start_process",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 22,
+      "complexity": 1,
+      "dependencies": [
+        "info",
+        "uuid4",
+        "append",
+        "time",
+        "isoformat",
+        "items",
+        "str",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "end_process",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 52,
+      "complexity": 4,
+      "dependencies": [
+        "info",
+        "append",
+        "pop",
+        "time",
+        "round",
+        "isoformat",
+        "items",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "log_step",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 82,
+      "complexity": 2,
+      "dependencies": [
+        "info",
+        "time",
+        "round",
+        "isoformat",
+        "update",
+        "items",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "log_error",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 106,
+      "complexity": 2,
+      "dependencies": [
+        "type",
+        "time",
+        "round",
+        "isoformat",
+        "update",
+        "items",
+        "error",
+        "str",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "log_warning",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 131,
+      "complexity": 2,
+      "dependencies": [
+        "time",
+        "round",
+        "isoformat",
+        "update",
+        "items",
+        "warning",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_current_process_id",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 155,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "decorator",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 162,
+      "complexity": 6,
+      "dependencies": [
+        "type",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "wraps",
+        "len",
+        "iscoroutinefunction",
+        "list",
+        "func",
+        "keys",
+        "log_error"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "format",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 274,
+      "complexity": 7,
+      "dependencies": [
+        "getMessage",
+        "hasattr",
+        "isoformat",
+        "str",
+        "fromtimestamp",
+        "format_exception",
+        "dumps"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "format",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 322,
+      "complexity": 2,
+      "dependencies": [
+        "formatTime",
+        "formatException",
+        "get",
+        "getMessage"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "sync_wrapper",
+      "type": "function",
+      "file_path": "backend/utils/logger.py",
+      "line_number": 184,
+      "complexity": 3,
+      "dependencies": [
+        "type",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "wraps",
+        "len",
+        "list",
+        "func",
+        "keys",
+        "log_error"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "generate_file_id",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 20,
+      "complexity": 1,
+      "dependencies": [
+        "uuid4",
+        "str"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "calculate_file_hash",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 25,
+      "complexity": 1,
+      "dependencies": [
+        "hexdigest",
+        "md5"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_file_extension",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 30,
+      "complexity": 1,
+      "dependencies": [
+        "Path",
+        "lower",
+        "lstrip"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "validate_file_size",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 35,
+      "complexity": 2,
+      "dependencies": [
+        "FileSizeExceededError"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "is_supported_file",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 42,
+      "complexity": 2,
+      "dependencies": [
+        "get_file_extension"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_file_type_from_content",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 58,
+      "complexity": 1,
+      "dependencies": [
+        "get_file_extension",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "delete_file",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 106,
+      "complexity": 3,
+      "dependencies": [
+        "info",
+        "remove",
+        "error",
+        "exists"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_storage_path",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 119,
+      "complexity": 1,
+      "dependencies": [
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ensure_directory_exists",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 129,
+      "complexity": 1,
+      "dependencies": [
+        "Path",
+        "mkdir"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "cleanup_old_files",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 134,
+      "complexity": 6,
+      "dependencies": [
+        "info",
+        "exists",
+        "time",
+        "remove",
+        "listdir",
+        "isfile",
+        "getmtime",
+        "error",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "get_file_info",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 161,
+      "complexity": 2,
+      "dependencies": [
+        "stat"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "validate_file_integrity",
+      "type": "function",
+      "file_path": "backend/utils/file_utils.py",
+      "line_number": 179,
+      "complexity": 7,
+      "dependencies": [
+        "calculate_file_hash",
+        "getsize",
+        "exists",
+        "open",
+        "access",
+        "read",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "FileProcessingError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 8,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "UnsupportedFileTypeError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 16,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "FileSizeExceededError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 25,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "CorruptedFileError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 34,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ProcessingFailedError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 40,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 50,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "InvalidComparisonDataError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 58,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonFailedError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 64,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ExportError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 70,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ExportGenerationError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 78,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "InvalidExportFormatError",
+      "type": "class",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 88,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_http_exception",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 98,
+      "complexity": 3,
+      "dependencies": [
+        "HTTPException"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 10,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 18,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 27,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 36,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 42,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 52,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 60,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 66,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 72,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 80,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/utils/exceptions.py",
+      "line_number": 90,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "CSVProcessor",
+      "type": "class",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 21,
+      "complexity": 45,
+      "dependencies": [
+        "hasattr",
+        "append",
+        "count",
+        "CorruptedFileError",
+        "open",
+        "_extract_csv_data",
+        "error",
+        "_detect_line_ending",
+        "max",
+        "_create_markdown_table",
+        "iterrows",
+        "get",
+        "endswith",
+        "apply",
+        "lower",
+        "update",
+        "detect",
+        "astype",
+        "isna",
+        "tolist",
+        "str",
+        "_create_structured_data",
+        "reset_index",
+        "_format_cell_value",
+        "info",
+        "all",
+        "validate_file",
+        "__init__",
+        "exists",
+        "time",
+        "_detect_encoding",
+        "pop",
+        "_clean_dataframe",
+        "Path",
+        "_convert_to_markdown",
+        "readline",
+        "_extract_metadata",
+        "join",
+        "isinstance",
+        "stat",
+        "strip",
+        "eq",
+        "ProcessingFailedError",
+        "_detect_delimiter",
+        "read",
+        "len",
+        "read_csv",
+        "super"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 24,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "validate_file",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 92,
+      "complexity": 6,
+      "dependencies": [
+        "endswith",
+        "exists",
+        "open",
+        "lower",
+        "read",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_clean_dataframe",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 224,
+      "complexity": 3,
+      "dependencies": [
+        "all",
+        "strip",
+        "eq",
+        "apply",
+        "astype",
+        "error",
+        "reset_index"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_format_cell_value",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 244,
+      "complexity": 6,
+      "dependencies": [
+        "str",
+        "isinstance",
+        "strip",
+        "isna"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_convert_to_markdown",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 257,
+      "complexity": 5,
+      "dependencies": [
+        "append",
+        "get",
+        "pop",
+        "len",
+        "error",
+        "str",
+        "join",
+        "_create_markdown_table"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_create_structured_data",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 299,
+      "complexity": 4,
+      "dependencies": [
+        "len",
+        "append",
+        "error",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_extract_csv_metadata",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 322,
+      "complexity": 2,
+      "dependencies": [
+        "update",
+        "stat",
+        "_detect_line_ending",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_detect_line_ending",
+      "type": "function",
+      "file_path": "backend/processors/csv_processor.py",
+      "line_number": 340,
+      "complexity": 6,
+      "dependencies": [
+        "read",
+        "open",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "BaseProcessor",
+      "type": "class",
+      "file_path": "backend/processors/base_processor.py",
+      "line_number": 14,
+      "complexity": 8,
+      "dependencies": [
+        "ljust",
+        "append",
+        "isoformat",
+        "error",
+        "max",
+        "get_process_logger",
+        "end_process",
+        "str",
+        "keys",
+        "enumerate",
+        "fromtimestamp",
+        "join",
+        "stat",
+        "start_process",
+        "range",
+        "log_step",
+        "len",
+        "list",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/processors/base_processor.py",
+      "line_number": 17,
+      "complexity": 1,
+      "dependencies": [
+        "get_process_logger"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "validate_file",
+      "type": "function",
+      "file_path": "backend/processors/base_processor.py",
+      "line_number": 40,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "get_processor_info",
+      "type": "function",
+      "file_path": "backend/processors/base_processor.py",
+      "line_number": 52,
+      "complexity": 1,
+      "dependencies": [],
+      "has_docstring": true
+    },
+    {
+      "name": "_create_markdown_table",
+      "type": "function",
+      "file_path": "backend/processors/base_processor.py",
+      "line_number": 60,
+      "complexity": 7,
+      "dependencies": [
+        "ljust",
+        "append",
+        "range",
+        "len",
+        "enumerate",
+        "str",
+        "max",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_extract_metadata",
+      "type": "function",
+      "file_path": "backend/processors/base_processor.py",
+      "line_number": 97,
+      "complexity": 2,
+      "dependencies": [
+        "stat",
+        "start_process",
+        "end_process",
+        "isoformat",
+        "log_step",
+        "error",
+        "list",
+        "keys",
+        "fromtimestamp",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "PDFProcessor",
+      "type": "class",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 18,
+      "complexity": 145,
+      "dependencies": [
+        "hasattr",
+        "append",
+        "upper",
+        "_fallback_pdf_conversion",
+        "float",
+        "print_exc",
+        "CorruptedFileError",
+        "open",
+        "split",
+        "lstrip",
+        "startswith",
+        "error",
+        "search",
+        "getsize",
+        "endswith",
+        "get",
+        "_looks_like_product_description",
+        "MarkItDown",
+        "lower",
+        "_create_placeholder_markdown",
+        "convert",
+        "update",
+        "all",
+        "str",
+        "replace",
+        "bool",
+        "info",
+        "_reconstruct_columnar_table",
+        "extend",
+        "_convert_pdf_to_markdown",
+        "any",
+        "validate_file",
+        "__init__",
+        "exists",
+        "time",
+        "Path",
+        "isdigit",
+        "_parse_invoice_structure",
+        "start",
+        "_parse_markdown_to_structured_data",
+        "PdfReader",
+        "enumerate",
+        "_extract_metadata",
+        "join",
+        "debug",
+        "strip",
+        "group",
+        "_parse_single_item",
+        "ProcessingFailedError",
+        "range",
+        "_parse_columnar_data",
+        "read",
+        "len",
+        "super",
+        "extract_text",
+        "hash",
+        "warning",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 21,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "validate_file",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 79,
+      "complexity": 6,
+      "dependencies": [
+        "endswith",
+        "exists",
+        "open",
+        "lower",
+        "read",
+        "startswith",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_create_placeholder_markdown",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 171,
+      "complexity": 1,
+      "dependencies": [
+        "getsize",
+        "time",
+        "Path",
+        "str",
+        "hash"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_markdown_to_structured_data",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 210,
+      "complexity": 21,
+      "dependencies": [
+        "info",
+        "all",
+        "extend",
+        "append",
+        "strip",
+        "split",
+        "_parse_invoice_structure",
+        "lstrip",
+        "startswith",
+        "len",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_invoice_structure",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 295,
+      "complexity": 14,
+      "dependencies": [
+        "info",
+        "all",
+        "strip",
+        "upper",
+        "print_exc",
+        "_parse_columnar_data",
+        "enumerate",
+        "len",
+        "error",
+        "warning"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_looks_like_data_row",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 373,
+      "complexity": 7,
+      "dependencies": [
+        "strip",
+        "upper",
+        "any",
+        "isdigit",
+        "lower",
+        "len",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_invoice_row",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 395,
+      "complexity": 10,
+      "dependencies": [
+        "start",
+        "append",
+        "strip",
+        "group",
+        "split",
+        "lower",
+        "len",
+        "error",
+        "search",
+        "join",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_columnar_data",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 441,
+      "complexity": 5,
+      "dependencies": [
+        "info",
+        "_reconstruct_columnar_table",
+        "append",
+        "strip",
+        "any",
+        "upper",
+        "range",
+        "len",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_reconstruct_columnar_table",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 466,
+      "complexity": 32,
+      "dependencies": [
+        "info",
+        "append",
+        "isdigit",
+        "print_exc",
+        "range",
+        "lower",
+        "enumerate",
+        "len",
+        "error",
+        "warning",
+        "join",
+        "debug",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_single_item",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 577,
+      "complexity": 14,
+      "dependencies": [
+        "append",
+        "isdigit",
+        "_looks_like_product_description",
+        "lower",
+        "len",
+        "error",
+        "debug",
+        "join",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_parse_by_pattern_detection",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 629,
+      "complexity": 10,
+      "dependencies": [
+        "append",
+        "_parse_single_item",
+        "_looks_like_product_description",
+        "lower",
+        "len",
+        "error",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_looks_like_product_description",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 664,
+      "complexity": 4,
+      "dependencies": [
+        "len",
+        "lower",
+        "any",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_normalize_row_data",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 682,
+      "complexity": 17,
+      "dependencies": [
+        "append",
+        "isdigit",
+        "lower",
+        "len",
+        "enumerate",
+        "error",
+        "join",
+        "debug",
+        "_is_number"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_is_number",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 735,
+      "complexity": 2,
+      "dependencies": [
+        "replace",
+        "strip",
+        "float"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_extract_pdf_metadata",
+      "type": "function",
+      "file_path": "backend/processors/pdf_processor.py",
+      "line_number": 745,
+      "complexity": 5,
+      "dependencies": [
+        "hasattr",
+        "get",
+        "open",
+        "PdfReader",
+        "len",
+        "update",
+        "error",
+        "warning"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ExcelProcessor",
+      "type": "class",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 21,
+      "complexity": 53,
+      "dependencies": [
+        "getattr",
+        "fillna",
+        "append",
+        "_get_workbook_info",
+        "close",
+        "hasattr",
+        "min",
+        "notna",
+        "CorruptedFileError",
+        "lstrip",
+        "error",
+        "_create_markdown_table",
+        "iterrows",
+        "DataFrame",
+        "get",
+        "endswith",
+        "lower",
+        "load_workbook",
+        "ExcelFile",
+        "_extract_excel_data",
+        "dropna",
+        "update",
+        "items",
+        "isna",
+        "tolist",
+        "str",
+        "_create_structured_data",
+        "reset_index",
+        "_format_cell_value",
+        "info",
+        "all",
+        "any",
+        "validate_file",
+        "__init__",
+        "exists",
+        "time",
+        "isdigit",
+        "pop",
+        "_clean_dataframe",
+        "Path",
+        "int",
+        "_convert_to_markdown",
+        "enumerate",
+        "_extract_metadata",
+        "is_integer",
+        "join",
+        "isinstance",
+        "strip",
+        "ProcessingFailedError",
+        "range",
+        "_get_sheet_names",
+        "len",
+        "super",
+        "_process_sheet",
+        "read_excel"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 24,
+      "complexity": 1,
+      "dependencies": [
+        "__init__",
+        "super"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "validate_file",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 88,
+      "complexity": 9,
+      "dependencies": [
+        "close",
+        "exists",
+        "Path",
+        "load_workbook",
+        "lower",
+        "lstrip",
+        "error",
+        "read_excel"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_get_sheet_names",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 189,
+      "complexity": 3,
+      "dependencies": [
+        "close",
+        "endswith",
+        "load_workbook",
+        "ExcelFile",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_clean_dataframe",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 246,
+      "complexity": 13,
+      "dependencies": [
+        "all",
+        "fillna",
+        "iterrows",
+        "any",
+        "strip",
+        "min",
+        "notna",
+        "range",
+        "dropna",
+        "len",
+        "enumerate",
+        "error",
+        "str",
+        "reset_index"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_format_cell_value",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 297,
+      "complexity": 7,
+      "dependencies": [
+        "isinstance",
+        "strip",
+        "int",
+        "str",
+        "isna",
+        "is_integer"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_convert_to_markdown",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 314,
+      "complexity": 7,
+      "dependencies": [
+        "append",
+        "_create_markdown_table",
+        "get",
+        "pop",
+        "items",
+        "len",
+        "error",
+        "str",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_create_structured_data",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 361,
+      "complexity": 5,
+      "dependencies": [
+        "append",
+        "get",
+        "len",
+        "items",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_extract_excel_metadata",
+      "type": "function",
+      "file_path": "backend/processors/excel_processor.py",
+      "line_number": 384,
+      "complexity": 4,
+      "dependencies": [
+        "getattr",
+        "hasattr",
+        "close",
+        "Path",
+        "load_workbook",
+        "lower",
+        "ExcelFile",
+        "update",
+        "len",
+        "error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "_create_file_info",
+      "type": "function",
+      "file_path": "backend/api/routes/comparison.py",
+      "line_number": 449,
+      "complexity": 1,
+      "dependencies": [
+        "FileInfo",
+        "len",
+        "now",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "SimpleFileTestRunner",
+      "type": "class",
+      "file_path": "archive/tests/test_file_processing.py",
+      "line_number": 20,
+      "complexity": 22,
+      "dependencies": [
+        "ExcelProcessor",
+        "append",
+        "upper",
+        "split",
+        "lstrip",
+        "process",
+        "run_original_tests",
+        "get",
+        "lower",
+        "items",
+        "str",
+        "bool",
+        "run_organized_tests",
+        "print",
+        "sorted",
+        "exists",
+        "time",
+        "Path",
+        "test_file",
+        "print_summary",
+        "stat",
+        "PDFProcessor",
+        "sum",
+        "len",
+        "is_file",
+        "list",
+        "CSVProcessor",
+        "glob"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "archive/tests/test_file_processing.py",
+      "line_number": 23,
+      "complexity": 1,
+      "dependencies": [
+        "CSVProcessor",
+        "ExcelProcessor",
+        "Path",
+        "PDFProcessor"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "print_summary",
+      "type": "function",
+      "file_path": "archive/tests/test_file_processing.py",
+      "line_number": 140,
+      "complexity": 9,
+      "dependencies": [
+        "print",
+        "upper",
+        "split",
+        "lower",
+        "sum",
+        "items",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_logging_basic",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 16,
+      "complexity": 2,
+      "dependencies": [
+        "print",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "log_step"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_operations",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 50,
+      "complexity": 2,
+      "dependencies": [
+        "isoformat",
+        "print",
+        "log_file_operation",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_comparison_operations",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 96,
+      "complexity": 2,
+      "dependencies": [
+        "log_comparison_operation",
+        "print"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_error_logging",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 145,
+      "complexity": 3,
+      "dependencies": [
+        "print",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "ValueError",
+        "log_warning",
+        "log_error"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_nested_processes",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 186,
+      "complexity": 2,
+      "dependencies": [
+        "print",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "log_step"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_performance_logging",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 227,
+      "complexity": 2,
+      "dependencies": [
+        "print",
+        "start_process",
+        "get_process_logger",
+        "end_process",
+        "sleep"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "archive/tests/demo_logging_test.py",
+      "line_number": 262,
+      "complexity": 6,
+      "dependencies": [
+        "test_func",
+        "print",
+        "append",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "MasterTestRunner",
+      "type": "class",
+      "file_path": "archive/tests/test_master_suite.py",
+      "line_number": 24,
+      "complexity": 49,
+      "dependencies": [
+        "ExcelProcessor",
+        "append",
+        "run_cross_format_tests",
+        "upper",
+        "isoformat",
+        "lstrip",
+        "process",
+        "max",
+        "now",
+        "DataComparator",
+        "get",
+        "get_process_logger",
+        "lower",
+        "run_format_compatibility_tests",
+        "items",
+        "str",
+        "bool",
+        "print",
+        "run_edge_case_tests",
+        "exists",
+        "time",
+        "Path",
+        "generate_report",
+        "rglob",
+        "test_comparison",
+        "run_invoice_comparison_tests",
+        "log_test",
+        "isinstance",
+        "stat",
+        "test_file_processing",
+        "PDFProcessor",
+        "sum",
+        "len",
+        "is_file",
+        "run_product_comparison_tests",
+        "compare",
+        "list",
+        "CSVProcessor",
+        "run_performance_tests",
+        "title"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "archive/tests/test_master_suite.py",
+      "line_number": 27,
+      "complexity": 1,
+      "dependencies": [
+        "ExcelProcessor",
+        "get_process_logger",
+        "Path",
+        "PDFProcessor",
+        "CSVProcessor",
+        "DataComparator"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "log_test",
+      "type": "function",
+      "file_path": "archive/tests/test_master_suite.py",
+      "line_number": 47,
+      "complexity": 8,
+      "dependencies": [
+        "isinstance",
+        "print",
+        "append",
+        "upper",
+        "isoformat",
+        "items",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "generate_report",
+      "type": "function",
+      "file_path": "archive/tests/test_master_suite.py",
+      "line_number": 351,
+      "complexity": 17,
+      "dependencies": [
+        "print",
+        "upper",
+        "get",
+        "time",
+        "isoformat",
+        "sum",
+        "len",
+        "max",
+        "now",
+        "title"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComprehensiveTestRunner",
+      "type": "class",
+      "file_path": "archive/tests/test_new_samples.py",
+      "line_number": 27,
+      "complexity": 49,
+      "dependencies": [
+        "ExcelProcessor",
+        "append",
+        "upper",
+        "split",
+        "lstrip",
+        "process",
+        "max",
+        "test_invoice_comparisons",
+        "DataComparator",
+        "test_multi_table",
+        "get",
+        "get_process_logger",
+        "lower",
+        "log_test_result",
+        "items",
+        "test_performance_benchmarks",
+        "str",
+        "test_decimal_precision",
+        "bool",
+        "print",
+        "exists",
+        "time",
+        "Path",
+        "print_summary",
+        "test_edge_cases",
+        "stat",
+        "test_product_comparisons",
+        "test_file_processing",
+        "PDFProcessor",
+        "sum",
+        "len",
+        "compare",
+        "CSVProcessor"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "archive/tests/test_new_samples.py",
+      "line_number": 30,
+      "complexity": 1,
+      "dependencies": [
+        "ExcelProcessor",
+        "get_process_logger",
+        "Path",
+        "PDFProcessor",
+        "CSVProcessor",
+        "DataComparator"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "log_test_result",
+      "type": "function",
+      "file_path": "archive/tests/test_new_samples.py",
+      "line_number": 47,
+      "complexity": 5,
+      "dependencies": [
+        "items",
+        "print",
+        "append"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "print_summary",
+      "type": "function",
+      "file_path": "archive/tests/test_new_samples.py",
+      "line_number": 450,
+      "complexity": 10,
+      "dependencies": [
+        "split",
+        "items",
+        "print",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_product_comparison_excel",
+      "type": "function",
+      "file_path": "archive/tests/create_test_excel.py",
+      "line_number": 13,
+      "complexity": 2,
+      "dependencies": [
+        "DataFrame",
+        "to_excel",
+        "ExcelWriter",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_invoice_excel",
+      "type": "function",
+      "file_path": "archive/tests/create_test_excel.py",
+      "line_number": 136,
+      "complexity": 3,
+      "dependencies": [
+        "DataFrame",
+        "to_excel",
+        "ExcelWriter",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_multi_sheet_excel",
+      "type": "function",
+      "file_path": "archive/tests/create_test_excel.py",
+      "line_number": 271,
+      "complexity": 2,
+      "dependencies": [
+        "DataFrame",
+        "to_excel",
+        "ExcelWriter",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_edge_cases_excel",
+      "type": "function",
+      "file_path": "archive/tests/create_test_excel.py",
+      "line_number": 322,
+      "complexity": 1,
+      "dependencies": [
+        "DataFrame",
+        "to_excel",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_decimal_precision_excel",
+      "type": "function",
+      "file_path": "archive/tests/create_test_excel.py",
+      "line_number": 394,
+      "complexity": 1,
+      "dependencies": [
+        "DataFrame",
+        "to_excel",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonTypeTestRunner",
+      "type": "class",
+      "file_path": "archive/tests/test_comparison_types.py",
+      "line_number": 21,
+      "complexity": 27,
+      "dependencies": [
+        "ExcelProcessor",
+        "append",
+        "upper",
+        "test_same_format_comparisons",
+        "lstrip",
+        "process",
+        "test_self_comparisons",
+        "DataComparator",
+        "get",
+        "test_cross_format_comparisons",
+        "lower",
+        "items",
+        "str",
+        "cwd",
+        "print",
+        "exists",
+        "time",
+        "test_file_comparison",
+        "test_invoice_specific_options",
+        "print_summary",
+        "abs",
+        "PDFProcessor",
+        "sum",
+        "len",
+        "compare",
+        "CSVProcessor",
+        "process_file"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "archive/tests/test_comparison_types.py",
+      "line_number": 24,
+      "complexity": 1,
+      "dependencies": [
+        "cwd",
+        "ExcelProcessor",
+        "PDFProcessor",
+        "CSVProcessor",
+        "DataComparator"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "print_summary",
+      "type": "function",
+      "file_path": "archive/tests/test_comparison_types.py",
+      "line_number": 252,
+      "complexity": 10,
+      "dependencies": [
+        "print",
+        "upper",
+        "sum",
+        "items",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_health_endpoint",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 20,
+      "complexity": 4,
+      "dependencies": [
+        "print",
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_root_endpoint",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 55,
+      "complexity": 3,
+      "dependencies": [
+        "print",
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_supported_formats",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 79,
+      "complexity": 9,
+      "dependencies": [
+        "print",
+        "get",
+        "len",
+        "json",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_comparison_types",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 119,
+      "complexity": 6,
+      "dependencies": [
+        "len",
+        "print",
+        "json",
+        "get"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_validation",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 154,
+      "complexity": 10,
+      "dependencies": [
+        "print",
+        "get",
+        "startswith",
+        "json",
+        "join",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_error_handling",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 239,
+      "complexity": 7,
+      "dependencies": [
+        "isinstance",
+        "print",
+        "get",
+        "post"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_response_times",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 299,
+      "complexity": 8,
+      "dependencies": [
+        "print",
+        "total_seconds",
+        "append",
+        "get",
+        "min",
+        "sum",
+        "len",
+        "max",
+        "now"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "archive/tests/demo_api_test.py",
+      "line_number": 353,
+      "complexity": 6,
+      "dependencies": [
+        "test_func",
+        "print",
+        "append",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_product_comparison_pdf1",
+      "type": "function",
+      "file_path": "archive/tests/create_test_pdfs.py",
+      "line_number": 19,
+      "complexity": 1,
+      "dependencies": [
+        "append",
+        "build",
+        "setStyle",
+        "Spacer",
+        "getSampleStyleSheet",
+        "TableStyle",
+        "SimpleDocTemplate",
+        "Paragraph",
+        "Table",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_product_comparison_pdf2",
+      "type": "function",
+      "file_path": "archive/tests/create_test_pdfs.py",
+      "line_number": 82,
+      "complexity": 1,
+      "dependencies": [
+        "append",
+        "build",
+        "setStyle",
+        "Spacer",
+        "getSampleStyleSheet",
+        "TableStyle",
+        "SimpleDocTemplate",
+        "Paragraph",
+        "Table",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_invoice_pdf1",
+      "type": "function",
+      "file_path": "archive/tests/create_test_pdfs.py",
+      "line_number": 144,
+      "complexity": 1,
+      "dependencies": [
+        "append",
+        "build",
+        "setStyle",
+        "Spacer",
+        "getSampleStyleSheet",
+        "TableStyle",
+        "SimpleDocTemplate",
+        "Paragraph",
+        "Table",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_invoice_pdf2",
+      "type": "function",
+      "file_path": "archive/tests/create_test_pdfs.py",
+      "line_number": 225,
+      "complexity": 1,
+      "dependencies": [
+        "append",
+        "build",
+        "setStyle",
+        "Spacer",
+        "getSampleStyleSheet",
+        "TableStyle",
+        "SimpleDocTemplate",
+        "Paragraph",
+        "Table",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_multi_table_pdf",
+      "type": "function",
+      "file_path": "archive/tests/create_test_pdfs.py",
+      "line_number": 307,
+      "complexity": 1,
+      "dependencies": [
+        "append",
+        "build",
+        "setStyle",
+        "Spacer",
+        "getSampleStyleSheet",
+        "TableStyle",
+        "SimpleDocTemplate",
+        "Paragraph",
+        "Table",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_edge_case_pdf",
+      "type": "function",
+      "file_path": "archive/tests/create_test_pdfs.py",
+      "line_number": 400,
+      "complexity": 1,
+      "dependencies": [
+        "append",
+        "build",
+        "setStyle",
+        "Spacer",
+        "getSampleStyleSheet",
+        "TableStyle",
+        "SimpleDocTemplate",
+        "Paragraph",
+        "Table",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_product_comparison_csv",
+      "type": "function",
+      "file_path": "archive/tests/create_test_csv.py",
+      "line_number": 11,
+      "complexity": 3,
+      "dependencies": [
+        "open",
+        "writer",
+        "writerows",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_invoice_csv",
+      "type": "function",
+      "file_path": "archive/tests/create_test_csv.py",
+      "line_number": 46,
+      "complexity": 3,
+      "dependencies": [
+        "open",
+        "writer",
+        "writerows",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_edge_cases_csv",
+      "type": "function",
+      "file_path": "archive/tests/create_test_csv.py",
+      "line_number": 80,
+      "complexity": 2,
+      "dependencies": [
+        "open",
+        "writer",
+        "writerows",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_decimal_precision_csv",
+      "type": "function",
+      "file_path": "archive/tests/create_test_csv.py",
+      "line_number": 101,
+      "complexity": 2,
+      "dependencies": [
+        "open",
+        "writer",
+        "writerows",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_different_delimiters_csv",
+      "type": "function",
+      "file_path": "archive/tests/create_test_csv.py",
+      "line_number": 119,
+      "complexity": 3,
+      "dependencies": [
+        "open",
+        "writer",
+        "writerows",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_large_dataset_csv",
+      "type": "function",
+      "file_path": "archive/tests/create_test_csv.py",
+      "line_number": 148,
+      "complexity": 3,
+      "dependencies": [
+        "append",
+        "writer",
+        "open",
+        "range",
+        "len",
+        "writerows",
+        "randint",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "create_sample_csv_file",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 19,
+      "complexity": 2,
+      "dependencies": [
+        "print",
+        "writer",
+        "mkdtemp",
+        "open",
+        "len",
+        "writerows",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_csv_processor",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 47,
+      "complexity": 12,
+      "dependencies": [
+        "print",
+        "validate_file",
+        "rmtree",
+        "get",
+        "split",
+        "process",
+        "create_sample_csv_file",
+        "enumerate",
+        "len",
+        "str",
+        "CSVProcessor",
+        "join"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_data_comparison",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 116,
+      "complexity": 6,
+      "dependencies": [
+        "run_comparison",
+        "print",
+        "close",
+        "get",
+        "set_event_loop",
+        "new_event_loop",
+        "len",
+        "compare",
+        "run_until_complete",
+        "DataComparator"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_file_operations",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 191,
+      "complexity": 4,
+      "dependencies": [
+        "calculate_file_hash",
+        "print",
+        "generate_file_id",
+        "is_supported_file",
+        "get_file_type_from_content",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_error_handling",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 253,
+      "complexity": 5,
+      "dependencies": [
+        "print",
+        "CorruptedFileError",
+        "FileSizeExceededError",
+        "create_http_exception",
+        "UnsupportedFileTypeError"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "test_configuration",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 299,
+      "complexity": 3,
+      "dependencies": [
+        "print",
+        "get_settings",
+        "exists",
+        "create_directories"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "main",
+      "type": "function",
+      "file_path": "archive/tests/demo_file_processing_test.py",
+      "line_number": 347,
+      "complexity": 6,
+      "dependencies": [
+        "test_func",
+        "print",
+        "append",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "APIComparisonTestRunner",
+      "type": "class",
+      "file_path": "archive/tests/test_api_comparisons.py",
+      "line_number": 18,
+      "complexity": 23,
+      "dependencies": [
+        "append",
+        "upper",
+        "open",
+        "test_api_comparison",
+        "test_same_format_api_comparisons",
+        "post",
+        "test_cross_format_api_comparisons",
+        "upload_file",
+        "get",
+        "lower",
+        "str",
+        "cwd",
+        "print",
+        "exists",
+        "time",
+        "Path",
+        "print_summary",
+        "sum",
+        "len",
+        "TestClient",
+        "prepare_files",
+        "json"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "archive/tests/test_api_comparisons.py",
+      "line_number": 21,
+      "complexity": 1,
+      "dependencies": [
+        "cwd",
+        "TestClient"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "print_summary",
+      "type": "function",
+      "file_path": "archive/tests/test_api_comparisons.py",
+      "line_number": 211,
+      "complexity": 6,
+      "dependencies": [
+        "sum",
+        "print",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "ComparisonTestRunner",
+      "type": "class",
+      "file_path": "archive/tests/test_comparison_functionality.py",
+      "line_number": 21,
+      "complexity": 49,
+      "dependencies": [
+        "ExcelProcessor",
+        "append",
+        "lstrip",
+        "process",
+        "test_invoice_comparisons",
+        "DataComparator",
+        "get",
+        "test_cross_format_comparisons",
+        "lower",
+        "str",
+        "print",
+        "exists",
+        "time",
+        "Path",
+        "test_comparison",
+        "print_summary",
+        "isinstance",
+        "test_product_comparisons",
+        "abs",
+        "PDFProcessor",
+        "sum",
+        "len",
+        "test_edge_case_comparisons",
+        "compare",
+        "CSVProcessor",
+        "process_file"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "__init__",
+      "type": "function",
+      "file_path": "archive/tests/test_comparison_functionality.py",
+      "line_number": 24,
+      "complexity": 1,
+      "dependencies": [
+        "ExcelProcessor",
+        "Path",
+        "PDFProcessor",
+        "CSVProcessor",
+        "DataComparator"
+      ],
+      "has_docstring": false
+    },
+    {
+      "name": "print_summary",
+      "type": "function",
+      "file_path": "archive/tests/test_comparison_functionality.py",
+      "line_number": 296,
+      "complexity": 18,
+      "dependencies": [
+        "isinstance",
+        "print",
+        "abs",
+        "sum",
+        "len"
+      ],
+      "has_docstring": true
+    },
+    {
+      "name": "parseCSVLine",
+      "type": "function",
+      "file_path": "frontend/test_csv_fix.js",
+      "line_number": 10,
+      "complexity": 8,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateCSVData",
+      "type": "function",
+      "file_path": "frontend/create_test_files.js",
+      "line_number": 12,
+      "complexity": 7,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateLargeCSVData",
+      "type": "function",
+      "file_path": "frontend/create_test_files.js",
+      "line_number": 35,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateEdgeCaseCSV",
+      "type": "function",
+      "file_path": "frontend/create_test_files.js",
+      "line_number": 49,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateMalformedCSV",
+      "type": "function",
+      "file_path": "frontend/create_test_files.js",
+      "line_number": 64,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateEmptyAndNullCSV",
+      "type": "function",
+      "file_path": "frontend/create_test_files.js",
+      "line_number": 77,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "debounce",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 11,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "checkVisible",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 21,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "on_click",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 28,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "getCellValue",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 36,
+      "complexity": 6,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "rowComparator",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 50,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "sortColumn",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 59,
+      "complexity": 18,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "updateHeader",
+      "type": "function",
+      "file_path": "backend/venv/lib/python3.13/site-packages/coverage/htmlfiles/coverage_html.js",
+      "line_number": 697,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "parseExcelFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 9,
+      "complexity": 29,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseCSVFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 54,
+      "complexity": 50,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "detectDelimiter",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 159,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseCSVLine",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 182,
+      "complexity": 8,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "parsePDFFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 229,
+      "complexity": 9,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "loadPDFJSLibrary",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 282,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "extractTableDataFromPDFText",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 300,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parsePDFTextToData",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 346,
+      "complexity": 11,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "isHeaderOrFooter",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 382,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "extractDataFromLine",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 396,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "extractDescriptionFromLine",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 412,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "cleanText",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 428,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseNumber",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 439,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateFallbackPDFData",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 451,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 466,
+      "complexity": 15,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "validateParsedData",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 528,
+      "complexity": 5,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "formatDataForComparison",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 553,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseExcelFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 9,
+      "complexity": 29,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseCSVFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 54,
+      "complexity": 50,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parsePDFFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 229,
+      "complexity": 9,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "loadPDFJSLibrary",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 282,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseFile",
+      "type": "function",
+      "file_path": "frontend/utils/file-parsers.js",
+      "line_number": 466,
+      "complexity": 15,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "formatFileSize",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 8,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getFileName",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 21,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "debounce",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 29,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "executedFunction",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 31,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "throttle",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 44,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateId",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 60,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "isValidFileType",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 67,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "parseCSV",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 75,
+      "complexity": 5,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "jsonToCSV",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 99,
+      "complexity": 6,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getSeverityColor",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 122,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getStatusIcon",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 135,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "showNotification",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 149,
+      "complexity": 25,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "deepClone",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 203,
+      "complexity": 7,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "objectsEqual",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 220,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "roundTo",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 227,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "calculatePercentage",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 234,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getCurrentDate",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 242,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getCurrentTime",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 253,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "escapeHtml",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 264,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "unescapeHtml",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 278,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "later",
+      "type": "function",
+      "file_path": "frontend/utils/helpers.js",
+      "line_number": 32,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "handleFileSelect",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 20,
+      "complexity": 9,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "checkFilesReady",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 57,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "initializeDragAndDrop",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 76,
+      "complexity": 9,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "compareFiles",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 132,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "performComparison",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 159,
+      "complexity": 87,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "calculateStringSimilarity",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 333,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "levenshteinDistance",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 347,
+      "complexity": 7,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "displayRawData",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 378,
+      "complexity": 23,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "createDataRow",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 412,
+      "complexity": 14,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "extractDataFromStructured",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 440,
+      "complexity": 24,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "toggleRawDataSection",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 492,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "toggleRawDataView",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 505,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "exportToMarkdown",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 513,
+      "complexity": 47,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "displayResults",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 597,
+      "complexity": 40,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "populateComparisonTable",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 669,
+      "complexity": 20,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "displayDifferences",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 712,
+      "complexity": 37,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "updateDiffSummaryBadges",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 753,
+      "complexity": 25,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "exportReport",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 780,
+      "complexity": 14,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateCSVContent",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 802,
+      "complexity": 11,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "downloadFile",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 818,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generatePDFReport",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 833,
+      "complexity": 38,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "loadJSPDFLibrary",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 932,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateHTMLReport",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 946,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateHTMLReportContent",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 965,
+      "complexity": 25,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "showSuccessMessage",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1051,
+      "complexity": 8,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "toggleTheme",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1094,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getCurrentThemeMode",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1121,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "setThemeMode",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1128,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "applyTheme",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1136,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getSystemPreference",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1156,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "updateThemeUI",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1167,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "saveThemePreference",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1206,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "loadThemePreference",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1217,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "updateMetaThemeColor",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1230,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "setupSystemThemeListener",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1250,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "initTheme",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1265,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "setupThemeKeyboardShortcuts",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1286,
+      "complexity": 13,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "addThemeTransitionEffects",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1307,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getThemeInfo",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1343,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "resetThemeToSystem",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1356,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "enhancedInitTheme",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 1363,
+      "complexity": 9,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "findMatchingRow",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 183,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "compareFiles",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 132,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generatePDFReport",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 833,
+      "complexity": 38,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "loadJSPDFLibrary",
+      "type": "function",
+      "file_path": "frontend/scripts/main.js",
+      "line_number": 932,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "apiRequest",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 37,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "uploadFile",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 59,
+      "complexity": 12,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "processFile",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 83,
+      "complexity": 17,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "compareFilesApi",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 111,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "checkBackendHealth",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 139,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "processUploadedFiles",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 150,
+      "complexity": 6,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "createStatusElement",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 197,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "displayBackendResults",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 213,
+      "complexity": 27,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "displayBackendDifferences",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 256,
+      "complexity": 78,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "getSeverityIcon",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 342,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "getSeverityText",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 352,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "formatFieldValue",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 362,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "populateBackendComparisonTable",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 379,
+      "complexity": 30,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "compareFilesWithBackend",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 424,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "compareFilesFrontend",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 445,
+      "complexity": 2,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "compareFiles",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 469,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "exportBackendReport",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 503,
+      "complexity": 7,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateBackendCSVContent",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 519,
+      "complexity": 20,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateBackendPDFReport",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 536,
+      "complexity": 5,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateBackendHTMLReport",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 554,
+      "complexity": 47,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "initializeBackendIntegration",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 676,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "apiRequest",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 37,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "uploadFile",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 59,
+      "complexity": 12,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "processFile",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 83,
+      "complexity": 17,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "compareFilesApi",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 111,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "checkBackendHealth",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 139,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "processUploadedFiles",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 150,
+      "complexity": 6,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "compareFilesWithBackend",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 424,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "compareFiles",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 469,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateBackendPDFReport",
+      "type": "function",
+      "file_path": "frontend/scripts/api_integration.js",
+      "line_number": 536,
+      "complexity": 5,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "switchDiffView",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 19,
+      "complexity": 26,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateSideBySideDiff",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 68,
+      "complexity": 22,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "generateUnifiedDiff",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 109,
+      "complexity": 15,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "createDiffLine",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 130,
+      "complexity": 10,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "createUnifiedDiffLine",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 163,
+      "complexity": 23,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "formatDataItem",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 200,
+      "complexity": 6,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "compareDataItems",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 208,
+      "complexity": 30,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "highlightDifferences",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 249,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "exportDiff",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 273,
+      "complexity": 81,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "highlightDifferencesEnhanced",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 370,
+      "complexity": 5,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "navigateDiff",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 393,
+      "complexity": 13,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "scrollToDiffLine",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 415,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "highlightLine",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 423,
+      "complexity": 3,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "updateNavigationState",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 439,
+      "complexity": 8,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "searchDiff",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 450,
+      "complexity": 7,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "clearSearch",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 472,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "showSearchResults",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 483,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "hideSearchResults",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 487,
+      "complexity": 1,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "showTooltip",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 494,
+      "complexity": 7,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "hideTooltip",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 524,
+      "complexity": 4,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "createDiffLineEnhanced",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 539,
+      "complexity": 12,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "getLineTooltipMessage",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 583,
+      "complexity": 14,
+      "dependencies": null,
+      "has_docstring": false
+    },
+    {
+      "name": "generateSideBySideDiffEnhanced",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 604,
+      "complexity": 33,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "compareDataItemsEnhanced",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 661,
+      "complexity": 35,
+      "dependencies": null,
+      "has_docstring": true
+    },
+    {
+      "name": "addDiffAnimations",
+      "type": "function",
+      "file_path": "frontend/scripts/diff-visualization.js",
+      "line_number": 716,
+      "complexity": 5,
+      "dependencies": null,
+      "has_docstring": true
+    }
+  ]
+}

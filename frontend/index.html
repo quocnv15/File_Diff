@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống So Sánh File Dữ Liệu - v1.2</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600&display=swap" rel="stylesheet">
+
+    <!-- Local Font Fallback -->
+    <link rel="stylesheet" href="styles/fonts.css">
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/diff.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">📊</div>
+                <h1 class="header-title">Hệ Thống So Sánh File Dữ Liệu</h1>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme (System → Light → Dark)" aria-label="Toggle theme">☀️</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <div class="upload-area" id="upload-area-1">
+                <input type="file" id="file1" class="file-input" accept=".xlsx,.pdf,.csv">
+                <div class="upload-icon">📄</div>
+                <div class="upload-title">File 1 (Excel/PDF/CSV)</div>
+                <div class="upload-subtitle">Kéo thả file hoặc click để chọn</div>
+                <div id="file1-info" class="file-info" style="display: none;"></div>
+            </div>
+
+            <div class="upload-area" id="upload-area-2">
+                <input type="file" id="file2" class="file-input" accept=".xlsx,.pdf,.csv">
+                <div class="upload-icon">📄</div>
+                <div class="upload-title">File 2 (Excel/PDF/CSV)</div>
+                <div class="upload-subtitle">Kéo thả file hoặc click để chọn</div>
+                <div id="file2-info" class="file-info" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview-section" id="previewSection">
+            <div class="preview-panel" id="previewPanelFile1">
+                <div class="preview-header">
+                    <div class="preview-title">
+                        <span class="preview-label">File 1</span>
+                        <span id="previewFile1Name" class="preview-name">Chưa chọn</span>
+                    </div>
+                    <div id="previewFile1Status" class="preview-status">Chưa có dữ liệu</div>
+                </div>
+                <div class="preview-body" id="previewBodyFile1">
+                    <div class="preview-placeholder" id="previewPlaceholderFile1">Chưa có nội dung để hiển thị</div>
+                    <div class="markdown-preview" id="markdownPreviewFile1" aria-live="polite"></div>
+                </div>
+            </div>
+            <div class="preview-panel" id="previewPanelFile2">
+                <div class="preview-header">
+                    <div class="preview-title">
+                        <span class="preview-label">File 2</span>
+                        <span id="previewFile2Name" class="preview-name">Chưa chọn</span>
+                    </div>
+                    <div id="previewFile2Status" class="preview-status">Chưa có dữ liệu</div>
+                </div>
+                <div class="preview-body" id="previewBodyFile2">
+                    <div class="preview-placeholder" id="previewPlaceholderFile2">Chưa có nội dung để hiển thị</div>
+                    <div class="markdown-preview" id="markdownPreviewFile2" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Control Panel -->
+        <section class="control-panel">
+            <div class="control-row">
+                <button id="compareBtn" class="btn btn-primary btn-lg" disabled>
+                    🔍 So Sánh Dữ Liệu
+                </button>
+
+                <select id="comparisonType" class="form-control">
+                    <option value="products">Sản phẩm</option>
+                    <option value="invoices">Hóa đơn</option>
+                    <option value="contracts">Hợp đồng</option>
+                </select>
+            </div>
+
+            <div class="control-row">
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="exactMatch" checked>
+                        <label for="exactMatch">So sánh chính xác</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="ignoreFormat" checked>
+                        <label for="ignoreFormat">Bỏ qua định dạng số</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="checkTotal" checked>
+                        <label for="checkTotal">Kiểm tra tổng tiền</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Đang xử lý và so sánh dữ liệu...</p>
+        </div>
+
+        <!-- Results Section -->
+        <section id="results" class="results-section">
+            <!-- Enhanced Statistics Cards -->
+            <div class="enhanced-stats">
+                <div class="stat-card enhanced">
+                    <div id="totalRows" class="stat-value">0</div>
+                    <div class="stat-label">Tổng số dòng</div>
+                    <div class="stat-change neutral">
+                        <span>📊</span>
+                        <span>Tổng cộng</span>
+                    </div>
+                </div>
+                <div class="stat-card enhanced success">
+                    <div id="matchingRows" class="stat-value">0</div>
+                    <div class="stat-label">Dòng khớp</div>
+                    <div class="stat-change positive">
+                        <span>✓</span>
+                        <span id="matchingPercent">0%</span>
+                    </div>
+                </div>
+                <div class="stat-card enhanced error">
+                    <div id="differentRows" class="stat-value">0</div>
+                    <div class="stat-label">Dòng sai lệch</div>
+                    <div class="stat-change negative">
+                        <span>✗</span>
+                        <span id="differentPercent">0%</span>
+                    </div>
+                </div>
+                <div class="stat-card enhanced warning">
+                    <div id="accuracyRate" class="stat-value">0%</div>
+                    <div class="stat-label">Tỷ lệ chính xác</div>
+                    <div class="stat-change neutral">
+                        <span>🎯</span>
+                        <span>Độ tin cậy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diff Summary Badges -->
+            <div class="diff-summary-badges" id="diffSummaryBadges">
+                <div class="diff-badge added" style="display: none;">
+                    <div class="diff-badge-icon">+</div>
+                    <span id="addedCount">0</span>
+                    <span>thêm</span>
+                </div>
+                <div class="diff-badge removed" style="display: none;">
+                    <div class="diff-badge-icon">−</div>
+                    <span id="removedCount">0</span>
+                    <span>xóa</span>
+                </div>
+                <div class="diff-badge modified" style="display: none;">
+                    <div class="diff-badge-icon">±</div>
+                    <span id="modifiedCount">0</span>
+                    <span>thay đổi</span>
+                </div>
+            </div>
+
+            <!-- Enhanced Diff Visualization -->
+            <div class="diff-view-container" id="diffViewContainer" style="display: none;">
+                <div class="diff-view-header">
+                    <h3 class="diff-view-title">So Sánh Chi Tiết</h3>
+                    <div class="diff-view-controls">
+                        <button class="diff-view-btn active" onclick="switchDiffView('side-by-side')" id="sideBySideBtn">
+                            📊 Song song
+                        </button>
+                        <button class="diff-view-btn" onclick="switchDiffView('unified')" id="unifiedBtn">
+                            📄 Thống nhất
+                        </button>
+                        <button class="diff-view-btn" onclick="switchDiffView('table')" id="tableViewBtn">
+                            📋 Bảng biểu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Diff Navigation Controls -->
+                <div class="diff-navigation" id="diffNavigation" style="display: none;">
+                    <div class="diff-nav-controls">
+                        <button class="diff-nav-btn" onclick="navigateDiff('first')" title="Đi đến khác biệt đầu tiên">
+                            ⏮️
+                        </button>
+                        <button class="diff-nav-btn" onclick="navigateDiff('prev')" title="Khác biệt trước">
+                            ◀️
+                        </button>
+                        <button class="diff-nav-btn" onclick="navigateDiff('next')" title="Khác biệt tiếp theo">
+                            ▶️
+                        </button>
+                        <button class="diff-nav-btn" onclick="navigateDiff('last')" title="Đi đến khác biệt cuối">
+                            ⏭️
+                        </button>
+                    </div>
+                    <div class="diff-search">
+                        <input type="text" id="diffSearchInput" placeholder="Tìm kiếm khác biệt..." onkeyup="searchDiff(this.value)">
+                        <button class="diff-nav-btn" onclick="clearSearch()" title="Xóa tìm kiếm">
+                            ❌
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Side-by-Side Diff View -->
+                <div class="diff-side-by-side" id="sideBySideView">
+                    <div class="diff-file-panel">
+                        <div class="diff-file-header">
+                            📁 File 1 - <span id="file1Name">N/A</span>
+                        </div>
+                        <div class="diff-content" id="file1DiffContent">
+                            <!-- File 1 diff content will be populated here -->
+                        </div>
+                    </div>
+                    <div class="diff-file-panel">
+                        <div class="diff-file-header">
+                            📁 File 2 - <span id="file2Name">N/A</span>
+                        </div>
+                        <div class="diff-content" id="file2DiffContent">
+                            <!-- File 2 diff content will be populated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unified Diff View -->
+                <div class="diff-unified" id="unifiedView" style="display: none;">
+                    <div class="diff-content" id="unifiedDiffContent">
+                        <!-- Unified diff content will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Table View -->
+                <div class="table-container" id="tableView" style="display: none;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mô tả sản phẩm</th>
+                                <th>Số lượng (File 1)</th>
+                                <th>Số lượng (File 2)</th>
+                                <th>Đơn giá (File 1)</th>
+                                <th>Đơn giá (File 2)</th>
+                                <th>Thành tiền (File 1)</th>
+                                <th>Thành tiền (File 2)</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparisonTable">
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Differences Panel -->
+            <div class="differences-panel">
+                <h3 class="panel-title">Chi tiết sai lệch</h3>
+                <div id="differencesList">
+                    <!-- Differences will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Raw Data Display Section -->
+            <div class="raw-data-section" id="rawDataSection" style="display: none;">
+                <div class="raw-data-header">
+                    <h3>Dữ liệu gốc trích xuất (Để kiểm tra đối chứng)</h3>
+                    <div class="raw-data-controls">
+                        <button class="btn btn-secondary" onclick="toggleRawDataView()">👁️ Hiển/Ẩn</button>
+                        <button class="btn btn-secondary" onclick="exportToMarkdown()">📝 Xuất Markdown</button>
+                    </div>
+                </div>
+                <div class="raw-data-container" id="rawDataContainer">
+                    <div class="raw-data-panel">
+                        <h4>📁 File 1 - <span id="rawFile1Name"></span></h4>
+                        <div class="raw-data-table-container">
+                            <table class="raw-data-table" id="rawFile1Table">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Mô tả</th>
+                                        <th>Số lượng</th>
+                                        <th>Đơn giá</th>
+                                        <th>Thành tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="rawFile1Data">
+                                    <!-- Raw data for file 1 will be populated here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="raw-data-panel">
+                        <h4>📁 File 2 - <span id="rawFile2Name"></span></h4>
+                        <div class="raw-data-table-container">
+                            <table class="raw-data-table" id="rawFile2Table">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Mô tả</th>
+                                        <th>Số lượng</th>
+                                        <th>Đơn giá</th>
+                                        <th>Thành tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="rawFile2Data">
+                                    <!-- Raw data for file 2 will be populated here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Export Section -->
+            <div class="export-section">
+                <h3>Xuất báo cáo</h3>
+                <div class="export-buttons">
+                    <button class="btn btn-secondary" onclick="exportReport('excel')">📊 Xuất Excel</button>
+                    <button class="btn btn-secondary" onclick="exportReport('pdf')">📄 Xuất PDF</button>
+                    <button class="btn btn-secondary" onclick="exportDiff()">🔄 Xuất Diff</button>
+                    <button class="btn btn-secondary" onclick="toggleRawDataSection()">📋 Xem dữ liệu gốc</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.2.0/marked.min.js" integrity="sha256-PynjGMBL2FHiZVJRCxdjCqbLYK8TZ/6zJxZ+4aT5vjg=" crossorigin="anonymous"></script>
+    <script src="utils/helpers.js"></script>
+    <script src="utils/file-parsers.js"></script>
+    <script src="scripts/main.js?v=1.5"></script>
+    <script src="scripts/api_integration.js?v=1.2"></script>
+    <script src="scripts/diff-visualization.js?v=1.1"></script>
+
+    <script>
+        // Initialize backend integration on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Backup original compareFiles function
+            if (typeof window.compareFiles === 'function') {
+                window.originalCompareFiles = window.compareFiles;
+                console.log('Original compareFiles function backed up');
+            }
+            
+            // Backend integration is active - using full backend API
+            console.log('Using backend API mode');
+            
+            // Optional: Check backend but don't replace compareFiles
+            if (window.backendAPI) {
+                window.backendAPI.initializeBackendIntegration();
+                console.log('Backend API initialized but not used');
+                
+                // Replace export functions with backend versions
+                if (window.backendAPI.exportBackendReport) {
+                    window.exportReport = window.backendAPI.exportBackendReport;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

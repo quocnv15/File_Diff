@@ -1,0 +1,15 @@
+{
+  "backend": {
+    "api_routes": {},
+    "processors": {},
+    "models": {},
+    "utils": {}
+  },
+  "frontend": {
+    "scripts": {},
+    "styles": {},
+    "components": {}
+  },
+  "tests": {},
+  "docs": {}
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📄 PDF Parsing Edge Case Tests</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .success { background: #d4edda; border-color: #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border-color: #f5c6cb; color: #721c24; }
+        .info { background: #d1ecf1; border-color: #bee5eb; color: #0c5460; }
+        .warning { background: #fff3cd; border-color: #ffeaa7; color: #856404; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        .test-log { font-family: monospace; font-size: 12px; background: #f8f9fa; padding: 10px; border-radius: 3px; max-height: 300px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <h1>📄 PDF Parsing Edge Case Tests</h1>
+    
+    <div class="test-section info">
+        <h2>📋 Test Overview</h2>
+        <p>This page tests the PDF parsing functionality with various edge cases and scenarios.</p>
+        <p><strong>Note:</strong> PDF parsing requires PDF.js library to be loaded dynamically.</p>
+    </div>
+
+    <div class="test-section">
+        <h2>🚀 PDF Library Tests</h2>
+        <button onclick="testPDFJSLibrary()">Load PDF.js Library</button>
+        <button onclick="testPDFJSLibraryAvailability()">Check Library Status</button>
+        <div id="libraryResults" class="test-log"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>📄 PDF Parsing Functions</h2>
+        <button onclick="testPDFParsingFunctions()">Test Core Functions</button>
+        <button onclick="testTextExtraction()">Test Text Extraction</button>
+        <button onclick="testTableExtraction()">Test Table Extraction</button>
+        <div id="parsingResults" class="test-log"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🌐 Vietnamese Text Support</h2>
+        <button onclick="testVietnameseText()">Test Vietnamese Parsing</button>
+        <button onclick="testUnicodeHandling()">Test Unicode Handling</button>
+        <button onclick="testSpecialCharacters()">Test Special Characters</button>
+        <div id="vietnameseResults" class="test-log"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>⚠️ Error Scenarios</h2>
+        <button onclick="testCorruptedPDF()">Test Corrupted PDF</button>
+        <button onclick="testProtectedPDF()">Test Protected PDF</button>
+        <button onclick="testEmptyPDF()">Test Empty PDF</button>
+        <button onclick="testLargePDF()">Test Large PDF Simulation</button>
+        <div id="errorResults" class="test-log"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>📊 Performance Tests</h2>
+        <button onclick="testParsingPerformance()">Test Parsing Performance</button>
+        <button onclick="testMemoryUsage()">Test Memory Usage</button>
+        <div id="performanceResults" class="test-log"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔄 Fallback Mechanisms</h2>
+        <button onclick="testFallbackToHTML()">Test HTML Fallback</button>
+        <button onclick="testPlaceholderData()">Test Placeholder Data</button>
+        <div id="fallbackResults" class="test-log"></div>
+    </div>
+
+    <!-- Load required scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="utils/file-parsers.js"></script>
+
+    <script>
+        function log(containerId, message, type = 'info') {
+            const container = document.getElementById(containerId);
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.innerHTML = `<span style="color: ${type === 'error' ? 'red' : type === 'success' ? 'green' : type === 'warning' ? 'orange' : 'blue'}">[${timestamp}] ${message}</span>`;
+            container.appendChild(logEntry);
+            container.scrollTop = container.scrollHeight;
+            console.log(`[${containerId}] ${message}`);
+        }
+
+        async function testPDFJSLibrary() {
+            log('libraryResults', 'Testing PDF.js library loading...', 'info');
+            
+            try {
+                if (typeof loadPDFJSLibrary === 'function') {
+                    await loadPDFJSLibrary();
+                    log('libraryResults', '✅ PDF.js library loaded successfully', 'success');
+                } else {
+                    log('libraryResults', '❌ loadPDFJSLibrary function not found', 'error');
+                }
+            } catch (error) {
+                log('libraryResults', `❌ PDF.js loading failed: ${error.message}`, 'error');
+            }
+        }
+
+        function testPDFJSLibraryAvailability() {
+            log('libraryResults', 'Checking PDF.js library status...', 'info');
+            
+            if (typeof pdfjsLib !== 'undefined') {
+                log('libraryResults', '✅ pdfjsLib is available', 'success');
+                log('libraryResults', `Version: ${pdfjsLib.version || 'Unknown'}`, 'info');
+            } else {
+                log('libraryResults', '❌ pdfjsLib is not available', 'error');
+                log('libraryResults', 'Click "Load PDF.js Library" to load it', 'warning');
+            }
+        }
+
+        function testPDFParsingFunctions() {
+            log('parsingResults', 'Testing PDF parsing functions...', 'info');
+            
+            const functions = [
+                'parsePDFFile',
+                'loadPDFJSLibrary',
+                'extractTableDataFromPDFText',
+                'parsePDFTextToData',
+                'isHeaderOrFooter',
+                'extractDataFromLine',
+                'extractDescriptionFromLine',
+                'cleanText',
+                'parseNumber',
+                'generateFallbackPDFData'
+            ];
+            
+            functions.forEach(funcName => {
+                if (typeof window[funcName] === 'function') {
+                    log('parsingResults', `✅ ${funcName} function available`, 'success');
+                } else {
+                    log('parsingResults', `❌ ${funcName} function not found`, 'error');
+                }
+            });
+        }
+
+        function testTextExtraction() {
+            log('parsingResults', 'Testing text extraction logic...', 'info');
+            
+            // Test Vietnamese text patterns
+            const testTexts = [
+                'HÓA ĐƠN BÁN HÀNG',
+                'Số lượng: 100',
+                'Đơn giá: 150.000 VNĐ',
+                'Thành tiền: 15.000.000 VNĐ',
+                'Mã sản phẩm: SP-001',
+                'Tên khách hàng: Nguyễn Văn A'
+            ];
+            
+            testTexts.forEach((text, index) => {
+                if (typeof cleanText === 'function') {
+                    const cleaned = cleanText(text);
+                    log('parsingResults, `Test ${index + 1}: "${text}" → "${cleaned}"`, 'info');
+                } else {
+                    log('parsingResults, `❌ cleanText function not available for test ${index + 1}`, 'error');
+                }
+            });
+            
+            log('parsingResults', '✅ Text extraction tests completed', 'success');
+        }
+
+        function testTableExtraction() {
+            log('parsingResults', 'Testing table extraction patterns...', 'info');
+            
+            // Test regex patterns for Vietnamese documents
+            const patterns = {
+                description: /(?:mô tả|sản phẩm|product|description|tên hàng|hàng hóa)(.*?)(?=số lượng|quantity|sl|đơn giá|unit price|đg|thành tiền|amount|tt|$)/i,
+                quantity: /(?:số lượng|quantity|sl)(.*?)(?=đơn giá|unit price|đg|thành tiền|amount|tt|$)/i,
+                unitPrice: /(?:đơn giá|unit price|đg)(.*?)(?=thành tiền|amount|tt|$)/i,
+                amount: /(?:thành tiền|amount|tt)(.*?)(?=tổng|total|sum|$)/i
+            };
+            
+            const testLine = 'Sản phẩm A - Mô tả chi tiết  Số lượng: 50  Đơn giá: 150.000  Thành tiền: 7.500.000';
+            
+            Object.keys(patterns).forEach(field => {
+                const match = testLine.match(patterns[field]);
+                if (match && match[1]) {
+                    log('parsingResults, `${field} pattern matched: "${match[1].trim()}"`, 'success');
+                } else {
+                    log('parsingResults, `${field} pattern no match`, 'warning');
+                }
+            });
+        }
+
+        function testVietnameseText() {
+            log('vietnameseResults', 'Testing Vietnamese text processing...', 'info');
+            
+            const vietnameseTests = [
+                'Sản phẩm cao cấp',
+                'Áo sơ mi nam',
+                'Đầm nữ công sở',
+                'Giày thể thao',
+                'Túi xách da thật',
+                'Đồng hồ thông minh',
+                'Tai nghe không dây',
+                'Bàn phím cơ',
+                'Màn hình cảm ứng',
+                'Thẻ nhớ điện tử'
+            ];
+            
+            vietnameseTests.forEach((text, index) => {
+                if (typeof cleanText === 'function') {
+                    const cleaned = cleanText(text);
+                    const preserved = text === cleaned;
+                    log('vietnameseResults, `Test ${index + 1}: "${text}" ${preserved ? '✅' : '❌'}', preserved ? 'success' : 'error');
+                }
+            });
+            
+            // Test number parsing with Vietnamese format
+            const vietnameseNumbers = ['1.000', '1.000.000', '150.500', '2.345.678,90'];
+            vietnameseNumbers.forEach(num => {
+                if (typeof parseNumber === 'function') {
+                    const parsed = parseNumber(num);
+                    log('vietnameseResults, `"${num}" → ${parsed}`, 'info');
+                }
+            });
+        }
+
+        function testUnicodeHandling() {
+            log('vietnameseResults', 'Testing Unicode character handling...', 'info');
+            
+            const unicodeTests = [
+                'ÁÀÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯáàâãèéêìíòóôõùúăđĩũơư',
+                '☕ ★ ♠ ♥ ♦ ♣ ♪ ♫ ♯',
+                '€ $ £ ¥ ₹ ₽',
+                '℃ ℉ ° ′ ″',
+                '① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩'
+            ];
+            
+            unicodeTests.forEach((text, index) => {
+                if (typeof cleanText === 'function') {
+                    const cleaned = cleanText(text);
+                    log('vietnameseResults, `Unicode test ${index + 1}: "${cleaned}"`, 'info');
+                }
+            });
+        }
+
+        function testSpecialCharacters() {
+            log('vietnameseResults', 'Testing special character handling...', 'info');
+            
+            const specialTests = [
+                'Product @#$%^&*() Test',
+                'Text with [brackets] and {braces}',
+                'File/path/name\\test.csv',
+                'Email@domain.com format',
+                'Website: http://example.com/page',
+                'Phone: +84-123-456-789'
+            ];
+            
+            specialTests.forEach((text, index) => {
+                if (typeof cleanText === 'function') {
+                    const cleaned = cleanText(text);
+                    log('vietnameseResults, `Special ${index + 1}: "${text}" → "${cleaned}"`, 'info');
+                }
+            });
+        }
+
+        async function testCorruptedPDF() {
+            log('errorResults', 'Testing corrupted PDF handling...', 'info');
+            
+            try {
+                // Create a mock corrupted PDF file
+                const corruptedData = new Uint8Array([0x25, 0x50, 0x44, 0x46, 0x00, 0x00, 0x00, 0x00]);
+                const mockFile = new File([corruptedData], 'corrupted.pdf', { type: 'application/pdf' });
+                
+                if (typeof parsePDFFile === 'function') {
+                    const result = await parsePDFFile(mockFile);
+                    log('errorResults', `✅ Corrupted PDF handled gracefully: ${result.length} fallback records`, 'success');
+                } else {
+                    log('errorResults', '❌ parsePDFFile function not available', 'error');
+                }
+            } catch (error) {
+                log('errorResults', `✅ Corrupted PDF error handled: ${error.message}`, 'success');
+            }
+        }
+
+        async function testProtectedPDF() {
+            log('errorResults', 'Testing protected PDF handling...', 'info');
+            
+            try {
+                // Simulate protected PDF scenario
+                const mockProtectedFile = new File(['%PDF-1.4\n% protected content'], 'protected.pdf', { type: 'application/pdf' });
+                
+                if (typeof parsePDFFile === 'function') {
+                    const result = await parsePDFFile(mockProtectedFile);
+                    log('errorResults, `✅ Protected PDF handled: ${result.length} records`, 'success');
+                }
+            } catch (error) {
+                log('errorResults, `✅ Protected PDF error handled: ${error.message}`, 'success');
+            }
+        }
+
+        async function testEmptyPDF() {
+            log('errorResults', 'Testing empty PDF handling...', 'info');
+            
+            try {
+                const emptyFile = new File([''], 'empty.pdf', { type: 'application/pdf' });
+                
+                if (typeof parsePDFFile === 'function') {
+                    const result = await parsePDFFile(emptyFile);
+                    log('errorResults, `✅ Empty PDF handled: ${result.length} records`, 'success');
+                }
+            } catch (error) {
+                log('errorResults, `✅ Empty PDF error handled: ${error.message}`, 'success');
+            }
+        }
+
+        async function testLargePDF() {
+            log('errorResults', 'Testing large PDF simulation...', 'info');
+            
+            // Create a large mock PDF content
+            let largeContent = '%PDF-1.4\n';
+            for (let i = 0; i < 1000; i++) {
+                largeContent += `Line ${i}: Product ${i} - Quantity: ${i * 10} - Price: ${i * 100}\n`;
+            }
+            
+            try {
+                const largeFile = new File([largeContent], 'large.pdf', { type: 'application/pdf' });
+                
+                // Check file size
+                const fileSize = largeFile.size / 1024 / 1024; // MB
+                log('errorResults, `Large PDF size: ${fileSize.toFixed(2)} MB`, 'info');
+                
+                if (typeof parsePDFFile === 'function') {
+                    const startTime = Date.now();
+                    const result = await parsePDFFile(largeFile);
+                    const duration = Date.now() - startTime;
+                    
+                    log('errorResults, `✅ Large PDF processed in ${duration}ms: ${result.length} records`, 'success');
+                }
+            } catch (error) {
+                log('errorResults, `✅ Large PDF error handled: ${error.message}`, 'success');
+            }
+        }
+
+        async function testParsingPerformance() {
+            log('performanceResults', 'Testing PDF parsing performance...', 'info');
+            
+            const iterations = 100;
+            
+            // Test text cleaning performance
+            if (typeof cleanText === 'function') {
+                const testText = 'Sản phẩm @#$%^&*() với Unicode: ÁÀÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯ';
+                const startTime = Date.now();
+                
+                for (let i = 0; i < iterations; i++) {
+                    cleanText(testText);
+                }
+                
+                const duration = Date.now() - startTime;
+                const avgTime = (duration / iterations).toFixed(4);
+                
+                log('performanceResults, `Text cleaning: ${duration}ms total, ${avgTime}ms avg`, 'info');
+                
+                if (avgTime < 1) {
+                    log('performanceResults, '✅ Excellent performance', 'success');
+                } else if (avgTime < 5) {
+                    log('performanceResults, '✅ Good performance', 'success');
+                } else {
+                    log('performanceResults, '⚠️ Performance could be better', 'warning');
+                }
+            }
+            
+            // Test number parsing performance
+            if (typeof parseNumber === 'function') {
+                const testNumbers = ['1,234.56', '100.50', '1000', '1.000.000', '150.000 VNĐ'];
+                const startTime = Date.now();
+                
+                for (let i = 0; i < iterations; i++) {
+                    testNumbers.forEach(num => parseNumber(num));
+                }
+                
+                const duration = Date.now() - startTime;
+                const avgTime = (duration / (iterations * testNumbers.length)).toFixed(4);
+                
+                log('performanceResults, `Number parsing: ${duration}ms total, ${avgTime}ms avg`, 'info');
+            }
+        }
+
+        function testMemoryUsage() {
+            log('performanceResults', 'Testing memory usage...', 'info');
+            
+            if (performance && performance.memory) {
+                const memory = performance.memory;
+                const usedMB = (memory.usedJSHeapSize / 1024 / 1024).toFixed(2);
+                const totalMB = (memory.totalJSHeapSize / 1024 / 1024).toFixed(2);
+                const limitMB = (memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2);
+                
+                log('performanceResults, `Used: ${usedMB}MB / Total: ${totalMB}MB / Limit: ${limitMB}MB`, 'info');
+                
+                const usagePercent = ((memory.usedJSHeapSize / memory.jsHeapSizeLimit) * 100).toFixed(1);
+                
+                if (usagePercent < 50) {
+                    log('performanceResults, `✅ Memory usage: ${usagePercent}% (Good)`, 'success');
+                } else if (usagePercent < 80) {
+                    log('performanceResults, `⚠️ Memory usage: ${usagePercent}% (Moderate)`, 'warning');
+                } else {
+                    log('performanceResults, `❌ Memory usage: ${usagePercent}% (High)`, 'error');
+                }
+            } else {
+                log('performanceResults, '❌ Memory API not available in this browser', 'error');
+            }
+        }
+
+        function testFallbackToHTML() {
+            log('fallbackResults', 'Testing HTML fallback mechanism...', 'info');
+            
+            if (typeof generateHTMLReport === 'function') {
+                try {
+                    // Create sample comparison results
+                    window.comparisonResults = {
+                        summary: { totalRows: 10, matchingRows: 8, differentRows: 2, accuracyRate: 80 },
+                        differences: [
+                            { rowNumber: 1, item1: { description: 'Test A' }, item2: { description: 'Test B' } }
+                        ],
+                        matches: [
+                            { rowNumber: 2, item1: { description: 'Test C' }, item2: { description: 'Test C' } }
+                        ]
+                    };
+                    
+                    log('fallbackResults, '✅ HTML fallback function available', 'success');
+                    log('fallbackResults, 'Click to test: generateHTMLReport()', 'info');
+                    
+                } catch (error) {
+                    log('fallbackResults, `❌ HTML fallback test failed: ${error.message}`, 'error');
+                }
+            } else {
+                log('fallbackResults, '❌ generateHTMLReport function not available', 'error');
+            }
+        }
+
+        function testPlaceholderData() {
+            log('fallbackResults', 'Testing placeholder data generation...', 'info');
+            
+            if (typeof generateFallbackPDFData === 'function') {
+                try {
+                    const placeholderData = generateFallbackPDFData();
+                    
+                    if (Array.isArray(placeholderData) && placeholderData.length > 0) {
+                        log('fallbackResults, `✅ Placeholder data generated: ${placeholderData.length} records`, 'success');
+                        log('fallbackResults, `Sample: ${JSON.stringify(placeholderData[0], null, 2)}`, 'info');
+                    } else {
+                        log('fallbackResults, '❌ Invalid placeholder data format', 'error');
+                    }
+                } catch (error) {
+                    log('fallbackResults, `❌ Placeholder data test failed: ${error.message}`, 'error');
+                }
+            } else {
+                log('fallbackResults, '❌ generateFallbackPDFData function not available', 'error');
+            }
+        }
+
+        // Auto-run basic checks on page load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                log('libraryResults', '📄 PDF Parsing Edge Case Tests loaded', 'info');
+                testPDFJSLibraryAvailability();
+                testPDFParsingFunctions();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
